@@ -1,0 +1,87 @@
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 990px) {
+
+  .container {
+    padding: 0 15px;
+  }
+
+  #navbarNav {
+    margin-top: 10px;
+  }
+
+  .navbar .navbar-nav {
+    text-align: left; 
+    width: 100%;
+  }
+
+  .navbar form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .navbar .form-control {
+    width: 80%;
+    margin-bottom: 0;
+  }
+
+  .navbar .btn {
+    width: 20%;
+    margin-top: 0;
+  }
+
+  .list-group-item {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    padding: 12px;
+    margin-bottom: 12px;
+    flex-direction: column;
+  }
+
+  .list-group-item .ms-3 {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+
+  .list-group-item .ms-3 strong {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 5px;
+  }
+  .btn-warning.btn-lg {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .navbar form {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .navbar-nav .nav-item a {
+    margin-bottom: 10px;
+  }
+}
+.mt-5 {
+    margin-top: 1rem !important;
+}
+
+.container {
+  max-width: 95%;
+}
+
+.py-4 {
+    padding-top: 0rem !important; 
+    padding-bottom: 1.5rem !important;
+}
