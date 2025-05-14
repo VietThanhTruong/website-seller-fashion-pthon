@@ -4,69 +4,72 @@
 {% load humanize %}
 
 {% block content %}
+<div class="container-fluid px-2 px-md-5 py-4">
+  <!-- Nút quay lại -->
+  <div class="mb-3">
+    <a href="{% url 'home' %}" class="btn btn-outline-dark shadow-sm">
+      <i class="fa fa-arrow-left me-2"></i> Tiếp tục mua sắm
+    </a>
+  </div>
 
-<div class="d-flex mt-4">
-  <a href="{% url 'home' %}" class="btn btn-outline-secondary me-2 shadow-sm">
-    <i class="fa fa-arrow-left"></i>
-  </a>
-</div>
+  <!-- Tiêu đề -->
+  <h3 class="text-center fw-bold mb-4">🛒 Giỏ hàng</h3>
 
-<h2 class="mb-4 text-center">🛒 Giỏ hàng</h2>
-
-{% if items %}
-<ul class="list-group shadow-sm rounded">
-  {% for item in items %}
-  <li
-    class="list-group-item d-flex justify-content-between align-items-center bg-light mb-3 rounded"
-  >
-    <div class="d-flex align-items-center">
-      <img
-        src="{{ item.product.image.url }}"
-        class="img-fluid"
-        style="width: 50px; height: 50px; object-fit: cover"
-        alt="{{ item.product.name }}"
-      />
-      <div class="ms-3">
-        <strong>{{ item.product.name }}</strong><br />
-        <!-- <span class="text-muted">Số lượng: {{ item.quantity }}</span> -->
-        <span> {{ item.total_price|intcomma }}đ </span>
+  {% if items %}
+  <!-- Danh sách sản phẩm -->
+  <div class="list-group">
+    {% for item in items %}
+    <div class="list-group-item bg-light rounded shadow-sm mb-3 p-3">
+  <div class="d-flex flex-md-row justify-content-between align-items-center">
+    <!-- Bên trái: ảnh, tên, giá -->
+    <div class="d-flex align-items-center mb-3 mb-md-0">
+      <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}"
+        class="rounded shadow-sm me-3"
+        style="width: 50px; height: 50px; object-fit: cover;">
+      <div>
+        <h6 class="mb-1 mb-sm-0">{{ item.product.name }}</h6>
+        <div class="text-danger fw-semibold small">
+          {{ item.total_price|intcomma }}đ
+        </div>
       </div>
     </div>
 
-    <div class="d-flex align-items-center">
-      <form
-        method="post"
-        action="{% url 'update_cart_quantity' item.id %}"
-        class="d-flex align-items-center"
-      >
-        {% csrf_token %}
-        <button
-          class="btn btn-sm btn-outline-danger me-2"
-          name="action"
-          value="decrease"
-        >
-          −
-        </button>
-        <span class="fw-bold">{{ item.quantity }}</span>
-        <button
-          class="btn btn-sm btn-outline-success ms-2"
-          name="action"
-          value="increase"
-        >
-          +
-        </button>
-      </form>
-    </div>
-  </li>
-  {% endfor %}
-</ul>
+    <!-- Bên phải: tăng / giảm -->
+    <form method="post" action="{% url 'update_cart_quantity' item.id %}"
+      class="d-flex align-items-center cart-update-form ms-auto"
+      data-id="{{ item.id }}">
+      {% csrf_token %}
+      <button type="button" class="btn btn-sm btn-outline-danger me-2" name="action" value="decrease">−</button>
+      <span id="quantity-{{ item.id }}" class="mx-2 fw-bold small">{{ item.quantity }}</span>
+      <button type="button" class="btn btn-sm btn-outline-success ms-2" name="action" value="increase">+</button>
+</form>
 
-<div class="d-flex justify-content-between mt-4">
-  <h5 class="text-end">Tổng cộng: <strong>{{ total|intcomma }} đ</strong></h5>
-  <a href="#" class="btn btn-warning btn-lg">Thanh toán</a>
+  </div>
 </div>
-{% else %}
-<div class="alert alert-info mt-3 text-center">Giỏ hàng trống.</div>
-{% endif %}
 
-{% endblock %}
+    {% endfor %}
+  </div>
+
+  <!-- Tổng cộng + Thanh toán -->
+  <div class="mt-4 p-4 bg-white rounded shadow text-end">
+    <h5 class="mb-3">
+      Tổng cộng: <span class="text-danger fw-bold" id="cart-total">{{ total|intcomma }}đ</span>
+    </h5>
+    <a href="#" class="btn btn-warning btn-lg w-100 w-md-auto">
+      <i class="fa fa-credit-card me-2"></i> Thanh toán
+    </a>
+  </div>
+
+  <script src="{% static 'js/update_cart_quantity.js' %}"></script>
+
+  {% else %}
+  <!-- Khi không có sản phẩm -->
+  <div class="alert alert-info text-center mt-5">
+    <i class="fa fa-shopping-cart fa-2x mb-2"></i><br />
+    Giỏ hàng trống. <br />
+    <a href="{% url 'home' %}" class="btn btn-outline-primary mt-3">🛍️ Quay lại cửa hàng</a>
+  </div>
+  {% endif %}
+</div>
+
+ {% endblock %}
