@@ -46,6 +46,7 @@ def search(request):
     return render(request, 'store/search_results.html', {
         'query': query,
         'results': results,
+        'cart_item_count': cart_item_count(request)
     })
 
 @login_required
