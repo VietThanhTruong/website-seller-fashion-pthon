@@ -1,0 +1,72 @@
+{% extends 'store/base_shop.html' %}
+{% block title %}Giỏ hàng{% endblock %}
+{% load static %}
+{% load humanize %}
+
+{% block content %}
+
+<div class="d-flex mt-4">
+  <a href="{% url 'home' %}" class="btn btn-outline-secondary me-2 shadow-sm">
+    <i class="fa fa-arrow-left"></i>
+  </a>
+</div>
+
+<h2 class="mb-4 text-center">🛒 Giỏ hàng</h2>
+
+{% if items %}
+<ul class="list-group shadow-sm rounded">
+  {% for item in items %}
+  <li
+    class="list-group-item d-flex justify-content-between align-items-center bg-light mb-3 rounded"
+  >
+    <div class="d-flex align-items-center">
+      <img
+        src="{{ item.product.image.url }}"
+        class="img-fluid"
+        style="width: 50px; height: 50px; object-fit: cover"
+        alt="{{ item.product.name }}"
+      />
+      <div class="ms-3">
+        <strong>{{ item.product.name }}</strong><br />
+        <!-- <span class="text-muted">Số lượng: {{ item.quantity }}</span> -->
+        <span> {{ item.total_price|intcomma }}đ </span>
+      </div>
+    </div>
+
+    <div class="d-flex align-items-center">
+      <form
+        method="post"
+        action="{% url 'update_cart_quantity' item.id %}"
+        class="d-flex align-items-center"
+      >
+        {% csrf_token %}
+        <button
+          class="btn btn-sm btn-outline-danger me-2"
+          name="action"
+          value="decrease"
+        >
+          −
+        </button>
+        <span class="fw-bold">{{ item.quantity }}</span>
+        <button
+          class="btn btn-sm btn-outline-success ms-2"
+          name="action"
+          value="increase"
+        >
+          +
+        </button>
+      </form>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+
+<div class="d-flex justify-content-between mt-4">
+  <h5 class="text-end">Tổng cộng: <strong>{{ total|intcomma }} đ</strong></h5>
+  <a href="#" class="btn btn-warning btn-lg">Thanh toán</a>
+</div>
+{% else %}
+<div class="alert alert-info mt-3 text-center">Giỏ hàng trống.</div>
+{% endif %}
+
+{% endblock %}
