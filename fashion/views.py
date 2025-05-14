@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.decorators import permission_required
 from django.views.decorators.csrf import csrf_protect
 from django.views.decorators.http import require_POST
+from fuzzywuzzy import process
 from .models import Product, CartItem
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
@@ -15,7 +16,6 @@ def cart_item_count(request):
     cart_items = CartItem.objects.filter(session_key=session_key)
         
     return cart_items.count()
-
 
 @login_required
 def home(request):
@@ -34,8 +34,19 @@ def edit_profile(request):
 
 @login_required
 def search(request):
-    # Logic xử lý tìm kiếm
-    return render(request, 'store/search_results.html')
+    query = request.GET.get('q', '')
+    products = Product.objects.all()  
+    results = []
+
+    for product in products:
+        similarity = process.extractOne(query, [product.name])[1]
+        if similarity > 80:  
+            results.append(product)
+    
+    return render(request, 'store/search_results.html', {
+        'query': query,
+        'results': results,
+    })
 
 @login_required
 def product_detail(request, product_id):
