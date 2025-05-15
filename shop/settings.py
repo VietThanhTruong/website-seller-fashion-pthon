@@ -142,3 +142,32 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # session
 SESSION_ENGINE = 'user_sessions.backends.db'
 SESSION_COOKIE_NAME = 'sessionid'
+
+# LOGGING
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': 'logs/product_changes.log',
+            'formatter': 'verbose',
+            'encoding': 'utf-8',  # ✅ thêm dòng này
+        },
+    },
+    'formatters': {
+        'verbose': {
+            'format': '[{asctime}] {levelname} {message}',
+            'style': '{',
+        },
+    },
+    'loggers': {
+        '': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}
