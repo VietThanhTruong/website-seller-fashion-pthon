@@ -5,71 +5,117 @@
 
 {% block content %}
 <div class="container-fluid px-2 px-md-5 py-4">
-  <!-- Nút quay lại -->
   <div class="mb-3">
     <a href="{% url 'home' %}" class="btn btn-outline-dark shadow-sm">
       <i class="fa fa-arrow-left me-2"></i> Tiếp tục mua sắm
     </a>
   </div>
 
-  <!-- Tiêu đề -->
   <h3 class="text-center fw-bold mb-4">🛒 Giỏ hàng</h3>
 
   {% if items %}
-  <!-- Danh sách sản phẩm -->
   <div class="list-group">
     {% for item in items %}
-    <div class="list-group-item bg-light rounded shadow-sm mb-3 p-3">
-  <div class="d-flex flex-md-row justify-content-between align-items-center">
-    <!-- Bên trái: ảnh, tên, giá -->
-    <div class="d-flex align-items-center mb-3 mb-md-0">
-      <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}"
-        class="rounded shadow-sm me-3"
-        style="width: 50px; height: 50px; object-fit: cover;">
-      <div>
-        <h6 class="mb-1 mb-sm-0">{{ item.product.name }}</h6>
-        <div class="text-danger fw-semibold small">
-          {{ item.total_price|intcomma }}đ
+    <div class="list-group-item bg-light rounded shadow-sm mb-3 p-3" id="cart-item-{{ item.id }}">
+      <div
+        class="d-flex flex-md-row justify-content-between align-items-center"
+      >
+        <div class="d-flex align-items-center mb-3 mb-md-0">
+          <img
+            src="{{ item.product.image.url }}"
+            alt="{{ item.product.name }}"
+            class="rounded shadow-sm me-3"
+            style="width: 50px; height: 50px; object-fit: cover"
+          />
+          <div>
+            <h6 class="mb-1 mb-sm-0">{{ item.product.name }}</h6>
+            <div class="text-danger fw-semibold small">
+              {{ item.total_price|intcomma }}đ
+            </div>
+          </div>
+        </div>
+
+        <form
+          method="post"
+          action="{% url 'update_cart_quantity' item.id %}"
+          class="d-flex align-items-center cart-update-form ms-auto"
+          data-id="{{ item.id }}"
+        >
+          {% csrf_token %}
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-danger me-2"
+            name="action"
+            value="decrease"
+          >
+            −
+          </button>
+          <span id="quantity-{{ item.id }}" class="mx-2 fw-bold small"
+            >{{ item.quantity }}</span
+          >
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-success ms-2"
+            name="action"
+            value="increase"
+          >
+            +
+          </button>
+        </form>
+        <div class="dropdown" style="margin-left: 1rem !important;">
+          <button
+            class="btn btn-sm btn-light"
+            type="button"
+            id="dropdownMenuButton-{{ item.id }}"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            &#8942;
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton-{{ item.id }}">
+            <li>
+              <form
+                method="post"
+                action="{% url 'delete_cart_item' item.id %}"
+                class="m-0 p-0 delete-cart-item"
+                data-item-id="{{ item.id }}"
+                id="delete-form-{{ item.id }}"
+              >
+                {% csrf_token %}
+                <button type="submit" class="dropdown-item text-danger">Xóa</button>
+              </form>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <!-- Bên phải: tăng / giảm -->
-    <form method="post" action="{% url 'update_cart_quantity' item.id %}"
-      class="d-flex align-items-center cart-update-form ms-auto"
-      data-id="{{ item.id }}">
-      {% csrf_token %}
-      <button type="button" class="btn btn-sm btn-outline-danger me-2" name="action" value="decrease">−</button>
-      <span id="quantity-{{ item.id }}" class="mx-2 fw-bold small">{{ item.quantity }}</span>
-      <button type="button" class="btn btn-sm btn-outline-success ms-2" name="action" value="increase">+</button>
-</form>
-
-  </div>
-</div>
-
     {% endfor %}
   </div>
 
-  <!-- Tổng cộng + Thanh toán -->
   <div class="mt-4 p-4 bg-white rounded shadow text-end">
     <h5 class="mb-3">
-      Tổng cộng: <span class="text-danger fw-bold" id="cart-total">{{ total|intcomma }}đ</span>
+      Tổng cộng:
+      <span class="text-danger fw-bold" id="cart-total"
+        >{{ total|intcomma }}đ</span
+      >
     </h5>
     <a href="#" class="btn btn-warning btn-lg w-100 w-md-auto">
       <i class="fa fa-credit-card me-2"></i> Thanh toán
     </a>
   </div>
 
-  <script src="{% static 'js/update_cart_quantity.js' %}"></script>
+  <script src="{% static 'js/update_cart.js' %}"></script>
 
   {% else %}
-  <!-- Khi không có sản phẩm -->
   <div class="alert alert-info text-center mt-5">
     <i class="fa fa-shopping-cart fa-2x mb-2"></i><br />
     Giỏ hàng trống. <br />
-    <a href="{% url 'home' %}" class="btn btn-outline-primary mt-3">🛍️ Quay lại cửa hàng</a>
+    <a href="{% url 'home' %}" class="btn btn-outline-primary mt-3"
+      >🛍️ Quay lại cửa hàng</a
+    >
   </div>
   {% endif %}
 </div>
 
- {% endblock %}
+{% endblock %}

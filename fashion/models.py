@@ -20,14 +20,13 @@ class Product(models.Model):
 class CartItem(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=1)
-    user = models.ForeignKey(User, null=True, blank=True, on_delete=models.CASCADE)  # Thêm trường user
-    session_key = models.CharField(max_length=40, null=True, blank=True)  # Cho trường giỏ hàng không đăng nhập
+    user = models.ForeignKey(User, null=True, blank=True, on_delete=models.CASCADE)
+    session_key = models.CharField(max_length=40, null=True, blank=True)
 
-    session_key = models.CharField(max_length=40)
     class Meta:
-        unique_together = (
-            ('product', 'user'),
-            ('product', 'session_key'),
-        )
+        constraints = [
+            models.UniqueConstraint(fields=['product', 'user'], name='unique_user_cartitem', condition=models.Q(user__isnull=False)),
+            models.UniqueConstraint(fields=['product', 'session_key'], name='unique_session_cartitem', condition=models.Q(user__isnull=True)),
+        ]
     def total_price(self):
         return self.quantity * self.product.price
