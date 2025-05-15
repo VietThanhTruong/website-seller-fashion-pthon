@@ -68,10 +68,6 @@ def get_changed_fields(old_instance, new_instance):
         if isinstance(new_val, FieldFile):
             new_val = new_val.name
 
-        print(f"Field: {field}")
-        print(f"    Old value: {old_val}")
-        print(f"    New value: {new_val}")
-
         if old_val != new_val:
             changes[field] = {'old': old_val, 'new': new_val}
     return changes
