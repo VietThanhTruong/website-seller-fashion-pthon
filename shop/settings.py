@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+    'user_sessions',
     'django.forms',
     'fashion',
 ]
@@ -128,7 +129,7 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = 'login'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",  
+    BASE_DIR / "fashion/static",  
 ]
 
 
@@ -137,3 +138,6 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# session
+SESSION_ENGINE = 'user_sessions.backends.db'
+SESSION_COOKIE_NAME = 'sessionid'
