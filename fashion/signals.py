@@ -5,8 +5,7 @@ import sqlite3
 import threading
 
 def changere_session(user, session_key, user_agent, ip):
-    db_path = 'D:/assigment-t/python-2/website-seller-fashion-pthon/db.sqlite3'
-    print(f"[✓] Updated info for user {user} with session key {session_key}")
+    db_path = 'E:/website-seller-fashion-pthon/db.sqlite3'
     try:
         with sqlite3.connect(db_path) as conn:
             cursor = conn.cursor()
@@ -16,10 +15,10 @@ def changere_session(user, session_key, user_agent, ip):
                 WHERE user_id = ? OR session_key = ?
             """, (user_agent, ip, user, session_key))
             conn.commit()
-            print(f"[✓] Updated {cursor.rowcount} session(s)")
+            # print(f"[✓] Updated {cursor.rowcount} session(s)")
     except sqlite3.Error as e:
         print(f"[✗] SQLite error: {e}")
-
+          
 def get_client_ip(request):
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
     if x_forwarded_for:
@@ -46,3 +45,18 @@ def on_user_logged_in(sender, request, user, **kwargs):
     except sqlite3.Error as e:
         print(f"SQLite error: {e}")
         pass
+
+class UpdateSessionInfoMiddleware:
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        if request.user.is_authenticated:
+            ip = get_client_ip(request)
+            user_agent = request.META.get('HTTP_USER_AGENT', '')
+            session_key = request.session.session_key
+            timer = threading.Timer(1.0, changere_session, args=(request.user.id, session_key, user_agent, ip))
+            timer.start()
+
+        response = self.get_response(request)
+        return response
