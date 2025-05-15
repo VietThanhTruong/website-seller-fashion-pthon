@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'fashion.middleware.session_info.UpdateSessionInfoMiddleware',
 ]
 
 ROOT_URLCONF = 'shop.urls'
