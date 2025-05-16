@@ -3,9 +3,10 @@ from django.contrib.auth.decorators import login_required, permission_required
 from django.views.decorators.csrf import csrf_protect
 from django.views.decorators.http import require_POST
 from django.http import JsonResponse
+from .forms import EditProfileForm, UserProfileForm
 from django.contrib.auth.forms import UserCreationForm
 from fuzzywuzzy import process
-from .models import Product, CartItem
+from .models import Product, CartItem, UserProfile
 import logging
 
 logger = logging.getLogger(__name__)
@@ -39,7 +40,26 @@ def user_profile(request):
 
 @login_required
 def edit_profile(request):
-    return render(request, 'store/edit_profile.html')
+    user = request.user
+    profile, created = UserProfile.objects.get_or_create(user=user)
+
+    if request.method == 'POST':
+        user_form = EditProfileForm(request.POST, instance=user)
+        profile_form = UserProfileForm(request.POST, request.FILES, instance=profile)
+        if user_form.is_valid() and profile_form.is_valid():
+            user_form.save()
+            profile_form.save()
+            return redirect('user_profile')  
+    else:
+        user_form = EditProfileForm(instance=user)
+        profile_form = UserProfileForm(instance=profile)
+
+    context = {
+        'user_form': user_form,
+        'profile_form': profile_form,
+        'cart_item_count': _cart_items(request).count()
+    }
+    return render(request, 'store/edit_profile.html', context)
 
 @login_required
 def search(request):

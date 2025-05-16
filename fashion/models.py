@@ -30,3 +30,10 @@ class CartItem(models.Model):
         ]
     def total_price(self):
         return self.quantity * self.product.price
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    profile_picture = models.ImageField(upload_to='users/', default='users/default.jpg', blank=True, null=True)
+
+    def __str__(self):
+        return self.user.username

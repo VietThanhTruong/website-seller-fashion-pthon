@@ -1,182 +1,77 @@
-[2025-05-15 18:24:05,257] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
-[2025-05-15 18:24:05,832] INFO Watching for file changes with StatReloader
-[2025-05-15 18:26:08,117] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
-[2025-05-15 18:26:08,704] INFO Watching for file changes with StatReloader
-[2025-05-15 18:26:32,645] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
-[2025-05-15 18:26:33,287] INFO Watching for file changes with StatReloader
-[2025-05-15 18:30:03,024] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
-[2025-05-15 18:30:03,598] INFO Watching for file changes with StatReloader
-[2025-05-15 18:30:06,932] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
-[2025-05-15 18:30:07,488] INFO Watching for file changes with StatReloader
-[2025-05-15 18:30:27,134] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
-[2025-05-15 18:30:27,696] INFO Watching for file changes with StatReloader
-[2025-05-15 18:31:28,649] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
-[2025-05-15 18:31:29,357] INFO Watching for file changes with StatReloader
-[2025-05-15 18:31:57,196] ERROR Internal Server Error: /adminfashion/cartitem/
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
-    result = _process_exception(request, e)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
-    response = view_func(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
-    response = view_func(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
-    return view(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
-    return bound_method(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
-    result = _process_exception(request, e)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
-    response = view_func(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\options.py", line 2024, in changelist_view
-    cl = self.get_changelist_instance(request)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\options.py", line 867, in get_changelist_instance
-    return ChangeList(
-           ^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\views\main.py", line 145, in __init__
-    self.queryset = self.get_queryset(request)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\views\main.py", line 583, in get_queryset
-    qs, search_may_have_duplicates = self.model_admin.get_search_results(
-                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\options.py", line 1242, in get_search_results
-    queryset = queryset.filter(models.Q.create(term_queries))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1491, in filter
-    return self._filter_or_exclude(False, args, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1509, in _filter_or_exclude
-    clone._filter_or_exclude_inplace(negate, args, kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1516, in _filter_or_exclude_inplace
-    self._query.add_q(Q(*args, **kwargs))
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
-    clause, _ = self._add_q(q_object, can_reuse)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
-    child_clause, needed_inner = self.build_filter(
-                                 ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1500, in build_filter
-    return self._add_q(
-           ^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
-    child_clause, needed_inner = self.build_filter(
-                                 ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1500, in build_filter
-    return self._add_q(
-           ^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
-    child_clause, needed_inner = self.build_filter(
-                                 ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1585, in build_filter
-    condition = self.build_lookup(lookups, col, value)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1406, in build_lookup
-    lhs = self.try_transform(lhs, lookup_name)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1455, in try_transform
-    raise FieldError(
-django.core.exceptions.FieldError: Unsupported lookup 'icontains' for ForeignKey or join on the field not permitted.
-[2025-05-15 18:33:14,444] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
-[2025-05-15 18:33:15,060] INFO Watching for file changes with StatReloader
-[2025-05-15 18:33:19,785] ERROR Internal Server Error: /adminfashion/cartitem/
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
-    result = _process_exception(request, e)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
-    response = view_func(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
-    response = view_func(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
-    return view(request, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
-    return bound_method(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
-    result = _process_exception(request, e)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
-    response = view_func(request, *args, **kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\options.py", line 2024, in changelist_view
-    cl = self.get_changelist_instance(request)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\options.py", line 867, in get_changelist_instance
-    return ChangeList(
-           ^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\views\main.py", line 145, in __init__
-    self.queryset = self.get_queryset(request)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\views\main.py", line 583, in get_queryset
-    qs, search_may_have_duplicates = self.model_admin.get_search_results(
-                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\admin\options.py", line 1242, in get_search_results
-    queryset = queryset.filter(models.Q.create(term_queries))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1491, in filter
-    return self._filter_or_exclude(False, args, kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1509, in _filter_or_exclude
-    clone._filter_or_exclude_inplace(negate, args, kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1516, in _filter_or_exclude_inplace
-    self._query.add_q(Q(*args, **kwargs))
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
-    clause, _ = self._add_q(q_object, can_reuse)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
-    child_clause, needed_inner = self.build_filter(
-                                 ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1500, in build_filter
-    return self._add_q(
-           ^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
-    child_clause, needed_inner = self.build_filter(
-                                 ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1500, in build_filter
-    return self._add_q(
-           ^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
-    child_clause, needed_inner = self.build_filter(
-                                 ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1585, in build_filter
-    condition = self.build_lookup(lookups, col, value)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1406, in build_lookup
-    lhs = self.try_transform(lhs, lookup_name)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1455, in try_transform
-    raise FieldError(
-django.core.exceptions.FieldError: Unsupported lookup 'icontains' for ForeignKey or join on the field not permitted.
-[2025-05-15 18:33:56,431] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
-[2025-05-15 18:33:56,988] INFO Watching for file changes with StatReloader
-[2025-05-15 18:34:32,340] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
-[2025-05-15 18:34:33,092] INFO Watching for file changes with StatReloader
+[2025-05-16 19:01:05,617] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:01:13,957] WARNING Forbidden (CSRF token from POST incorrect.): /login/
+[2025-05-16 19:01:21,156] WARNING Forbidden (CSRF token from POST incorrect.): /login/
+[2025-05-16 19:01:43,326] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:02:33,958] INFO E:\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-16 19:02:34,643] INFO Watching for file changes with StatReloader
+[2025-05-16 19:07:08,549] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:08:29,331] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:09:38,799] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:11:17,611] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:11:23,670] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:11:25,616] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:11:25,655] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:11:48,743] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:12:15,881] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:12:51,666] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:15:48,538] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:17:17,358] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:17:35,076] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:17:55,561] INFO E:\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-16 19:17:56,258] INFO Watching for file changes with StatReloader
+[2025-05-16 19:17:57,885] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:18:06,917] INFO E:\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-16 19:18:07,561] INFO Watching for file changes with StatReloader
+[2025-05-16 19:19:25,129] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:19:58,880] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:20:32,410] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:22:33,483] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:22:46,232] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:22:52,334] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:22:58,129] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:23:11,190] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:23:29,724] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:24:03,614] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:24:06,084] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:24:13,998] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:26:14,924] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:26:18,941] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:27:02,164] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:27:48,969] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:28:25,797] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:28:54,322] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:29:03,801] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:29:17,392] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:29:43,159] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:30:01,724] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:30:40,464] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:32:46,315] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
+[2025-05-16 19:32:47,102] INFO Watching for file changes with StatReloader
+[2025-05-16 19:33:25,455] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
+[2025-05-16 19:33:26,063] INFO Watching for file changes with StatReloader
+[2025-05-16 19:34:18,531] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
+[2025-05-16 19:34:19,206] INFO Watching for file changes with StatReloader
+[2025-05-16 19:34:38,033] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
+[2025-05-16 19:34:38,814] INFO Watching for file changes with StatReloader
+[2025-05-16 19:34:48,390] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
+[2025-05-16 19:34:49,116] INFO Watching for file changes with StatReloader
+[2025-05-16 19:35:05,953] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
+[2025-05-16 19:35:06,589] INFO Watching for file changes with StatReloader
+[2025-05-16 19:35:14,177] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
+[2025-05-16 19:35:14,760] INFO Watching for file changes with StatReloader
+[2025-05-16 19:35:22,163] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
+[2025-05-16 19:35:22,889] INFO Watching for file changes with StatReloader
+[2025-05-16 19:35:38,609] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
+[2025-05-16 19:35:39,304] INFO Watching for file changes with StatReloader
+[2025-05-16 19:36:09,367] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
+[2025-05-16 19:36:09,940] INFO Watching for file changes with StatReloader
+[2025-05-16 19:36:33,660] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
+[2025-05-16 19:36:34,252] INFO Watching for file changes with StatReloader
+[2025-05-16 19:36:43,693] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
+[2025-05-16 19:36:44,320] INFO Watching for file changes with StatReloader
+[2025-05-16 19:37:09,235] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
+[2025-05-16 19:37:09,825] INFO Watching for file changes with StatReloader
+[2025-05-16 19:37:38,812] INFO E:\website-seller-fashion-pthon\fashion\admin.py changed, reloading.
+[2025-05-16 19:37:39,447] INFO Watching for file changes with StatReloader
+[2025-05-16 19:39:57,670] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-16 19:39:58,483] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json

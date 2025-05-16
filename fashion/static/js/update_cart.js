@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const cartTotalElement = document.getElementById("cart-total");
             if (cartTotalElement && data.cart_total !== undefined) {
               cartTotalElement.textContent =
-                formatCurrency(data.cart_total) + " đ";
+                formatCurrency(data.cart_total) + " VNĐ";
             }
 
             alert(data.message);
@@ -82,13 +82,13 @@ document.addEventListener("DOMContentLoaded", () => {
               );
               if (itemTotalElement) {
                 itemTotalElement.textContent =
-                  formatCurrency(data.item_total) + "đ";
+                  formatCurrency(data.item_total) + " VNĐ";
               }
 
               const cartTotalElement = document.getElementById("cart-total");
               if (cartTotalElement) {
                 cartTotalElement.textContent =
-                  formatCurrency(data.cart_total) + " đ";
+                  formatCurrency(data.cart_total) + " VNĐ";
               }
             } else {
               alert(data.error || "Cập nhật thất bại");

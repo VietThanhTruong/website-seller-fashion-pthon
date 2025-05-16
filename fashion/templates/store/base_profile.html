@@ -21,29 +21,30 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/">Home</a>
-                    </li>
-                    <li class="nav-item ms-3">
-                        <a class="nav-link" href="{% url 'cart' %}">
-                            <i class="fa fa-shopping-cart"></i> Giỏ hàng ({{ cart_item_count }})
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <form method="POST" action="{% url 'logout' %}" class="d-inline">
-                            {% csrf_token %}
-                            <button type="submit" class="btn btn-danger">Đăng xuất</button>
-                        </form>
-                    </li>
-
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-flex-start">
+                  <li class="nav-item ms-3 d-flex align-items-center">
+                    <a class="nav-link d-flex align-items-center" href="{% url 'cart' %}">
+                        {% if cart_item_count > 0 %}
+                            <span class="badge bg-danger" style="position: absolute;margin-top: -1.4rem;font-size: 8.5px;margin-left: 10px; border-radius: 50%;--bs-badge-border-radius: 0;">{{ cart_item_count }}</span>
+                        {% endif %}
+                        <i class="fa fa-shopping-cart me-1"></i> Giỏ hàng
+                    </a>
+                  </li>
+                  <li class="nav-item ms-3 d-flex align-items-center">
+                    <form method="POST" action="{% url 'logout' %}">
+                      {% csrf_token %}
+                      <button type="submit" class="btn btn-outline-danger btn-sm">Đăng xuất</button>
+                    </form>
+                  </li>
                 </ul>
-            </div>
+              </div>
+              
+              
         </div>
     </nav>
 
-    <div class="container mt-5 pt-5">
+    <div class="container mt-5">
         {% block content %}
         {% endblock %}
     </div>

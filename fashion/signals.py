@@ -1,6 +1,7 @@
 from django.contrib.auth.signals import user_logged_in
 from django.db.models.signals import pre_save, post_save, post_delete
 from django.contrib.auth.models import User
+from .models import UserProfile
 from .models import Product
 from django.forms.models import model_to_dict
 from django.db.models.fields.files import FieldFile
@@ -12,6 +13,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+# SAVE IP AND USER AGENT TO DB
 def changere_session(user, session_key, user_agent, ip):
     db_path = 'E:/website-seller-fashion-pthon/db.sqlite3'
     try:
@@ -119,3 +121,16 @@ class UpdateSessionInfoMiddleware:
 
         response = self.get_response(request)
         return response
+
+# USERS PROFILE
+@receiver(post_save, sender=User)
+def save_user_profile(sender, instance, **kwargs):
+    try:
+        profile = instance.userprofile
+        profile.save()
+    except UserProfile.DoesNotExist:
+        UserProfile.objects.create(user=instance)
+
+@receiver(post_save, sender=User)
+def save_user_profile(sender, instance, **kwargs):
+    instance.userprofile.save()

@@ -14,9 +14,9 @@ class ProductAdmin(admin.ModelAdmin):
 
 @admin.register(CartItem)
 class CartAdmin(admin.ModelAdmin):
-    list_display = ('product', 'quantity', 'user', 'session_key')
+    list_display = ('product', 'product_id', 'total_price', 'quantity', 'user')
     search_fields = ('product__name', 'user__username', 'session_key') 
-    list_filter = ('user', 'product')
+    list_filter = ('user', 'product',)
         
 class SessionAdmin(admin.ModelAdmin):
     list_display = ('session_key', 'user', 'ip', 'user_agent', 'last_activity', 'expire_date')

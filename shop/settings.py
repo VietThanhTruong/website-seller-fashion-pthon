@@ -154,7 +154,7 @@ LOGGING = {
             'class': 'logging.FileHandler',
             'filename': 'logs/product_changes.log',
             'formatter': 'verbose',
-            'encoding': 'utf-8',  # ✅ thêm dòng này
+            'encoding': 'utf-8',  
         },
     },
     'formatters': {
