@@ -75,3 +75,9 @@
 [2025-05-16 19:37:39,447] INFO Watching for file changes with StatReloader
 [2025-05-16 19:39:57,670] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
 [2025-05-16 19:39:58,483] WARNING Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-05-17 07:28:47,255] INFO Watching for file changes with StatReloader
+[2025-05-17 07:30:12,190] INFO Watching for file changes with StatReloader
+[2025-05-17 07:30:22,276] WARNING Not Found: /members/
+[2025-05-17 07:30:22,359] WARNING Not Found: /favicon.ico
+[2025-05-17 07:31:44,115] WARNING Not Found: /favicon.ico
+[2025-05-17 07:32:42,192] WARNING Not Found: /admin/
