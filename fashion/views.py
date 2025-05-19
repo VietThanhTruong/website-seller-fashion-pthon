@@ -165,7 +165,6 @@ def cart(request):
     for key in keys_to_clear:
         if key in request.session:
             del request.session[key]
-            
     items = _cart_items(request)
     return render(request, 'store/cart.html', {
         'items': items,
@@ -183,7 +182,8 @@ def checkout_address_view(request):
 
     contacts = UserContact.objects.filter(user=user)
 
-    item_ids_str = request.GET.get("selected_items") or request.session.get("selected_items", "")
+    item_ids_str = request.session.get("selected_items", "") or request.GET.get("selected_items")
+    oderKey = request.session.get("oderKey", "") or request.GET.get("csrfmiddlewaretoken") 
     item_ids = item_ids_str.split(",") if item_ids_str else []
 
     selected_items = items.filter(id__in=item_ids)
@@ -192,7 +192,7 @@ def checkout_address_view(request):
     request.session['selected_items'] = ",".join(item_ids)
     request.session['total_price'] = int(total_price)  
     request.session['items_ids_only'] = item_ids
-
+    request.session['oderKey'] = oderKey
     if request.method == 'POST':
         action = request.POST.get('action')
 

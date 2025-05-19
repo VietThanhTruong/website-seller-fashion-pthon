@@ -1105,3 +1105,117 @@ AttributeError: 'CartItem' object has no attribute 'get'
 [2025-05-19 19:09:10,466] INFO Watching for file changes with StatReloader
 [2025-05-19 19:09:43,984] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
 [2025-05-19 19:09:45,772] INFO Watching for file changes with StatReloader
+[2025-05-19 19:17:45,840] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:17:51,555] INFO Watching for file changes with StatReloader
+[2025-05-19 19:20:52,187] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:20:54,665] INFO Watching for file changes with StatReloader
+[2025-05-19 19:21:05,459] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:21:07,020] INFO Watching for file changes with StatReloader
+[2025-05-19 19:21:22,613] ERROR Internal Server Error: /cart
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 169, in cart
+    print(11111111111,request.session["selected_items"], request.session["total_price"], request.session["oderKey"])
+                      ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+           ~~~~~~~~~~~~~^^^^^
+KeyError: 'selected_items'
+[2025-05-19 19:21:25,216] ERROR Internal Server Error: /cart
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 169, in cart
+    print(11111111111,request.session["selected_items"], request.session["total_price"], request.session["oderKey"])
+                      ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+           ~~~~~~~~~~~~~^^^^^
+KeyError: 'selected_items'
+[2025-05-19 19:21:26,099] ERROR Internal Server Error: /cart
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 169, in cart
+    print(11111111111,request.session["selected_items"], request.session["total_price"], request.session["oderKey"])
+                      ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+           ~~~~~~~~~~~~~^^^^^
+KeyError: 'selected_items'
+[2025-05-19 19:22:12,342] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:22:14,563] INFO Watching for file changes with StatReloader
+[2025-05-19 19:23:34,975] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:23:36,086] INFO Watching for file changes with StatReloader
+[2025-05-19 19:24:12,103] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:24:13,036] INFO Watching for file changes with StatReloader
+[2025-05-19 19:25:49,006] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:25:50,497] INFO Watching for file changes with StatReloader
+[2025-05-19 19:26:47,173] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:26:48,117] INFO Watching for file changes with StatReloader
+[2025-05-19 19:27:44,285] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:27:45,623] INFO Watching for file changes with StatReloader
+[2025-05-19 19:27:56,773] ERROR Internal Server Error: /checkout/address/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view fashion.views.checkout_address_view didn't return an HttpResponse object. It returned None instead.
+[2025-05-19 19:28:16,459] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:28:18,242] INFO Watching for file changes with StatReloader
+[2025-05-19 19:28:20,558] ERROR Internal Server Error: /checkout/address/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view fashion.views.checkout_address_view didn't return an HttpResponse object. It returned None instead.
+[2025-05-19 19:28:38,373] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:28:40,118] INFO Watching for file changes with StatReloader
+[2025-05-19 19:28:45,191] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:28:47,486] INFO Watching for file changes with StatReloader
+[2025-05-19 19:28:48,036] ERROR Internal Server Error: /checkout/address/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view fashion.views.checkout_address_view didn't return an HttpResponse object. It returned None instead.
+[2025-05-19 19:29:00,925] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:29:01,960] INFO Watching for file changes with StatReloader
+[2025-05-19 19:29:03,744] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:29:06,263] INFO Watching for file changes with StatReloader
+[2025-05-19 19:29:54,143] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:29:57,179] INFO Watching for file changes with StatReloader
