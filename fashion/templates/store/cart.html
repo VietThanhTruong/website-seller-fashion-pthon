@@ -16,11 +16,21 @@
   {% if items %}
   <div class="list-group">
     {% for item in items %}
-    <div class="list-group-item bg-light rounded shadow-sm mb-3 p-3" id="cart-item-{{ item.id }}">
+    <div
+      class="list-group-item bg-light rounded shadow-sm mb-3 p-3"
+      id="cart-item-{{ item.id }}"
+    >
       <div
         class="d-flex flex-md-row justify-content-between align-items-center"
       >
         <div class="d-flex align-items-center mb-3 mb-md-0">
+          <input
+            type="checkbox"
+            class="form-check-input me-3 cart-checkbox"
+            data-price="{{ item.total_price }}"
+            data-id="{{ item.id }}"
+          />
+
           <img
             src="{{ item.product.image.url }}"
             alt="{{ item.product.name }}"
@@ -50,9 +60,9 @@
           >
             −
           </button>
-          <span id="quantity-{{ item.id }}" class="mx-2 fw-bold small"
-            >{{ item.quantity }}</span
-          >
+          <span id="quantity-{{ item.id }}" class="mx-2 fw-bold small">
+            {{ item.quantity }}
+          </span>
           <button
             type="button"
             class="btn btn-sm btn-outline-success ms-2"
@@ -62,7 +72,8 @@
             +
           </button>
         </form>
-        <div class="dropdown" style="margin-left: 1rem !important;">
+
+        <div class="dropdown" style="margin-left: 1rem !important">
           <button
             class="btn btn-sm btn-light"
             type="button"
@@ -72,7 +83,10 @@
           >
             &#8942;
           </button>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton-{{ item.id }}">
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="dropdownMenuButton-{{ item.id }}"
+          >
             <li>
               <form
                 method="post"
@@ -82,38 +96,41 @@
                 id="delete-form-{{ item.id }}"
               >
                 {% csrf_token %}
-                <button type="submit" class="dropdown-item text-danger">Xóa</button>
+                <button type="submit" class="dropdown-item text-danger">
+                  Xóa
+                </button>
               </form>
             </li>
           </ul>
         </div>
       </div>
     </div>
-
     {% endfor %}
   </div>
 
   <div class="mt-4 p-4 bg-white rounded shadow text-end">
     <h5 class="mb-3">
-      Tổng cộng:
-      <span class="text-danger fw-bold" id="cart-total"
-        >{{ total|intcomma }} VNĐ</span
-      >
+      Tổng cộng (đã chọn):
+      <span class="text-danger fw-bold" id="cart-total">0 VNĐ</span>
     </h5>
-    <a href="#" class="btn btn-warning btn-lg w-100 w-md-auto">
-      <i class="fa fa-credit-card me-2"></i> Thanh toán
-    </a>
+    <form method="post" action="{% url 'checkout' %}" id="checkout-form">
+      {% csrf_token %}
+      <input type="hidden" name="selected_items" id="selected-items-input" />
+      <button type="submit" class="btn btn-warning btn-lg w-100 w-md-auto">
+        <i class="fa fa-credit-card me-2"></i> Thanh toán
+      </button>
+</form>
   </div>
 
-  <script src="{% static 'js/update_cart.js' %}"></script>
+  <script src="{% static 'js/cart.js' %}"></script>
 
   {% else %}
   <div class="alert alert-info text-center mt-5">
     <i class="fa fa-shopping-cart fa-2x mb-2"></i><br />
     Giỏ hàng trống. <br />
-    <a href="{% url 'home' %}" class="btn btn-outline-primary mt-3"
-      >🛍️ Quay lại cửa hàng</a
-    >
+    <a href="{% url 'home' %}" class="btn btn-outline-primary mt-3">
+      🛍️ Quay lại cửa hàng
+    </a>
   </div>
   {% endif %}
 </div>

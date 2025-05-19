@@ -102,3 +102,67 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const checkboxes = document.querySelectorAll(".cart-checkbox");
+  const totalDisplay = document.getElementById("cart-total");
+
+  const formatCurrency = (number) => {
+    return new Intl.NumberFormat("vi-VN").format(number) + " VNĐ";
+  };
+
+  const updateTotal = () => {
+    let total = 0;
+    checkboxes.forEach((checkbox) => {
+      if (checkbox.checked) {
+        total += parseInt(checkbox.dataset.price);
+      }
+    });
+    totalDisplay.textContent = formatCurrency(total);
+  };
+
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", updateTotal);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const checkboxes = document.querySelectorAll(".cart-checkbox");
+  const totalDisplay = document.getElementById("cart-total");
+  const checkoutForm = document.getElementById("checkout-form");
+  const selectedItemsInput = document.getElementById("selected-items-input");
+
+  const formatCurrency = (number) => {
+    return new Intl.NumberFormat("vi-VN").format(number) + " VNĐ";
+  };
+
+  const updateTotal = () => {
+    let total = 0;
+    checkboxes.forEach((checkbox) => {
+      if (checkbox.checked) {
+        total += parseInt(checkbox.dataset.price);
+      }
+    });
+    totalDisplay.textContent = formatCurrency(total);
+  };
+
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", updateTotal);
+  });
+
+  checkoutForm.addEventListener("submit", function (e) {
+    const selectedIds = [];
+    checkboxes.forEach((checkbox) => {
+      if (checkbox.checked) {
+        selectedIds.push(checkbox.dataset.id);
+      }
+    });
+
+    if (selectedIds.length === 0) {
+      e.preventDefault();
+      alert("Vui lòng chọn ít nhất một sản phẩm để thanh toán.");
+    } else {
+      selectedItemsInput.value = selectedIds.join(",");
+    }
+  });
+});

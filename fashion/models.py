@@ -28,6 +28,7 @@ class CartItem(models.Model):
             models.UniqueConstraint(fields=['product', 'user'], name='unique_user_cartitem', condition=models.Q(user__isnull=False)),
             models.UniqueConstraint(fields=['product', 'session_key'], name='unique_session_cartitem', condition=models.Q(user__isnull=True)),
         ]
+          
     def total_price(self):
         return self.quantity * self.product.price
 

@@ -8,6 +8,7 @@ from django.contrib.auth.forms import UserCreationForm
 from fuzzywuzzy import process
 from .models import Product, CartItem, UserProfile
 import logging
+import urllib.parse
 
 logger = logging.getLogger(__name__)
 
@@ -24,6 +25,17 @@ def _total_price(items):
 
 def _format_vnd(amount):
     return '{:,.0f}'.format(amount).replace(',', ',')
+
+def generate_vietqr_url(amount, content):
+    base_url = "https://img.vietqr.io/image/mbbank-0397644468-print.jpg"
+    params = {
+        "accountName": "Phạm Lê Xuân Trường",
+        "addInfo": content,
+        "amount": amount
+    }
+    query_string = urllib.parse.urlencode(params, safe='')
+    full_url = f"{base_url}?{query_string}"
+    return full_url
 
 @login_required
 def home(request):
@@ -153,6 +165,36 @@ def cart(request):
         'total': _total_price(items),
         'cart_item_count': items.count()
     })
+    
+@login_required
+def checkout_view(request):
+    if request.method == "POST":
+        items = _cart_items(request)
+        selected_ids = request.POST.get("selected_items", "")
+        ids = selected_ids.split(",") if selected_ids else []
+        
+        selected_items = items.filter(id__in=ids)
+        total_price = sum(item.total_price() for item in selected_items)
+        return render(request, "store/checkout.html", {
+            "items": selected_items,
+            'cart_item_count': items.count(),
+            "data": {
+                    "amount": total_price,
+                    "transactionContent": request.user.username,
+                    "bankName": "MB Bank",
+                    "stk": "0397644468",
+                    "name": "Phạm Lê Xuân Trường",
+                    "icon": "https://img.bankhub.dev/rounded/mbbank.png",
+                    "description": "Ngân hàng TMCP Quân đội",
+                    "qrCode": generate_vietqr_url(total_price, request.user.username),
+                    "status_text": "pending"
+            },
+        })
+    else:
+        return render(request, "store/checkout.html", {
+            "items": [],
+            "total": 0,
+        })
 
 def register(request):
     form = UserCreationForm(request.POST or None)
