@@ -85,3 +85,12 @@ body {
     padding-top: 0rem !important; 
     padding-bottom: 1.5rem !important;
 }
+
+.alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}

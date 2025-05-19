@@ -8,7 +8,7 @@ from django.contrib.auth.forms import UserCreationForm
 from fuzzywuzzy import process
 from django.urls import reverse
 from django.contrib import messages
-from .models import Product, CartItem, UserProfile, UserContact
+from .models import Product, CartItem, UserProfile, UserContact, Order, OrderItem
 import logging
 import urllib.parse
 
@@ -161,6 +161,11 @@ def update_cart_quantity(request, item_id):
 
 @login_required
 def cart(request):
+    keys_to_clear = ['selected_items', 'total_price', 'oderKey', 'selected_contact_id', 'voucher_code', 'items']
+    for key in keys_to_clear:
+        if key in request.session:
+            del request.session[key]
+            
     items = _cart_items(request)
     return render(request, 'store/cart.html', {
         'items': items,
@@ -171,80 +176,107 @@ def cart(request):
 @login_required
 def checkout_address_view(request):
     user = request.user
+    items = _cart_items(request)
+
+    if not items.exists():
+        return redirect('cart')
+
     contacts = UserContact.objects.filter(user=user)
 
-    itemIds = request.GET.get("selected_items") or request.session.get('selected_items', '')
-    oderKey = request.GET.get("oderKey") or request.session.get('oderKey', '')
+    item_ids_str = request.GET.get("selected_items") or request.session.get("selected_items", "")
+    item_ids = item_ids_str.split(",") if item_ids_str else []
 
-    request.session['selected_items'] = itemIds
-    request.session['oderKey'] = oderKey
+    selected_items = items.filter(id__in=item_ids)
+    total_price = sum(item.total_price() for item in selected_items)
+
+    request.session['selected_items'] = ",".join(item_ids)
+    request.session['total_price'] = int(total_price)  
+    request.session['items_ids_only'] = item_ids
 
     if request.method == 'POST':
         action = request.POST.get('action')
 
         if action == 'add_address':
-            new_address = request.POST.get('new_address')
-            new_phone = request.POST.get('new_phone')
-            new_email = request.POST.get('new_email')
-
-            if new_address and new_phone:
-                UserContact.objects.create(
-                    user=user,
-                    address=new_address,
-                    contact_phone=new_phone,
-                    contact_email=new_email or ''
-                )
-                messages.success(request, "Đã thêm địa chỉ mới thành công.")
+            if contacts.count() >= 4:
+                messages.warning(request, "Bạn chỉ có thể lưu tối đa 4 địa chỉ.")
             else:
-                messages.error(request, "Vui lòng nhập đầy đủ địa chỉ và số điện thoại.")
+                address = request.POST.get('new_address')
+                phone = request.POST.get('new_phone')
+                email = request.POST.get('new_email', '')
 
-            contacts = UserContact.objects.filter(user=user)
+                if address and phone:
+                    UserContact.objects.create(user=user, address=address, contact_phone=phone, contact_email=email)
+                    messages.success(request, "Thêm địa chỉ thành công.")
+                else:
+                    messages.error(request, "Vui lòng điền đầy đủ thông tin.")
 
-            return render(request, 'store/checkout_address.html', {
-                'contacts': contacts,
-                'itemIds': itemIds,
-            })
+            return redirect("checkout_address")
+
+        elif action == 'delete_contact':
+            contact_id = request.POST.get('contact_id')
+            contact = get_object_or_404(UserContact, id=contact_id, user=user)
+            contact.delete()
+            messages.success(request, "Đã xóa địa chỉ thành công.")
+            return redirect("checkout_address")
 
         elif action == 'checkout':
-            selected_contact_id = request.POST.get('selected_contact')
+            selected_contact_id = request.POST.get("selected_contact")
             if not selected_contact_id:
-                messages.error(request, "Vui lòng chọn địa chỉ nhận hàng trước khi thanh toán.")
-                return render(request, 'store/checkout_address.html', {
-                    'contacts': contacts,
-                    'itemIds': itemIds,
-                })
+                messages.error(request, "Vui lòng chọn địa chỉ giao hàng.")
             else:
                 request.session['selected_contact_id'] = selected_contact_id
-                voucher_code = request.POST.get('voucher_code')
-                if voucher_code:
-                    request.session['voucher_code'] = voucher_code
+                request.session['order_note'] = request.POST.get("note", "")
                 return redirect("checkout")
 
     return render(request, 'store/checkout_address.html', {
         'contacts': contacts,
-        "itemIds": itemIds
+        'items': selected_items,
+        'itemIds': item_ids_str,
     })
-
 
 @login_required
 def checkout_view(request):
     user = request.user
     items = _cart_items(request)
 
-    selected_ids = request.session.get('selected_items', '')
-    oderKey = request.session.get('oderKey', '')
+    contact_id = request.session.get('selected_contact_id')
+    item_ids_str = request.session.get('selected_items', '')
+    total_price = request.session.get('total_price')
+    note = request.session.get('order_note', '')
+    oder_key = request.session.get('oderKey')
 
-    if len(items) == 0:
-        return redirect('cart')
+    if not all([contact_id, item_ids_str, total_price]):
+        return redirect("checkout_address")
 
-    ids = selected_ids.split(",") if selected_ids else []
-    selected_items = items.filter(id__in=ids)
-    total_price = sum(item.total_price() for item in selected_items)
+    contact = get_object_or_404(UserContact, id=contact_id, user=user)
+
+    order, created = Order.objects.get_or_create(
+        order_key=oder_key,
+        defaults={
+            'user': user,
+            'address': contact.address,
+            'contact_phone': contact.contact_phone,
+            'contact_email': contact.contact_email,
+            'note': note,
+            'total_amount': total_price
+        }
+    )
+
+    item_ids = item_ids_str.split(",") if item_ids_str else []
+    selected_items = items.filter(id__in=item_ids)
+    if created:
+        for item in selected_items:
+            product = item.product
+            OrderItem.objects.create(
+                order=order,
+                product=product,
+                quantity=item.quantity,
+                price=product.price
+            )
 
     return render(request, "store/checkout.html", {
-        "items": selected_items,
         'cart_item_count': items.count(),
-        "data": {
+        'data': {
             "amount": total_price,
             "transactionContent": user.username,
             "bankName": "MB Bank",
@@ -254,8 +286,8 @@ def checkout_view(request):
             "description": "Ngân hàng TMCP Quân đội",
             "qrCode": generate_vietqr_url(total_price, user.username),
             "status_text": "pending",
-            "oderKey": oderKey
-        },
+            "oderKey": oder_key
+        }
     })
 
 def register(request):
