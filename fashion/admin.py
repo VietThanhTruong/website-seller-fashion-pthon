@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category, CartItem
+from .models import Product, Category, CartItem, Order, OrderItem
 from user_sessions.models import Session
 
 @admin.register(Product)
@@ -26,3 +26,5 @@ class SessionAdmin(admin.ModelAdmin):
 admin.site.unregister(Session)
 admin.site.register(Session, SessionAdmin)
 admin.site.register(Category)
+admin.site.register(Order)
+admin.site.register(OrderItem)

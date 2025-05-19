@@ -6,7 +6,9 @@ from django.http import JsonResponse
 from .forms import EditProfileForm, UserProfileForm
 from django.contrib.auth.forms import UserCreationForm
 from fuzzywuzzy import process
-from .models import Product, CartItem, UserProfile
+from django.urls import reverse
+from django.contrib import messages
+from .models import Product, CartItem, UserProfile, UserContact
 import logging
 import urllib.parse
 
@@ -167,34 +169,94 @@ def cart(request):
     })
     
 @login_required
+def checkout_address_view(request):
+    user = request.user
+    contacts = UserContact.objects.filter(user=user)
+
+    itemIds = request.GET.get("selected_items") or request.session.get('selected_items', '')
+    oderKey = request.GET.get("oderKey") or request.session.get('oderKey', '')
+
+    request.session['selected_items'] = itemIds
+    request.session['oderKey'] = oderKey
+
+    if request.method == 'POST':
+        action = request.POST.get('action')
+
+        if action == 'add_address':
+            new_address = request.POST.get('new_address')
+            new_phone = request.POST.get('new_phone')
+            new_email = request.POST.get('new_email')
+
+            if new_address and new_phone:
+                UserContact.objects.create(
+                    user=user,
+                    address=new_address,
+                    contact_phone=new_phone,
+                    contact_email=new_email or ''
+                )
+                messages.success(request, "Đã thêm địa chỉ mới thành công.")
+            else:
+                messages.error(request, "Vui lòng nhập đầy đủ địa chỉ và số điện thoại.")
+
+            contacts = UserContact.objects.filter(user=user)
+
+            return render(request, 'store/checkout_address.html', {
+                'contacts': contacts,
+                'itemIds': itemIds,
+            })
+
+        elif action == 'checkout':
+            selected_contact_id = request.POST.get('selected_contact')
+            if not selected_contact_id:
+                messages.error(request, "Vui lòng chọn địa chỉ nhận hàng trước khi thanh toán.")
+                return render(request, 'store/checkout_address.html', {
+                    'contacts': contacts,
+                    'itemIds': itemIds,
+                })
+            else:
+                request.session['selected_contact_id'] = selected_contact_id
+                voucher_code = request.POST.get('voucher_code')
+                if voucher_code:
+                    request.session['voucher_code'] = voucher_code
+                return redirect("checkout")
+
+    return render(request, 'store/checkout_address.html', {
+        'contacts': contacts,
+        "itemIds": itemIds
+    })
+
+
+@login_required
 def checkout_view(request):
-    if request.method == "POST":
-        items = _cart_items(request)
-        selected_ids = request.POST.get("selected_items", "")
-        ids = selected_ids.split(",") if selected_ids else []
-        
-        selected_items = items.filter(id__in=ids)
-        total_price = sum(item.total_price() for item in selected_items)
-        return render(request, "store/checkout.html", {
-            "items": selected_items,
-            'cart_item_count': items.count(),
-            "data": {
-                    "amount": total_price,
-                    "transactionContent": request.user.username,
-                    "bankName": "MB Bank",
-                    "stk": "0397644468",
-                    "name": "Phạm Lê Xuân Trường",
-                    "icon": "https://img.bankhub.dev/rounded/mbbank.png",
-                    "description": "Ngân hàng TMCP Quân đội",
-                    "qrCode": generate_vietqr_url(total_price, request.user.username),
-                    "status_text": "pending"
-            },
-        })
-    else:
-        return render(request, "store/checkout.html", {
-            "items": [],
-            "total": 0,
-        })
+    user = request.user
+    items = _cart_items(request)
+
+    selected_ids = request.session.get('selected_items', '')
+    oderKey = request.session.get('oderKey', '')
+
+    if len(items) == 0:
+        return redirect('cart')
+
+    ids = selected_ids.split(",") if selected_ids else []
+    selected_items = items.filter(id__in=ids)
+    total_price = sum(item.total_price() for item in selected_items)
+
+    return render(request, "store/checkout.html", {
+        "items": selected_items,
+        'cart_item_count': items.count(),
+        "data": {
+            "amount": total_price,
+            "transactionContent": user.username,
+            "bankName": "MB Bank",
+            "stk": "0397644468",
+            "name": "Phạm Lê Xuân Trường",
+            "icon": "https://img.bankhub.dev/rounded/mbbank.png",
+            "description": "Ngân hàng TMCP Quân đội",
+            "qrCode": generate_vietqr_url(total_price, user.username),
+            "status_text": "pending",
+            "oderKey": oderKey
+        },
+    })
 
 def register(request):
     form = UserCreationForm(request.POST or None)

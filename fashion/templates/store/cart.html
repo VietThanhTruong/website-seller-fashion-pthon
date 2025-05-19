@@ -113,13 +113,13 @@
       Tổng cộng (đã chọn):
       <span class="text-danger fw-bold" id="cart-total">0 VNĐ</span>
     </h5>
-    <form method="post" action="{% url 'checkout' %}" id="checkout-form">
+    <form method="get" action="{% url 'checkout_address' %}" id="checkout-form">
       {% csrf_token %}
       <input type="hidden" name="selected_items" id="selected-items-input" />
       <button type="submit" class="btn btn-warning btn-lg w-100 w-md-auto">
         <i class="fa fa-credit-card me-2"></i> Thanh toán
       </button>
-</form>
+    </form>
   </div>
 
   <script src="{% static 'js/cart.js' %}"></script>

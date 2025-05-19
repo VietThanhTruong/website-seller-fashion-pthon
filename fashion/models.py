@@ -31,10 +31,50 @@ class CartItem(models.Model):
           
     def total_price(self):
         return self.quantity * self.product.price
+    
+class Order(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+    order_key = models.CharField(max_length=100, unique=True, null=True, editable=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    address = models.TextField(verbose_name="Địa chỉ nhận hàng")
+    contact_phone = models.CharField(max_length=20, verbose_name="Số điện thoại liên hệ")
+    contact_email = models.EmailField(verbose_name="Email liên hệ", null=True, blank=True)
+
+    note = models.TextField(null=True, blank=True, verbose_name="Nội dung ghi chú")
+    total_amount = models.IntegerField(default=0)
+
+    def __str__(self):
+        return f"Đơn hàng #{self.id} của {self.user}"
+
+class OrderItem(models.Model):
+    order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='items')
+    product = models.ForeignKey('Product', on_delete=models.CASCADE)
+    quantity = models.PositiveIntegerField(default=1)
+    price = models.IntegerField() 
+
+    def total_price(self):
+        return self.quantity * self.price
+
+    def __str__(self):
+        return f"{self.product.name} x {self.quantity}"
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     profile_picture = models.ImageField(upload_to='users/', default='users/default.jpg', blank=True, null=True)
+    address = models.TextField(null=True, blank=True, verbose_name="Địa chỉ nhận hàng")
+    contact_phone = models.CharField(max_length=20, null=True, blank=True, verbose_name="Số điện thoại liên hệ")
+    contact_email = models.EmailField(null=True, blank=True, verbose_name="Email liên hệ")
 
     def __str__(self):
         return self.user.username
+    
+class UserContact(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="contacts")
+    address = models.TextField(verbose_name="Địa chỉ nhận hàng")
+    contact_phone = models.CharField(max_length=20, verbose_name="Số điện thoại liên hệ")
+    contact_email = models.EmailField(verbose_name="Email liên hệ", null=True, blank=True)
+    is_default = models.BooleanField(default=False, verbose_name="Địa chỉ mặc định")
+    
+    def __str__(self):
+        return f"{self.address} - {self.contact_phone} ({self.user.username})"
