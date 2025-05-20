@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
+from django.utils.translation import gettext_lazy as _
 from pathlib import Path
 import os
 
@@ -52,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'fashion.signals.UpdateSessionInfoMiddleware',
+    'django.middleware.locale.LocaleMiddleware'
 ]
 
 ROOT_URLCONF = 'shop.urls'
@@ -171,3 +173,21 @@ LOGGING = {
         },
     },
 }
+
+# LOAD SUPPORT LANGUAGES
+
+LANGUAGE_CODE = 'vi'
+
+USE_I18N = True
+
+USE_L10N = True
+
+LANGUAGES = [
+    ('en', _('English')),
+    ('vi', _('Vietnamese')),
+    ('ja', _('Japanese')),
+]
+
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]

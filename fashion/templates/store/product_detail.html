@@ -7,7 +7,7 @@
 <div class="container-fluid py-4 px-0">
   <div class="mb-4">
     <a href="{% url 'home' %}" class="btn btn-outline-dark shadow-sm">
-      <i class="fa fa-arrow-left me-2"></i> Quay lại trang chủ
+      <i class="fa fa-arrow-left me-2"></i> {% trans "Quay lại trang chủ" %}
     </a>
   </div>
 
@@ -39,7 +39,7 @@
           {% csrf_token %}
           <div class="row g-2 align-items-end mb-4">
             <div class="col-auto">
-              <label for="quantity" class="form-label mb-0">Số lượng</label>
+              <label for="quantity" class="form-label mb-0">{% trans "Số lượng" %}</label>
               <input
                 type="number"
                 class="form-control"
@@ -52,7 +52,7 @@
             </div>
             <div class="col-auto">
               <button type="submit" class="btn btn-success">
-                <i class="fa fa-cart-plus me-1"></i> Thêm vào giỏ hàng
+                <i class="fa fa-cart-plus me-1"></i> {% trans "Thêm vào giỏ hàng" %}
               </button>
             </div>
           </div>

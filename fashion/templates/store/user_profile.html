@@ -25,17 +25,17 @@
                     </div>
 
                     <div class="row mb-3">
-                        <div class="col-md-4 fw-semibold text-muted">Full Name</div>
+                        <div class="col-md-4 fw-semibold text-muted">{% trans "Tên" %}</div>
                         <div class="col-md-8">{{ user.first_name }} {{ user.last_name }}</div>
                     </div>
 
                     <div class="row mb-3">
-                        <div class="col-md-4 fw-semibold text-muted">Date Joined</div>
+                        <div class="col-md-4 fw-semibold text-muted">{% trans "Ngày tạo tài khoản" %}</div>
                         <div class="col-md-8">{{ user.date_joined|date:"F j, Y" }}</div>
                     </div>
 
                     <div class="text-center mt-4">
-                        <a href="{% url 'edit_profile' %}" class="btn btn-outline-primary px-4">Edit Profile</a>
+                        <a href="{% url 'edit_profile' %}" class="btn btn-outline-primary px-4">{% trans "Sửa thông tin" %}</a>
                     </div>
                 </div>
             </div>

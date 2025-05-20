@@ -37,14 +37,14 @@
               for="{{ profile_form.profile_picture.id_for_label }}"
               class="form-label"
             >
-              Ảnh đại diện
+              {% trans "Ảnh đại diện" %}
             </label>
 
             {% if profile_form.instance.profile_picture %}
             <div class="mb-2">
               <img
                 src="{{ profile_form.instance.profile_picture.url }}"
-                alt="Ảnh đại diện"
+                alt="{% trans 'Ảnh đại diện' %}"
                 class="img-thumbnail"
                 width="150"
                 height="150"

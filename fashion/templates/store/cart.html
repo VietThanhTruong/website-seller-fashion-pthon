@@ -1,5 +1,5 @@
 {% extends 'store/base_shop.html' %}
-{% block title %}Giỏ hàng{% endblock %}
+{% trans "{% block title %}Giỏ hàng{% endblock %}" %}
 {% load static %}
 {% load humanize %}
 
@@ -7,11 +7,11 @@
 <div class="container-fluid px-2 px-md-5 py-4">
   <div class="mb-3">
     <a href="{% url 'home' %}" class="btn btn-outline-dark shadow-sm">
-      <i class="fa fa-arrow-left me-2"></i> Tiếp tục mua sắm
+      <i class="fa fa-arrow-left me-2"></i> {% trans "Tiếp tục mua sắm" %}
     </a>
   </div>
 
-  <h3 class="text-center fw-bold mb-4">🛒 Giỏ hàng</h3>
+  <h3 class="text-center fw-bold mb-4">{% trans "🛒 Giỏ hàng" %}</h3>
 
   {% if items %}
   <div class="list-group">
@@ -22,7 +22,7 @@
         id="select-all-checkbox"
       />
       <label class="form-check-label fw-bold" for="select-all-checkbox">
-        Chọn tất cả
+        {% trans "Chọn tất cả" %}
       </label>
     </div>
     {% for item in items %}
@@ -107,7 +107,7 @@
               >
                 {% csrf_token %}
                 <button type="submit" class="dropdown-item text-danger">
-                  Xóa
+                  {% trans "Xóa" %}
                 </button>
               </form>
             </li>
@@ -120,14 +120,14 @@
 
   <div class="mt-4 p-4 bg-white rounded shadow text-end">
     <h5 class="mb-3">
-      Tổng cộng (đã chọn):
-      <span class="text-danger fw-bold" id="cart-total">0 VNĐ</span>
+      {% trans "Tổng cộng (đã chọn):" %}
+      <span class="text-danger fw-bold" id="cart-total">{% trans "0 VNĐ" %}</span>
     </h5>
     <form method="get" action="{% url 'checkout_address' %}" id="checkout-form">
       {% csrf_token %}
       <input type="hidden" name="selected_items" id="selected-items-input" />
       <button type="submit" class="btn btn-warning btn-lg w-100 w-md-auto">
-        <i class="fa fa-credit-card me-2"></i> Thanh toán
+        <i class="fa fa-credit-card me-2"></i> {% trans "Thanh toán" %}
       </button>
     </form>
   </div>
@@ -137,9 +137,9 @@
   {% else %}
   <div class="alert alert-info text-center mt-5">
     <i class="fa fa-shopping-cart fa-2x mb-2"></i><br />
-    Giỏ hàng trống. <br />
+    {% trans "Giỏ hàng trống." %} <br />
     <a href="{% url 'home' %}" class="btn btn-outline-primary mt-3">
-      🛍️ Quay lại cửa hàng
+      {% trans "🛍️ Quay lại cửa hàng" %}
     </a>
   </div>
   {% endif %}

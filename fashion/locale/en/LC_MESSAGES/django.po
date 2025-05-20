@@ -1,0 +1,308 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-20 10:52+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: English <en@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ⁨.\templates - Copy\store\checkout.html⁩:32 .\templates\store\checkout.html:32
+msgid "Xác nhận thanh toán"
+msgstr "Confirm Payment"
+
+#: .\templates\login.html:6 .\templates\login.html:45
+#: .\templates\register.html:48
+msgid "Đăng nhập"
+msgstr "Login"
+
+#: .\templates\login.html:33
+msgid "Đăng nhập tài khoản"
+msgstr "Account Login"
+
+#: .\templates\login.html:48
+msgid "Chưa có tài khoản?"
+msgstr "Don't have an account?"
+
+#: .\templates\login.html:48 .\templates\register.html:6
+#: .\templates\register.html:45
+msgid "Đăng ký"
+msgstr "Register"
+
+#: .\templates\register.html:33
+msgid "Đăng ký tài khoản"
+msgstr "Account Registration"
+
+#: .\templates\register.html:48
+msgid "Đã có tài khoản?"
+msgstr "Already have an account?"
+
+#: .\templates\store\base_profile.html:31 .\templates\store\base_shop.html:33
+msgid "Giỏ hàng"
+msgstr "Shopping Cart"
+
+#: .\templates\store\base_profile.html:37
+msgid "Đăng xuất"
+msgstr "Logout"
+
+#: .\templates\store\base_shop.html:25
+msgid "Tìm"
+msgstr "Search"
+
+#: .\templates\store\base_shop.html:38
+msgid "Thông tin người dùng"
+msgstr "User Information"
+
+#: .\templates\store\cart.html:10
+msgid "Tiếp tục mua sắm"
+msgstr "Continue Shopping"
+
+#: .\templates\store\cart.html:14
+msgid "🛒 Giỏ hàng"
+msgstr "🛒 Cart"
+
+#: .\templates\store\cart.html:25
+msgid "Chọn tất cả"
+msgstr "Select All"
+
+#: .\templates\store\cart.html:110
+msgid "Xóa"
+msgstr "Delete"
+
+#: .\templates\store\cart.html:123
+msgid "Tổng cộng (đã chọn):"
+msgstr "Total (Selected):"
+
+#: .\templates\store\cart.html:124
+msgid "0 VNĐ"
+msgstr "0 VND"
+
+#: .\templates\store\cart.html:130
+msgid "Thanh toán"
+msgstr "Checkout"
+
+#: .\templates\store\cart.html:140
+msgid "Giỏ hàng trống."
+msgstr "Your cart is empty."
+
+#: .\templates\store\cart.html:142
+msgid "🛍️ Quay lại cửa hàng"
+msgstr "🛍️ Back to Store"
+
+#: .\templates\store\checkout.html:42
+msgid "Mở App Ngân hàng để"
+msgstr "Open Banking App to"
+
+#: .\templates\store\checkout.html:42
+msgid "quét mã VietQR"
+msgstr "scan VietQR code"
+
+#: .\templates\store\checkout.html:42
+msgid "hoặc {\\"
+msgstr "or {\\"
+
+#: .\templates\store\checkout.html:43
+msgid "chuyển khoản chính xác số tiền bên dưới"
+msgstr "transfer the exact amount below"
+
+#: .\templates\store\checkout.html:67
+msgid "Ngân hàng"
+msgstr "Bank"
+
+#: .\templates\store\checkout.html:73
+msgid "Chủ tài khoản:"
+msgstr "Account Holder:"
+
+#: .\templates\store\checkout.html:79
+msgid "Số tài khoản:"
+msgstr "Account Number:"
+
+#: .\templates\store\checkout.html:87 .\templates\store\checkout.html:103
+#: .\templates\store\checkout.html:117
+msgid "Sao chép"
+msgstr "Copy"
+
+#: .\templates\store\checkout.html:93
+msgid "Số tiền:"
+msgstr "Amount:"
+
+#: .\templates\store\checkout.html:109
+msgid "Nội dung:"
+msgstr "Content:"
+
+#: .\templates\store\checkout.html:131
+msgid "Đang kiểm tra giao dịch..."
+msgstr "Checking transaction..."
+
+#: .\templates\store\checkout.html:138
+msgid "Giao dịch đã hoàn tất!"
+msgstr "Transaction Completed!"
+
+#: .\templates\store\checkout.html:145
+msgid "Giao dịch thất bại!"
+msgstr "Transaction Failed!"
+
+#: .\templates\store\checkout.html:156
+msgid "Lưu ý: Nhập chính xác"
+msgstr "Note: Enter exactly"
+
+#: .\templates\store\checkout.html:156
+msgid "số tiền"
+msgstr "the amount"
+
+#: .\templates\store\checkout.html:157
+msgid "nội dung"
+msgstr "the content"
+
+#: .\templates\store\checkout.html:157
+msgid "khi chuyển khoản"
+msgstr "when transferring"
+
+#: .\templates\store\checkout.html:164
+msgid "Huỷ"
+msgstr "Cancel"
+
+#: .\templates\store\checkout.html:177
+msgid "Đã sao chép: "
+msgstr "Copied: "
+
+#: .\templates\store\checkout.html:179
+msgid "Không thể sao chép!"
+msgstr "Cannot copy!"
+
+#: .\templates\store\checkout_address.html:2
+msgid "Thông tin nhận hàng"
+msgstr "Shipping Information"
+
+#: .\templates\store\checkout_address.html:41
+msgid "Chọn địa chỉ có sẵn:"
+msgstr "Select Available Address:"
+
+#: .\templates\store\checkout_address.html:70
+msgid "Địa chỉ:"
+msgstr "Address:"
+
+#: .\templates\store\checkout_address.html:71
+msgid "Điện thoại:"
+msgstr "Phone:"
+
+#: .\templates\store\checkout_address.html:72
+msgid "Email:"
+msgstr "Email:"
+
+#: .\templates\store\checkout_address.html:81
+msgid "Bạn chưa có địa chỉ nhận hàng nào. Vui lòng thêm địa chỉ mới:"
+msgstr "You have no shipping address. Please add a new address:"
+
+#: .\templates\store\checkout_address.html:87
+msgid "Mã voucher (nếu có)"
+msgstr "Voucher Code (if any)"
+
+#: .\templates\store\checkout_address.html:94
+msgid "Nhập mã voucher"
+msgstr "Enter voucher code"
+
+#: .\templates\store\checkout_address.html:105
+#: .\templates\store\checkout_address.html:180
+msgid "Thêm địa chỉ mới"
+msgstr "Add New Address"
+
+#: .\templates\store\checkout_address.html:114
+msgid "Tiếp tục thanh toán"
+msgstr "Continue to Payment"
+
+#: .\templates\store\checkout_address.html:121 .\templates\store\home.html:6
+msgid "Danh sách sản phẩm"
+msgstr "Product List"
+
+#: .\templates\store\checkout_address.html:186
+msgid "Đóng"
+msgstr "Close"
+
+#: .\templates\store\checkout_address.html:192
+msgid "Địa chỉ nhận hàng"
+msgstr "Shipping Address"
+
+#: .\templates\store\checkout_address.html:201
+msgid "Vui lòng nhập địa chỉ nhận hàng."
+msgstr "Please enter a shipping address."
+
+#: .\templates\store\checkout_address.html:205
+msgid "Số điện thoại liên hệ"
+msgstr "Contact Phone Number"
+
+#: .\templates\store\checkout_address.html:215
+msgid "Vui lòng nhập số điện thoại liên hệ."
+msgstr "Please enter a contact phone number."
+
+#: .\templates\store\checkout_address.html:220
+msgid "Email liên hệ (không bắt buộc)"
+msgstr "Contact Email (optional)"
+
+#: .\templates\store\checkout_address.html:237
+msgid "Hủy"
+msgstr "Cancel"
+
+#: .\templates\store\checkout_address.html:239
+msgid "Lưu địa chỉ"
+msgstr "Save Address"
+
+#: .\templates\store\checkout_address.html:266
+msgid "Bạn chắc chắn muốn xóa địa chỉ này?"
+msgstr "Are you sure you want to delete this address?"
+
+#: .\templates\store\edit_profile.html:40
+#: .\templates\store\edit_profile.html:47
+msgid "Ảnh đại diện"
+msgstr "Profile Picture"
+
+#: .\templates\store\home.html:15 .\templates\store\search_results.html:18
+msgid "Xem chi tiết"
+msgstr "View Details"
+
+#: .\templates\store\product_detail.html:10
+msgid "Quay lại trang chủ"
+msgstr "Back to Home"
+
+#: .\templates\store\product_detail.html:42
+msgid "Số lượng"
+msgstr "Quantity"
+
+#: .\templates\store\product_detail.html:55
+msgid "Thêm vào giỏ hàng"
+msgstr "Add to Cart"
+
+#: .\templates\store\search_results.html:4
+msgid "Kết quả tìm kiếm"
+msgstr "Search Results"
+
+#: .\templates\store\search_results.html:7
+msgid "🔍 Kết quả tìm kiếm cho "
+msgstr "🔍 Search results for "
+
+#: .\templates\store\search_results.html:25
+msgid "Không tìm thấy sản phẩm nào phù hợp."
+msgstr "No matching products found."
+
+#: .\templates\store\user_profile.html:28
+msgid "Tên"
+msgstr "Name"
+
+#: .\templates\store\user_profile.html:33
+msgid "Ngày tạo tài khoản"
+msgstr "Account Creation Date"
+
+#: .\templates\store\user_profile.html:38
+msgid "Sửa thông tin"
+msgstr "Edit Information"

@@ -22,7 +22,7 @@
           <li class="nav-item">
             <form class="d-flex" action="{% url 'search' %}" method="GET">
               <input class="form-control me-2" type="search" placeholder="Tìm sản phẩm" aria-label="Search" name="q">
-              <button class="btn btn-outline-success" type="submit">Tìm</button>
+              <button class="btn btn-outline-success" type="submit">{% trans "Tìm" %}</button>
             </form>
           </li>
           <li class="nav-item ms-2">
@@ -30,12 +30,12 @@
               {% if cart_item_count > 0 %}
                 <span class="badge bg-danger" style="position: absolute;margin-top: -0.15rem;font-size: 8.5px;margin-left: 10px; border-radius: 50%;--bs-badge-border-radius: 0;">{{ cart_item_count }}</span>
               {% endif %}
-              <i class="fa fa-shopping-cart me-2"></i> Giỏ hàng
+              <i class="fa fa-shopping-cart me-2"></i> {% trans "Giỏ hàng" %}
             </a>
           </li>
           <li class="nav-item ms-2">
             <a class="nav-link" href="{% url 'user_profile' %}">
-              <i class="fa fa-user"></i> Thông tin người dùng
+              <i class="fa fa-user"></i> {% trans "Thông tin người dùng" %}
             </a>
           </li>
         </ul>
