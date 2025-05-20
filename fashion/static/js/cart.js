@@ -125,12 +125,12 @@ document.addEventListener("DOMContentLoaded", () => {
     checkbox.addEventListener("change", updateTotal);
   });
 });
-
 document.addEventListener("DOMContentLoaded", () => {
   const checkboxes = document.querySelectorAll(".cart-checkbox");
   const totalDisplay = document.getElementById("cart-total");
   const checkoutForm = document.getElementById("checkout-form");
   const selectedItemsInput = document.getElementById("selected-items-input");
+  const selectAll = document.getElementById("select-all-checkbox");
 
   const formatCurrency = (number) => {
     return new Intl.NumberFormat("vi-VN").format(number) + " VNĐ";
@@ -147,7 +147,19 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   checkboxes.forEach((checkbox) => {
-    checkbox.addEventListener("change", updateTotal);
+    checkbox.addEventListener("change", () => {
+      updateTotal();
+
+      const allChecked = Array.from(checkboxes).every(cb => cb.checked);
+      selectAll.checked = allChecked;
+    });
+  });
+
+  selectAll.addEventListener("change", () => {
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = selectAll.checked;
+    });
+    updateTotal(); 
   });
 
   checkoutForm.addEventListener("submit", function (e) {

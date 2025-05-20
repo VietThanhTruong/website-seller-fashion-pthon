@@ -1219,3 +1219,11 @@ ValueError: The view fashion.views.checkout_address_view didn't return an HttpRe
 [2025-05-19 19:29:06,263] INFO Watching for file changes with StatReloader
 [2025-05-19 19:29:54,143] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
 [2025-05-19 19:29:57,179] INFO Watching for file changes with StatReloader
+[2025-05-19 19:31:17,240] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:31:19,292] INFO Watching for file changes with StatReloader
+[2025-05-19 19:31:37,820] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:31:39,039] INFO Watching for file changes with StatReloader
+[2025-05-19 19:33:12,198] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:33:13,341] INFO Watching for file changes with StatReloader
+[2025-05-19 19:33:38,421] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-19 19:33:39,211] INFO Watching for file changes with StatReloader

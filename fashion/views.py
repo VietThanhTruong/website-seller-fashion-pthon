@@ -232,6 +232,7 @@ def checkout_address_view(request):
         'contacts': contacts,
         'items': selected_items,
         'itemIds': item_ids_str,
+        'cart_item_count': items.count(),
     })
 
 @login_required
@@ -273,6 +274,7 @@ def checkout_view(request):
                 quantity=item.quantity,
                 price=product.price
             )
+        # selected_items.delete()
 
     return render(request, "store/checkout.html", {
         'cart_item_count': items.count(),
