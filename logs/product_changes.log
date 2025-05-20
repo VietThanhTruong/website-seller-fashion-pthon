@@ -2039,3 +2039,6 @@ user_sessions
 [2025-05-20 12:47:32,562] INFO Watching for file changes with StatReloader
 [2025-05-20 12:47:39,260] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\templatetags\custom_filters.py changed, reloading.
 [2025-05-20 12:47:44,845] INFO Watching for file changes with StatReloader
+[2025-05-20 12:58:43,324] INFO Watching for file changes with StatReloader
+[2025-05-20 12:59:56,654] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\shop\settings.py changed, reloading.
+[2025-05-20 13:00:01,457] INFO Watching for file changes with StatReloader
