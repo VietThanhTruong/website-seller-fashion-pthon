@@ -1,7 +1,9 @@
 {% extends 'store/base_shop.html' %}
-{% trans "{% block title %}Trang chủ{% endblock %}" %}
+{% load i18n %}
+{% block title %}{% trans "Trang chủ" %}{% endblock %}
 {% load static %}
 {% load humanize %}
+{% load custom_filters %}
 {% block content %}
 <h1 class="mb-4 text-center">{% trans "Danh sách sản phẩm" %}</h1>
     <div class="row">
@@ -11,7 +13,7 @@
         <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}" style="height: 200px; object-fit: cover;">
         <div class="card-body">
           <h5 class="card-title">{{ product.name }}</h5>
-          <p class="card-text text-primary fw-bold">{{ product.price|floatformat:0|intcomma }}đ</p>
+          <p class="card-text text-primary fw-bold">{{ product.price|format_price }}đ</p>
           <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-primary w-100">{% trans "Xem chi tiết" %}</a>
         </div>
       </div>

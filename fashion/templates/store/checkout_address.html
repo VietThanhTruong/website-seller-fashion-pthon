@@ -1,4 +1,5 @@
 {% extends "store/base_shop.html" %}
+{% load i18n %}
 {% block title %}{% trans "Thông tin nhận hàng" %}{% endblock %}
 {% load static %}
 {% load humanize %}
@@ -69,7 +70,7 @@
             >
               <strong>{% trans "Địa chỉ:" %}</strong> {{ c.address }}<br />
               <strong>{% trans "Điện thoại:" %}</strong> {{ c.contact_phone }}<br />
-              <strong>{% trans "Email:" %}</strong> {{ c.contact_email|default:\"Chưa có\" }}
+              <strong>{% trans "Email:" %}</strong> {{ c.contact_email|default:"Chưa có" }}
             </label>
           </div>
         </div>

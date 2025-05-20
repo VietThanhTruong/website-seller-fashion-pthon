@@ -56,13 +56,17 @@ msgstr "Shopping Cart"
 msgid "Đăng xuất"
 msgstr "Logout"
 
+#: .\templates\store\base_shop.html:24
+msgid "Tìm sản phẩm"
+msgstr "Find products"
+
 #: .\templates\store\base_shop.html:25
 msgid "Tìm"
 msgstr "Search"
 
 #: .\templates\store\base_shop.html:38
-msgid "Thông tin người dùng"
-msgstr "User Information"
+msgid "Thông tin tài khoản"
+msgstr "Account information"
 
 #: .\templates\store\cart.html:10
 msgid "Tiếp tục mua sắm"
@@ -109,8 +113,8 @@ msgid "quét mã VietQR"
 msgstr "scan VietQR code"
 
 #: .\templates\store\checkout.html:42
-msgid "hoặc {\\"
-msgstr "or {\\"
+msgid "hoặc"
+msgstr "or"
 
 #: .\templates\store\checkout.html:43
 msgid "chuyển khoản chính xác số tiền bên dưới"
@@ -226,6 +230,10 @@ msgstr "Continue to Payment"
 msgid "Danh sách sản phẩm"
 msgstr "Product List"
 
+#: \templates\store\home.html:3
+msgid "Trang chủ"
+msgstr "Home"
+
 #: .\templates\store\checkout_address.html:186
 msgid "Đóng"
 msgstr "Close"
@@ -288,8 +296,8 @@ msgid "Kết quả tìm kiếm"
 msgstr "Search Results"
 
 #: .\templates\store\search_results.html:7
-msgid "🔍 Kết quả tìm kiếm cho "
-msgstr "🔍 Search results for "
+msgid " Kết quả tìm kiếm cho"
+msgstr " Search results for"
 
 #: .\templates\store\search_results.html:25
 msgid "Không tìm thấy sản phẩm nào phù hợp."

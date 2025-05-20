@@ -241,7 +241,7 @@ def checkout_view(request):
     total_price = request.session.get('total_price')
     note = request.session.get('order_note', '')
     oder_key = request.session.get('oderKey')
-
+    print(contact_id, item_ids_str, total_price)
     if not all([contact_id, item_ids_str, total_price]):
         return redirect("cart")
 

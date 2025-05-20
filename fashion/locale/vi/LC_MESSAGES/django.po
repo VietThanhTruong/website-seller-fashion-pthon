@@ -288,7 +288,7 @@ msgid "Kết quả tìm kiếm"
 msgstr ""
 
 #: .\templates\store\search_results.html:7
-msgid "🔍 Kết quả tìm kiếm cho \\"
+msgid " Kết quả tìm kiếm cho"
 msgstr ""
 
 #: .\templates\store\search_results.html:25

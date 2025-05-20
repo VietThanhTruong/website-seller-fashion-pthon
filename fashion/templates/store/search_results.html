@@ -1,10 +1,11 @@
 {% extends 'store/base_shop.html' %}
 {% load humanize %}
+{% load i18n %}
 
 {% block title %}{% trans "Kết quả tìm kiếm" %}{% endblock %}
 
 {% block content %}
-  <h2 class="mb-4">{% trans "🔍 Kết quả tìm kiếm cho \"{{ query }}\"" %}</h2>
+  <h2 class="mb-4">🔍{% trans " Kết quả tìm kiếm cho" %} "{{ query }}"</h2>
 
   {% if results %}
     <div class="row">

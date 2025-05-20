@@ -1,5 +1,6 @@
 {% extends 'store/base_shop.html' %}
-{% trans "{% block title %}Thanh Toán{% endblock %}" %}
+{% load i18n %}
+{% block title %}{% trans "Thanh Toán" %}{% endblock %}
 {% load static %}
 {% load humanize %}
 
@@ -39,7 +40,7 @@
       height="32"
     />
     <p class="mb-0 small text-muted text-center">
-      {% trans "Mở App Ngân hàng để" %} <b>{% trans "quét mã VietQR" %}</b> {% trans "hoặc {\" \"}" %}
+      {% trans "Mở App Ngân hàng để" %} <b>{% trans "quét mã VietQR" %}</b> {% trans "hoặc" %} {" "}
       <b>{% trans "chuyển khoản chính xác số tiền bên dưới" %}</b>
     </p>
   </div>
