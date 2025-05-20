@@ -2042,3 +2042,11 @@ user_sessions
 [2025-05-20 12:58:43,324] INFO Watching for file changes with StatReloader
 [2025-05-20 12:59:56,654] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\shop\settings.py changed, reloading.
 [2025-05-20 13:00:01,457] INFO Watching for file changes with StatReloader
+[2025-05-20 13:01:09,513] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\templatetags\custom_filters.py changed, reloading.
+[2025-05-20 13:01:17,035] INFO Watching for file changes with StatReloader
+[2025-05-20 15:38:03,760] WARNING Method Not Allowed (GET): /vi/add-to-cart/1
+[2025-05-20 16:03:12,340] WARNING Not Found: /media/products/2024-11-10_230154.png
+[2025-05-20 16:03:12,344] WARNING Not Found: /media/products/2024-11-12_124307.png
+[2025-05-20 16:03:12,388] WARNING Not Found: /media/products/1.jpg
+[2025-05-20 16:03:12,393] WARNING Not Found: /media/products/2025-04-12_113237.png
+[2025-05-20 16:03:12,400] WARNING Not Found: /media/products/2025-04-22_084300.png
