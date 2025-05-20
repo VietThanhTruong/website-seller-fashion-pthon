@@ -161,10 +161,6 @@ def update_cart_quantity(request, item_id):
 
 @login_required
 def cart(request):
-    keys_to_clear = ['selected_items', 'total_price', 'oderKey', 'selected_contact_id', 'voucher_code', 'items']
-    for key in keys_to_clear:
-        if key in request.session:
-            del request.session[key]
     items = _cart_items(request)
     return render(request, 'store/cart.html', {
         'items': items,
@@ -247,7 +243,7 @@ def checkout_view(request):
     oder_key = request.session.get('oderKey')
 
     if not all([contact_id, item_ids_str, total_price]):
-        return redirect("checkout_address")
+        return redirect("cart")
 
     contact = get_object_or_404(UserContact, id=contact_id, user=user)
 

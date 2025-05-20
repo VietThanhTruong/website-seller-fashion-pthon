@@ -1,8 +1,28 @@
 function formatCurrency(number) {
-  return number.toLocaleString("vi-VN");
+  return new Intl.NumberFormat("en-US").format(number);
+}
+
+function parseCurrency(currencyStr) {
+  return Number(currencyStr.replace(/,/g, ""));
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  const checkboxes = document.querySelectorAll(".cart-checkbox");
+  const totalDisplay = document.getElementById("cart-total");
+  const checkoutForm = document.getElementById("checkout-form");
+  const selectedItemsInput = document.getElementById("selected-items-input");
+  const selectAll = document.getElementById("select-all-checkbox");
+
+  const updateTotal = () => {
+    let total = 0;
+    checkboxes.forEach((checkbox) => {
+      if (checkbox.checked) {
+        total += parseInt(checkbox.dataset.price);
+      }
+    });
+    totalDisplay.textContent = formatCurrency(total) + " VNĐ";
+  };
+
   document.querySelectorAll(".delete-cart-item").forEach((form) => {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -29,16 +49,15 @@ document.addEventListener("DOMContentLoaded", () => {
         .then((response) => response.json())
         .then((data) => {
           if (data.success) {
+            document.querySelector(
+                `.cart-checkbox[data-id="${itemId}"]`
+              ).checked = false;
+              
             const itemRow = document.querySelector(`#cart-item-${itemId}`);
             if (itemRow) {
               itemRow.remove();
             }
-
-            const cartTotalElement = document.getElementById("cart-total");
-            if (cartTotalElement && data.cart_total !== undefined) {
-              cartTotalElement.textContent =
-                formatCurrency(data.cart_total) + " VNĐ";
-            }
+            updateTotal();
 
             alert(data.message);
           } else {
@@ -48,6 +67,42 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(() => alert("Có lỗi xảy ra, vui lòng thử lại."));
     });
   });
+
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      updateTotal();
+
+      const allChecked = Array.from(checkboxes).every((cb) => cb.checked);
+      selectAll.checked = allChecked;
+    });
+  });
+
+  if (selectAll) {
+    selectAll.addEventListener("change", () => {
+      checkboxes.forEach((checkbox) => {
+        checkbox.checked = selectAll.checked;
+      });
+      updateTotal();
+    });
+  }
+
+  if (checkoutForm) {
+    checkoutForm.addEventListener("submit", function (e) {
+      const selectedIds = [];
+      checkboxes.forEach((checkbox) => {
+        if (checkbox.checked) {
+          selectedIds.push(checkbox.dataset.id);
+        }
+      });
+
+      if (selectedIds.length === 0) {
+        e.preventDefault();
+        alert("Vui lòng chọn ít nhất một sản phẩm để thanh toán.");
+      } else {
+        selectedItemsInput.value = selectedIds.join(",");
+      }
+    });
+  }
 
   document.querySelectorAll(".cart-update-form").forEach((form) => {
     const buttons = form.querySelectorAll('button[name="action"]');
@@ -77,18 +132,22 @@ document.addEventListener("DOMContentLoaded", () => {
               document.getElementById(`quantity-${itemId}`).textContent =
                 data.quantity;
 
+              const itemCheckbox = document.querySelector(
+                `.cart-checkbox[data-id="${itemId}"]`
+              );
+              if (itemCheckbox) {
+                itemCheckbox.dataset.price = parseCurrency(data.item_total);
+              }
+
               const itemTotalElement = document.getElementById(
                 `item-total-${itemId}`
               );
               if (itemTotalElement) {
-                itemTotalElement.textContent =
-                  formatCurrency(data.item_total) + " VNĐ";
+                itemTotalElement.textContent = data.item_total + "đ";
               }
 
-              const cartTotalElement = document.getElementById("cart-total");
-              if (cartTotalElement) {
-                cartTotalElement.textContent =
-                  formatCurrency(data.cart_total) + " VNĐ";
+              if (itemCheckbox && itemCheckbox.checked) {
+                updateTotal();
               }
             } else {
               alert(data.error || "Cập nhật thất bại");
@@ -100,81 +159,5 @@ document.addEventListener("DOMContentLoaded", () => {
           });
       });
     });
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const checkboxes = document.querySelectorAll(".cart-checkbox");
-  const totalDisplay = document.getElementById("cart-total");
-
-  const formatCurrency = (number) => {
-    return new Intl.NumberFormat("vi-VN").format(number) + " VNĐ";
-  };
-
-  const updateTotal = () => {
-    let total = 0;
-    checkboxes.forEach((checkbox) => {
-      if (checkbox.checked) {
-        total += parseInt(checkbox.dataset.price);
-      }
-    });
-    totalDisplay.textContent = formatCurrency(total);
-  };
-
-  checkboxes.forEach((checkbox) => {
-    checkbox.addEventListener("change", updateTotal);
-  });
-});
-document.addEventListener("DOMContentLoaded", () => {
-  const checkboxes = document.querySelectorAll(".cart-checkbox");
-  const totalDisplay = document.getElementById("cart-total");
-  const checkoutForm = document.getElementById("checkout-form");
-  const selectedItemsInput = document.getElementById("selected-items-input");
-  const selectAll = document.getElementById("select-all-checkbox");
-
-  const formatCurrency = (number) => {
-    return new Intl.NumberFormat("vi-VN").format(number) + " VNĐ";
-  };
-
-  const updateTotal = () => {
-    let total = 0;
-    checkboxes.forEach((checkbox) => {
-      if (checkbox.checked) {
-        total += parseInt(checkbox.dataset.price);
-      }
-    });
-    totalDisplay.textContent = formatCurrency(total);
-  };
-
-  checkboxes.forEach((checkbox) => {
-    checkbox.addEventListener("change", () => {
-      updateTotal();
-
-      const allChecked = Array.from(checkboxes).every(cb => cb.checked);
-      selectAll.checked = allChecked;
-    });
-  });
-
-  selectAll.addEventListener("change", () => {
-    checkboxes.forEach((checkbox) => {
-      checkbox.checked = selectAll.checked;
-    });
-    updateTotal(); 
-  });
-
-  checkoutForm.addEventListener("submit", function (e) {
-    const selectedIds = [];
-    checkboxes.forEach((checkbox) => {
-      if (checkbox.checked) {
-        selectedIds.push(checkbox.dataset.id);
-      }
-    });
-
-    if (selectedIds.length === 0) {
-      e.preventDefault();
-      alert("Vui lòng chọn ít nhất một sản phẩm để thanh toán.");
-    } else {
-      selectedItemsInput.value = selectedIds.join(",");
-    }
   });
 });

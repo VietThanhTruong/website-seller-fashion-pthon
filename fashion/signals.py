@@ -113,6 +113,12 @@ class UpdateSessionInfoMiddleware:
 
     def __call__(self, request):
         if request.user.is_authenticated:
+            
+            if not request.path.startswith('/checkout'):
+                for key in ['selected_items', 'total_price', 'oderKey', 'selected_contact_id', 'voucher_code', 'items']:
+                    if key in request.session:
+                        del request.session[key]
+
             ip = get_client_ip(request)
             user_agent = request.META.get('HTTP_USER_AGENT', '')
             session_key = request.session.session_key
