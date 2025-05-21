@@ -1,0 +1,86 @@
+[2025-05-20 09:57:41,910] INFO Product Created: 10 - Áo nè by user admin
+[2025-05-20 10:06:42,178] INFO Product Created: 11 - màu by user admin
+[2025-05-20 10:11:57,646] INFO Product Updated: 11 - màu by user admin. Changes: description: 'Màu' -> 'Màu bè'
+[2025-05-21 09:39:51,008] INFO Product Updated: 11 - màu by user admin. Changes: image: 'products/z5990698440649_93bdc9fbd6e71cb5a8fed33fc803f90d.jpg' -> 'products/products/11.png'
+[2025-05-21 09:40:34,187] INFO Product Updated: 10 - Áo nè by user admin. Changes: image: 'products/111.jpg' -> 'products/products/10.jpg'
+[2025-05-21 09:41:11,790] INFO Product Updated: 9 - Bugs news by user admin. Changes: image: 'products/2025-04-12_113237.png' -> 'products/products/9.png'
+[2025-05-21 09:41:30,838] INFO Product Updated: 8 - Bugs by user admin. Changes: image: 'products/2025-04-22_084300.png' -> 'products/products/8.png'
+[2025-05-21 09:42:05,098] INFO Product Updated: 7 - Mũ by user admin. Changes: image: 'products/1.jpeg' -> 'products/products/7.jpeg'
+[2025-05-21 09:42:59,028] INFO Product Updated: 6 - Dây chuyền by user admin. Changes: image: 'products/1.jpg' -> 'products/products/6.png'
+[2025-05-21 09:43:33,388] INFO Product Updated: 5 - Áo mới by user admin. Changes: image: 'products/12.jpg' -> 'products/products/5.jpg'
+[2025-05-21 09:43:49,414] INFO Product Updated: 4 - Dép by user admin. Changes: image: 'products/2024-11-12_124307.png' -> 'products/products/4.png'
+[2025-05-21 09:44:01,225] INFO Product Updated: 3 - Giầy by user admin. Changes: image: 'products/2024-11-10_230154.png' -> 'products/products/3.png'
+[2025-05-21 09:44:44,309] INFO Product Updated: 2 - Quần by user admin. Changes: image: 'products/z6499450836599_a4c24a1e318dcc861c78dbec8ceb156a.jpg' -> 'products/products/2.png'
+[2025-05-21 09:45:27,108] INFO Product Updated: 1 - Áo by user admin. Changes: image: 'products/z6499450836599_a4c24a1e318dcc861c78dbec8ceb156a_ZmkVfbi.jpg' -> 'products/products/1.png'
+[2025-05-21 09:49:46,418] ERROR Detected path traversal attempt in '/1.png'
+Traceback (most recent call last):
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/contrib/admin/options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1987, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1843, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1894, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/dvwuutxc/project/fashion/admin.py", line 13, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1314, in save_model
+    obj.save()
+  File "/home/dvwuutxc/project/fashion/models.py", line 34, in save
+    super().save(*args, **kwargs)
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/db/models/base.py", line 1128, in _save_table
+    values = [
+             ^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/db/models/base.py", line 1132, in <listcomp>
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/db/models/fields/files.py", line 338, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/db/models/fields/files.py", line 98, in save
+    name = self.field.generate_filename(self.instance, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/db/models/fields/files.py", line 357, in generate_filename
+    filename = validate_file_name(filename, allow_relative_path=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dvwuutxc/virtualenv/project/3.11/lib/python3.11/site-packages/django/core/files/utils.py", line 17, in validate_file_name
+    raise SuspiciousFileOperation(
+django.core.exceptions.SuspiciousFileOperation: Detected path traversal attempt in '/1.png'
+[2025-05-21 09:52:04,823] INFO Product Updated: 1 - Áo by user admin. Changes: image: 'products/products/1.png' -> 'products/1_PIo63bU.png'
+[2025-05-21 09:52:24,286] INFO Product Updated: 1 - Áo by user admin. Changes: image: 'products/1_PIo63bU.png' -> 'products/1_fIrF9Ar.png'
+[2025-05-21 09:55:36,807] INFO Product Updated: 1 - Áo by user admin. Changes: image: 'products/1_fIrF9Ar.png' -> 'products/1.png'
+[2025-05-21 09:57:59,837] INFO Product Updated: 11 - màu by user admin. Changes: 

@@ -1,5 +1,11 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.files.storage import default_storage
+import os
+
+def user_directory_path(instance, filename):
+    ext = filename.split('.')[-1]
+    return f'users/{instance.user.id}.{ext}'
 
 class Category(models.Model):
     name = models.CharField(max_length=100)
@@ -16,6 +22,28 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def save(self, *args, **kwargs):
+        is_new = self.pk is None
+        new_image = self.image 
+    
+        if is_new:
+            self.image = None 
+            super().save(*args, **kwargs)  
+    
+        if new_image:
+            ext = os.path.splitext(new_image.name)[-1].lower()
+            expected_name = f'{self.id}{ext}'
+            full_path = os.path.join('products', expected_name)
+    
+            if default_storage.exists(full_path):
+                default_storage.delete(full_path)
+    
+            new_image.name = expected_name
+            self.image = new_image  
+    
+        super().save(*args, **kwargs)
+
 
 class CartItem(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
@@ -61,7 +89,7 @@ class OrderItem(models.Model):
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    profile_picture = models.ImageField(upload_to='users/', default='users/default.jpg', blank=True, null=True)
+    profile_picture = models.ImageField(upload_to=user_directory_path, default='users/default.jpg', blank=True, null=True)
     address = models.TextField(null=True, blank=True, verbose_name="Địa chỉ nhận hàng")
     contact_phone = models.CharField(max_length=20, null=True, blank=True, verbose_name="Số điện thoại liên hệ")
     contact_email = models.EmailField(null=True, blank=True, verbose_name="Email liên hệ")

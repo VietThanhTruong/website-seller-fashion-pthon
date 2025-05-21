@@ -1,0 +1,749 @@
+[
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "Staff",
+    "permissions": [
+      16,
+      33,
+      34,
+      35,
+      36,
+      29,
+      30,
+      31,
+      32,
+      25,
+      26,
+      27,
+      28,
+      24
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "customer",
+    "permissions": [
+      33,
+      34,
+      35,
+      36,
+      32,
+      28
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 3,
+  "fields": {
+    "name": "Admin",
+    "permissions": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      10,
+      11,
+      12,
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      33,
+      34,
+      35,
+      36,
+      29,
+      30,
+      31,
+      32,
+      25,
+      26,
+      27,
+      28,
+      21,
+      22,
+      23,
+      24
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$EBoyuGlxLfGQnydaHoMWAc$U6MQOyxldk3Z9pDZfdp/R7oRQ9GTSDnrOM7NrdF2LYk=",
+    "last_login": "2025-05-20T08:47:29.924Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "Trường",
+    "last_name": "Dev",
+    "email": "tp869252@gmail.com.vn",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-05-13T08:20:52Z",
+    "groups": [
+      3
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$N9WA5MSxD47NC5OBBE30pS$qlUFTtB20M5hZq8TFLBwrVx/j7/tZFYoV2u3/PiYjVM=",
+    "last_login": "2025-05-17T00:31:58.835Z",
+    "is_superuser": false,
+    "username": "user1",
+    "first_name": "user",
+    "last_name": "1",
+    "email": "user1@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-05-14T01:38:08Z",
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user_sessions.session",
+  "pk": "k047ywl75a8e7w371cde3o2n1wb3ip78",
+  "fields": {
+    "session_data": ".eJxVjjkOwjAQRe8ydWSN8ZakpOcECFmOxyFhsaXYKRDi7jhSCmj_-9sbrFvLZNccFjsT9MCh-dUG5-8hboBuLl4T8ymWZR7YZmE7zeyUKDyOu_evYHJ5qmlNzumg1Wi6lhuPEjtpFIpWG-Q0Si6UQEnUmsEr5AfRKU7BoNfGoR-30rmEZ64ns03x8YL-DEJWWSi4NJAWqmMxlVDH4PMFok5Exg:1uHgAi:_rX5892S0uD1kFWUiRaieavVhrorFd3W-CfVsV41KAM",
+    "expire_date": "2025-06-04T09:55:36.972Z",
+    "user": 1,
+    "user_agent": null,
+    "last_activity": "2025-05-21T09:55:36.972Z",
+    "ip": null
+  }
+},
+{
+  "model": "user_sessions.session",
+  "pk": "pdsmayq9pjbn7bh0ulex8q04e0jmikz0",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGll4s2sMJT1nsPzZxQFkS3FSIe5OIqWAZop5b-atfFjm4pfOkx-zuihQh98uhvTkuoH8CPXedGp1nsaoN0XvtOtby_y67u7fQQm9rGsnEYgynoY1ZXDmbNEQkc1RWCRIkqM1gM4RWxoMgyAmQLYRMDhUny_YIzeG:1uG5TM:UrMSDvb1Ru2YCANl0-4y7xojryHwr6o04zzQvkHV30k",
+    "expire_date": "2025-05-31T00:32:16.412Z",
+    "user": 2,
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/135.0.7049.53 Mobile/15E148 Safari/604.1",
+    "last_activity": "2025-05-17T00:32:16.412Z",
+    "ip": "172.16.2.24"
+  }
+},
+{
+  "model": "fashion.category",
+  "pk": 1,
+  "fields": {
+    "name": "Bug"
+  }
+},
+{
+  "model": "fashion.product",
+  "pk": 1,
+  "fields": {
+    "name": "Áo",
+    "price": 500000,
+    "description": "Áo",
+    "image": "products/1.png",
+    "category": null
+  }
+},
+{
+  "model": "fashion.product",
+  "pk": 2,
+  "fields": {
+    "name": "Quần",
+    "price": 1000000,
+    "description": "Quần",
+    "image": "products/2.png",
+    "category": null
+  }
+},
+{
+  "model": "fashion.product",
+  "pk": 3,
+  "fields": {
+    "name": "Giầy",
+    "price": 500000,
+    "description": "Giầy",
+    "image": "products/3.png",
+    "category": null
+  }
+},
+{
+  "model": "fashion.product",
+  "pk": 4,
+  "fields": {
+    "name": "Dép",
+    "price": 100000,
+    "description": "Dép",
+    "image": "products/4.png",
+    "category": null
+  }
+},
+{
+  "model": "fashion.product",
+  "pk": 5,
+  "fields": {
+    "name": "Áo mới",
+    "price": 700000,
+    "description": "Áo mới",
+    "image": "products/5.jpg",
+    "category": null
+  }
+},
+{
+  "model": "fashion.product",
+  "pk": 6,
+  "fields": {
+    "name": "Dây chuyền",
+    "price": 2000000,
+    "description": "Dây chuyền",
+    "image": "products/6.png",
+    "category": null
+  }
+},
+{
+  "model": "fashion.product",
+  "pk": 7,
+  "fields": {
+    "name": "Mũ",
+    "price": 400000,
+    "description": "Mũ",
+    "image": "products/7.jpeg",
+    "category": null
+  }
+},
+{
+  "model": "fashion.product",
+  "pk": 8,
+  "fields": {
+    "name": "Bugs",
+    "price": 50000000,
+    "description": "Bug cực to đùngggggggggggggggg",
+    "image": "products/8.png",
+    "category": 1
+  }
+},
+{
+  "model": "fashion.product",
+  "pk": 9,
+  "fields": {
+    "name": "Bugs news",
+    "price": 500000,
+    "description": "Bug new cực múp nèeee",
+    "image": "products/9.png",
+    "category": 1
+  }
+},
+{
+  "model": "fashion.product",
+  "pk": 10,
+  "fields": {
+    "name": "Áo nè",
+    "price": 500000,
+    "description": "Áo mới",
+    "image": "products/10.jpg",
+    "category": null
+  }
+},
+{
+  "model": "fashion.product",
+  "pk": 11,
+  "fields": {
+    "name": "màu",
+    "price": 3432424,
+    "description": "Màu bè",
+    "image": "products/11.png",
+    "category": null
+  }
+},
+{
+  "model": "fashion.cartitem",
+  "pk": 14,
+  "fields": {
+    "product": 7,
+    "quantity": 4,
+    "user": 2,
+    "session_key": ""
+  }
+},
+{
+  "model": "fashion.cartitem",
+  "pk": 18,
+  "fields": {
+    "product": 3,
+    "quantity": 3,
+    "user": 1,
+    "session_key": ""
+  }
+},
+{
+  "model": "fashion.cartitem",
+  "pk": 19,
+  "fields": {
+    "product": 5,
+    "quantity": 4,
+    "user": 1,
+    "session_key": ""
+  }
+},
+{
+  "model": "fashion.cartitem",
+  "pk": 20,
+  "fields": {
+    "product": 6,
+    "quantity": 4,
+    "user": 1,
+    "session_key": ""
+  }
+},
+{
+  "model": "fashion.cartitem",
+  "pk": 22,
+  "fields": {
+    "product": 7,
+    "quantity": 4,
+    "user": 1,
+    "session_key": null
+  }
+},
+{
+  "model": "fashion.cartitem",
+  "pk": 23,
+  "fields": {
+    "product": 4,
+    "quantity": 3,
+    "user": 1,
+    "session_key": null
+  }
+},
+{
+  "model": "fashion.cartitem",
+  "pk": 24,
+  "fields": {
+    "product": 4,
+    "quantity": 1,
+    "user": 2,
+    "session_key": null
+  }
+},
+{
+  "model": "fashion.cartitem",
+  "pk": 25,
+  "fields": {
+    "product": 5,
+    "quantity": 1,
+    "user": 2,
+    "session_key": null
+  }
+},
+{
+  "model": "fashion.cartitem",
+  "pk": 26,
+  "fields": {
+    "product": 1,
+    "quantity": 1,
+    "user": 2,
+    "session_key": null
+  }
+},
+{
+  "model": "fashion.cartitem",
+  "pk": 27,
+  "fields": {
+    "product": 2,
+    "quantity": 1,
+    "user": 2,
+    "session_key": null
+  }
+},
+{
+  "model": "fashion.cartitem",
+  "pk": 29,
+  "fields": {
+    "product": 1,
+    "quantity": 4,
+    "user": 1,
+    "session_key": null
+  }
+},
+{
+  "model": "fashion.cartitem",
+  "pk": 33,
+  "fields": {
+    "product": 2,
+    "quantity": 1,
+    "user": 1,
+    "session_key": null
+  }
+},
+{
+  "model": "fashion.cartitem",
+  "pk": 34,
+  "fields": {
+    "product": 11,
+    "quantity": 1,
+    "user": 1,
+    "session_key": null
+  }
+},
+{
+  "model": "fashion.cartitem",
+  "pk": 35,
+  "fields": {
+    "product": 10,
+    "quantity": 1,
+    "user": 1,
+    "session_key": null
+  }
+},
+{
+  "model": "fashion.order",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "order_key": "FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf",
+    "created_at": "2025-05-19T12:06:35.989Z",
+    "address": "4dsfdsf",
+    "contact_phone": "435435",
+    "contact_email": "",
+    "note": "",
+    "total_amount": 2500000
+  }
+},
+{
+  "model": "fashion.order",
+  "pk": 5,
+  "fields": {
+    "user": 1,
+    "order_key": "re1dUoj3HkvElOoCOjIwdXo1KJC3LHPuNR971j1plFAZcAmRoLnZZmka6b1ns917",
+    "created_at": "2025-05-19T12:29:21.286Z",
+    "address": "dfer",
+    "contact_phone": "32545435435",
+    "contact_email": "",
+    "note": "",
+    "total_amount": 2500000
+  }
+},
+{
+  "model": "fashion.order",
+  "pk": 6,
+  "fields": {
+    "user": 1,
+    "order_key": "gJ24TwNoYtNrkssfN2ACtlatcQYIvOgKCmaY0rvKCOSMbequnuf5fK6Cyin2cgsn",
+    "created_at": "2025-05-19T13:00:43.307Z",
+    "address": "4dsfdsf",
+    "contact_phone": "435435",
+    "contact_email": "",
+    "note": "",
+    "total_amount": 1800000
+  }
+},
+{
+  "model": "fashion.order",
+  "pk": 7,
+  "fields": {
+    "user": 1,
+    "order_key": "Lg4LcBMLYF9fkChYwHO2auAW7Hi0VaLwMer0BmmGWq021taZdD56oXGvkEr8froz",
+    "created_at": "2025-05-20T01:49:37.536Z",
+    "address": "4dsfdsf",
+    "contact_phone": "435435",
+    "contact_email": "",
+    "note": "",
+    "total_amount": 17700000
+  }
+},
+{
+  "model": "fashion.order",
+  "pk": 8,
+  "fields": {
+    "user": 1,
+    "order_key": "GWYqwEzmIg3gM6YFAqGGOwkIEb7VhMgkHUlFVp9hG1U3tXRGhmXK2ZqhR8g3B3Tn",
+    "created_at": "2025-05-20T04:55:44.558Z",
+    "address": "4dsfdsf",
+    "contact_phone": "435435",
+    "contact_email": "",
+    "note": "",
+    "total_amount": 5300000
+  }
+},
+{
+  "model": "fashion.order",
+  "pk": 9,
+  "fields": {
+    "user": 1,
+    "order_key": "vsltTfvuM7sVLmz2xecBiR7k8seeu6XywqIIi05pKSjIsds3eatFwkdTlpnmOnAB",
+    "created_at": "2025-05-20T04:57:45.879Z",
+    "address": "4dsfdsf",
+    "contact_phone": "435435",
+    "contact_email": "",
+    "note": "",
+    "total_amount": 5300000
+  }
+},
+{
+  "model": "fashion.order",
+  "pk": 10,
+  "fields": {
+    "user": 1,
+    "order_key": "EAJOp3t0aCcUeiGabk4ZhycUtXgRujJGFltrwwhDPg8wNSxDpzPHAW1SnVDHUtF2",
+    "created_at": "2025-05-20T10:12:54.103Z",
+    "address": "dfer",
+    "contact_phone": "32545435435",
+    "contact_email": "",
+    "note": "",
+    "total_amount": 3932424
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 1,
+  "fields": {
+    "order": 2,
+    "product": 1,
+    "quantity": 2,
+    "price": 500000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "product": 3,
+    "quantity": 3,
+    "price": 500000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 8,
+  "fields": {
+    "order": 5,
+    "product": 1,
+    "quantity": 2,
+    "price": 500000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 9,
+  "fields": {
+    "order": 5,
+    "product": 3,
+    "quantity": 3,
+    "price": 500000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 10,
+  "fields": {
+    "order": 6,
+    "product": 7,
+    "quantity": 4,
+    "price": 400000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 11,
+  "fields": {
+    "order": 6,
+    "product": 4,
+    "quantity": 2,
+    "price": 100000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 12,
+  "fields": {
+    "order": 7,
+    "product": 3,
+    "quantity": 4,
+    "price": 500000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 13,
+  "fields": {
+    "order": 7,
+    "product": 5,
+    "quantity": 4,
+    "price": 700000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 14,
+  "fields": {
+    "order": 7,
+    "product": 6,
+    "quantity": 4,
+    "price": 2000000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 15,
+  "fields": {
+    "order": 7,
+    "product": 7,
+    "quantity": 4,
+    "price": 400000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 16,
+  "fields": {
+    "order": 7,
+    "product": 4,
+    "quantity": 3,
+    "price": 100000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 17,
+  "fields": {
+    "order": 7,
+    "product": 1,
+    "quantity": 4,
+    "price": 500000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 18,
+  "fields": {
+    "order": 7,
+    "product": 2,
+    "quantity": 1,
+    "price": 1000000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 19,
+  "fields": {
+    "order": 8,
+    "product": 3,
+    "quantity": 5,
+    "price": 500000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 20,
+  "fields": {
+    "order": 8,
+    "product": 5,
+    "quantity": 4,
+    "price": 700000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 21,
+  "fields": {
+    "order": 9,
+    "product": 3,
+    "quantity": 5,
+    "price": 500000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 22,
+  "fields": {
+    "order": 9,
+    "product": 5,
+    "quantity": 4,
+    "price": 700000
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 23,
+  "fields": {
+    "order": 10,
+    "product": 11,
+    "quantity": 1,
+    "price": 3432424
+  }
+},
+{
+  "model": "fashion.orderitem",
+  "pk": 24,
+  "fields": {
+    "order": 10,
+    "product": 10,
+    "quantity": 1,
+    "price": 500000
+  }
+},
+{
+  "model": "fashion.userprofile",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "profile_picture": "users/1.png",
+    "address": null,
+    "contact_phone": null,
+    "contact_email": null
+  }
+},
+{
+  "model": "fashion.userprofile",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "profile_picture": "users/default.jpg",
+    "address": null,
+    "contact_phone": null,
+    "contact_email": null
+  }
+},
+{
+  "model": "fashion.usercontact",
+  "pk": 16,
+  "fields": {
+    "user": 1,
+    "address": "dfer",
+    "contact_phone": "32545435435",
+    "contact_email": "",
+    "is_default": false
+  }
+},
+{
+  "model": "fashion.usercontact",
+  "pk": 30,
+  "fields": {
+    "user": 1,
+    "address": "4dsfdsf",
+    "contact_phone": "435435",
+    "contact_email": "",
+    "is_default": false
+  }
+}
+]

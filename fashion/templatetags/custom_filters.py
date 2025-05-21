@@ -4,6 +4,7 @@ register = template.Library()
 
 @register.filter
 def format_price(value):
+    print(f"Value before formatting: {value}")
     try:
         if isinstance(value, (int, float)):
             value_int = int(value)

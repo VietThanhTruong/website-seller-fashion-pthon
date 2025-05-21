@@ -22,9 +22,23 @@ class SessionAdmin(admin.ModelAdmin):
     list_display = ('session_key', 'user', 'ip', 'user_agent', 'last_activity', 'expire_date')
     search_fields = ('user__username', 'ip', 'user_agent')
     list_filter = ('expire_date',)
+    
+@admin.register(Order)
+class OrderAdmin(admin.ModelAdmin):
+    list_display = (
+        'id', 'created_at', 'address', 'contact_phone', 'contact_email',
+        'note', 'total_amount', 'user', 'order_key'
+    )
+    search_fields = ('id', 'contact_phone', 'contact_email', 'order_key', 'user__username')
+    list_filter = ('created_at',)
+
+@admin.register(OrderItem)
+class OrderItemAdmin(admin.ModelAdmin):
+    list_display = ('id', 'quantity', 'price', 'order', 'product')
+    search_fields = ('id', 'order__id', 'product__name')
+    list_filter = ('order',)
+
 
 admin.site.unregister(Session)
 admin.site.register(Session, SessionAdmin)
 admin.site.register(Category)
-admin.site.register(Order)
-admin.site.register(OrderItem)

@@ -82,11 +82,14 @@ APPEND_SLASH=True
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'dvwuutxc_fashion_web',      
+        'USER': 'dvwuutxc_truongdev',           
+        'PASSWORD': 'truongdev230405',    
+        'HOST': 'localhost',       
+        'PORT': '3306',            
     }
-}
-
+}  
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -114,7 +117,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+
+LANGUAGE_CODE = 'vi'
 
 TIME_ZONE = 'UTC'
 
@@ -122,19 +126,23 @@ USE_I18N = True
 
 USE_TZ = True
 
+DEFAULT_CHARSET = 'utf-8'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = 'login'
 
-STATICFILES_DIRS = [
-    BASE_DIR / "fashion/static",  
-]
+STATIC_URL = '/static/'
 
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+STATICFILES_DIRS = [
+    BASE_DIR / "fashion" / "static",
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -150,24 +158,31 @@ SESSION_COOKIE_NAME = 'sessionid'
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
-    'handlers': {
-        'file': {
-            'level': 'INFO',
-            'class': 'logging.FileHandler',
-            'filename': 'logs/product_changes.log',
-            'formatter': 'verbose',
-            'encoding': 'utf-8',  
-        },
-    },
     'formatters': {
         'verbose': {
             'format': '[{asctime}] {levelname} {message}',
             'style': '{',
         },
     },
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': 'logs/product_changes.log',
+            'formatter': 'verbose',
+            'encoding': 'utf-8',
+        },
+        'error_file': {
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': 'logs/errors.log',
+            'formatter': 'verbose',
+            'encoding': 'utf-8',
+        },
+    },
     'loggers': {
-        '': {
-            'handlers': ['file'],
+        'django': {
+            'handlers': ['file', 'error_file'],
             'level': 'INFO',
             'propagate': True,
         },
@@ -175,8 +190,6 @@ LOGGING = {
 }
 
 # LOAD SUPPORT LANGUAGES
-
-LANGUAGE_CODE = 'vi'
 
 USE_I18N = True
 

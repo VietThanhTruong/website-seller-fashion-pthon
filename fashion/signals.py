@@ -10,12 +10,14 @@ from user_sessions.models import Session as UserSessionModel
 import sqlite3
 import threading
 import logging
+from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
 # SAVE IP AND USER AGENT TO DB
 def changere_session(user, session_key, user_agent, ip):
-    db_path = 'D:/assigment-t/python-2/website-seller-fashion-pthon/db.sqlite3'
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    db_path = BASE_DIR / 'db.sqlite3'
     try:
         with sqlite3.connect(db_path) as conn:
             cursor = conn.cursor()
