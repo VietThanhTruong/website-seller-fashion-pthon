@@ -11,16 +11,20 @@
           {% csrf_token %}
 
           <div class="mb-3">
-            <label for="{{ user_form.email.id_for_label }}" class="form-label"
-              >Email</label
-            >
-            {{ user_form.email|add_class:"form-control" }}
+            <label for="{{ profile_form.contact_email.id_for_label }}" class="form-label">Email</label>
+            {{ profile_form.contact_email|add_class:"form-control" }}
           </div>
+
+          <div class="mb-3">
+            <label for="{{ profile_form.contact_phone.id_for_label }}" class="form-label">Phone</label>
+            {{ profile_form.contact_phone|add_class:"form-control" }}
+          </div>
+
           <div class="mb-3">
             <label
               for="{{ user_form.first_name.id_for_label }}"
               class="form-label"
-              >First Name</label
+              >{% trans "Tên" %}</label
             >
             {{ user_form.first_name|add_class:"form-control" }}
           </div>
@@ -28,7 +32,7 @@
             <label
               for="{{ user_form.last_name.id_for_label }}"
               class="form-label"
-              >Last Name</label
+              >{% trans "Họ" %}</label
             >
             {{ user_form.last_name|add_class:"form-control" }}
           </div>

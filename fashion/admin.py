@@ -1,5 +1,7 @@
 from django.contrib import admin
-from .models import Product, Category, CartItem, Order, OrderItem
+from .models import Product, Category, CartItem, Order, OrderItem, UserProfile
+from django.contrib.auth.admin import UserAdmin as DefaultUserAdmin
+from django.contrib.auth.models import User
 from user_sessions.models import Session
 
 @admin.register(Product)
@@ -38,6 +40,27 @@ class OrderItemAdmin(admin.ModelAdmin):
     search_fields = ('id', 'order__id', 'product__name')
     list_filter = ('order',)
 
+@admin.register(UserProfile)
+class UserProfileAdmin(admin.ModelAdmin):
+    list_display = ('user', 'contact_email', 'contact_phone', 'address', 'isVerified_email', 'isVerified_phone')
+    search_fields = ('user__username', 'contact_email', 'contact_phone', 'address')
+    list_filter = ('user', 'isVerified_email', 'isVerified_phone')
+    ordering = ('-user',)
+
+class CustomUserAdmin(DefaultUserAdmin):
+    list_display = ('username', 'email', 'first_name', 'last_name', 'is_staff', 'is_superuser', 'is_active', 'date_joined')
+    list_filter = ('is_staff', 'is_superuser', 'is_active')
+    search_fields = ('username', 'email')
+    ordering = ('username',)
+    fieldsets = (
+        (None, {'fields': ('username', 'password')}),
+        ('Thông tin cá nhân', {'fields': ('first_name', 'last_name', 'email')}),
+        ('Phân quyền', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
+        ('Thời gian', {'fields': ('last_login', 'date_joined')}),
+    )
+
+admin.site.unregister(User)
+admin.site.register(User, CustomUserAdmin)
 
 admin.site.unregister(Session)
 admin.site.register(Session, SessionAdmin)

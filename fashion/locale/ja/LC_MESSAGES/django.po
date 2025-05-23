@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-20 10:52+0700\n"
+"POT-Creation-Date: 2025-05-23 12:36+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Japanese <ja@li.org>\n"
@@ -18,299 +18,367 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ⁨.\templates - Copy\store\checkout.html⁩:32 .\templates\store\checkout.html:32
-msgid "Xác nhận thanh toán"
-msgstr "支払いの確認"
+#: .\fashion\templates\login.html:36
+msgid "CHÀO MỪNG BẠN TRỞ LẠI !"
+msgstr "おかえりなさい！"
 
-#: .\templates\login.html:6 .\templates\login.html:45
-#: .\templates\register.html:48
-msgid "Đăng nhập"
-msgstr "ログイン"
+#: .\fashion\templates\login.html:38
+msgid "Không có tài khoản,"
+msgstr "すでにアカウントをお持ちですか？"
 
-#: .\templates\login.html:33
-msgid "Đăng nhập tài khoản"
-msgstr "アカウントにログイン"
-
-#: .\templates\login.html:48
-msgid "Chưa có tài khoản?"
-msgstr "アカウントをお持ちでないですか？"
-
-#: .\templates\login.html:48 .\templates\register.html:6
-#: .\templates\register.html:45
+#: .\fashion\templates\login.html:40 .\fashion\templates\login.html:194
+#: .\fashion\templates\register.html:7 .\fashion\templates\register.html:46
 msgid "Đăng ký"
 msgstr "登録"
 
-#: .\templates\register.html:33
+#: .\fashion\templates\login.html:48 .\fashion\templates\login.html:150
+msgid "Tên đăng nhập"
+msgstr "ユーザー名"
+
+#: .\fashion\templates\login.html:59 .\fashion\templates\login.html:161
+msgid "Mật khẩu"
+msgstr "パスワード"
+
+#: .\fashion\templates\login.html:77 .\fashion\templates\login.html:143
+#: .\fashion\templates\register.html:49
+msgid "Đăng nhập"
+msgstr "ログイン"
+
+#: .\fashion\templates\login.html:82 .\fashion\templates\login.html:199
+msgid "Hoặc Đăng nhập bằng nền tảng xã hội"
+msgstr "またはSNSアカウントでログイン"
+
+#: .\fashion\templates\login.html:139
+msgid "ĐĂNG KÝ TẠI ĐÂY!"
+msgstr "ここで登録！"
+
+#: .\fashion\templates\login.html:141
+msgid "Đã có tài khoản,"
+msgstr "すでにアカウントをお持ちですか？"
+
+#: .\fashion\templates\login.html:176
+msgid "Nhập lại mật khẩu"
+msgstr ""
+
+#: .\fashion\templates\register.html:34
 msgid "Đăng ký tài khoản"
 msgstr "アカウント登録"
 
-#: .\templates\register.html:48
+#: .\fashion\templates\register.html:49
 msgid "Đã có tài khoản?"
 msgstr "すでにアカウントをお持ちですか？"
 
-#: .\templates\store\base_profile.html:31 .\templates\store\base_shop.html:33
+#: .\fashion\templates\store\base_profile.html:8
+msgid "Website Seller Fashion"
+msgstr ""
+
+#: .\fashion\templates\store\base_profile.html:32
+#: .\fashion\templates\store\base_shop.html:66
+#: .\fashion\templates\store\cart.html:3
 msgid "Giỏ hàng"
 msgstr "カート"
 
-#: .\templates\store\base_profile.html:37
+#: .\fashion\templates\store\base_profile.html:38
+#: .\fashion\templates\store\base_shop.html:184
 msgid "Đăng xuất"
 msgstr "ログアウト"
 
-#: .\templates\store\base_shop.html:24
+#: .\fashion\templates\store\base_shop.html:41
 msgid "Tìm sản phẩm"
 msgstr "製品を探す"
 
-#: .\templates\store\base_shop.html:25
+#: .\fashion\templates\store\base_shop.html:46
 msgid "Tìm"
 msgstr "検索"
 
-#: .\templates\store\base_shop.html:38
+#: .\fashion\templates\store\base_shop.html:175
 msgid "Thông tin tài khoản"
 msgstr "アカウント情報"
 
-#: .\templates\store\cart.html:10
+#: .\fashion\templates\store\cart.html:12
 msgid "Tiếp tục mua sắm"
 msgstr "買い物を続ける"
 
-#: .\templates\store\cart.html:14
+#: .\fashion\templates\store\cart.html:16
 msgid "🛒 Giỏ hàng"
 msgstr "🛒 カート"
 
-#: .\templates\store\cart.html:25
+#: .\fashion\templates\store\cart.html:27
 msgid "Chọn tất cả"
 msgstr "すべて選択"
 
-#: .\templates\store\cart.html:110
+#: .\fashion\templates\store\cart.html:112
 msgid "Xóa"
 msgstr "削除"
 
-#: .\templates\store\cart.html:123
+#: .\fashion\templates\store\cart.html:125
 msgid "Tổng cộng (đã chọn):"
 msgstr "合計（選択済み）："
 
-#: .\templates\store\cart.html:124
+#: .\fashion\templates\store\cart.html:126
 msgid "0 VNĐ"
 msgstr "0 VND"
 
-#: .\templates\store\cart.html:130
+#: .\fashion\templates\store\cart.html:132
 msgid "Thanh toán"
 msgstr "支払い"
 
-#: .\templates\store\cart.html:140
+#: .\fashion\templates\store\cart.html:142
 msgid "Giỏ hàng trống."
 msgstr "カートは空です。"
 
-#: .\templates\store\cart.html:142
+#: .\fashion\templates\store\cart.html:144
 msgid "🛍️ Quay lại cửa hàng"
 msgstr "🛍️ 店舗に戻る"
 
-#: .\templates\store\checkout.html:42
+#: .\fashion\templates\store\checkout.html:3
+#, fuzzy
+#| msgid "Thanh toán"
+msgid "Thanh Toán"
+msgstr "支払い"
+
+#: .\fashion\templates\store\checkout.html:33
+msgid "Xác nhận thanh toán"
+msgstr "支払いの確認"
+
+#: .\fashion\templates\store\checkout.html:43
 msgid "Mở App Ngân hàng để"
 msgstr "銀行アプリを開いて"
 
-#: .\templates\store\checkout.html:42
+#: .\fashion\templates\store\checkout.html:43
 msgid "quét mã VietQR"
 msgstr "VietQRコードをスキャン"
 
-#: .\templates\store\checkout.html:42
+#: .\fashion\templates\store\checkout.html:43
 msgid "hoặc"
 msgstr "または"
 
-#: .\templates\store\checkout.html:43
+#: .\fashion\templates\store\checkout.html:44
 msgid "chuyển khoản chính xác số tiền bên dưới"
 msgstr "下記の金額を正確に振り込んでください"
 
-#: .\templates\store\checkout.html:67
+#: .\fashion\templates\store\checkout.html:68
 msgid "Ngân hàng"
 msgstr "銀行"
 
-#: .\templates\store\checkout.html:73
+#: .\fashion\templates\store\checkout.html:74
 msgid "Chủ tài khoản:"
 msgstr "口座名義："
 
-#: .\templates\store\checkout.html:79
+#: .\fashion\templates\store\checkout.html:80
 msgid "Số tài khoản:"
 msgstr "口座番号："
 
-#: .\templates\store\checkout.html:87 .\templates\store\checkout.html:103
-#: .\templates\store\checkout.html:117
+#: .\fashion\templates\store\checkout.html:88
+#: .\fashion\templates\store\checkout.html:104
+#: .\fashion\templates\store\checkout.html:118
 msgid "Sao chép"
 msgstr "コピー"
 
-#: .\templates\store\checkout.html:93
+#: .\fashion\templates\store\checkout.html:94
 msgid "Số tiền:"
 msgstr "金額："
 
-#: .\templates\store\checkout.html:109
+#: .\fashion\templates\store\checkout.html:110
 msgid "Nội dung:"
 msgstr "内容："
 
-#: .\templates\store\checkout.html:131
+#: .\fashion\templates\store\checkout.html:132
 msgid "Đang kiểm tra giao dịch..."
 msgstr "取引を確認中..."
 
-#: .\templates\store\checkout.html:138
+#: .\fashion\templates\store\checkout.html:139
 msgid "Giao dịch đã hoàn tất!"
 msgstr "取引が完了しました！"
 
-#: .\templates\store\checkout.html:145
+#: .\fashion\templates\store\checkout.html:146
 msgid "Giao dịch thất bại!"
 msgstr "取引に失敗しました！"
 
-#: .\templates\store\checkout.html:156
+#: .\fashion\templates\store\checkout.html:157
 msgid "Lưu ý: Nhập chính xác"
 msgstr "注意：正確に入力してください"
 
-#: .\templates\store\checkout.html:156
+#: .\fashion\templates\store\checkout.html:157
 msgid "số tiền"
 msgstr "金額"
 
-#: .\templates\store\checkout.html:157
+#: .\fashion\templates\store\checkout.html:158
 msgid "nội dung"
 msgstr "内容"
 
-#: .\templates\store\checkout.html:157
+#: .\fashion\templates\store\checkout.html:158
 msgid "khi chuyển khoản"
 msgstr "振込時に"
 
-#: .\templates\store\checkout.html:164
+#: .\fashion\templates\store\checkout.html:165
 msgid "Huỷ"
 msgstr "キャンセル"
 
-#: .\templates\store\checkout.html:177
+#: .\fashion\templates\store\checkout.html:178
 msgid "Đã sao chép: "
 msgstr "コピーしました："
 
-#: .\templates\store\checkout.html:179
+#: .\fashion\templates\store\checkout.html:180
 msgid "Không thể sao chép!"
 msgstr "コピーできません！"
 
-#: .\templates\store\checkout_address.html:2
+#: .\fashion\templates\store\checkout_address.html:3
 msgid "Thông tin nhận hàng"
 msgstr "配送情報"
 
-#: .\templates\store\checkout_address.html:41
+#: .\fashion\templates\store\checkout_address.html:42
 msgid "Chọn địa chỉ có sẵn:"
 msgstr "利用可能な住所を選択："
 
-#: .\templates\store\checkout_address.html:70
+#: .\fashion\templates\store\checkout_address.html:71
 msgid "Địa chỉ:"
 msgstr "住所："
 
-#: .\templates\store\checkout_address.html:71
+#: .\fashion\templates\store\checkout_address.html:72
 msgid "Điện thoại:"
 msgstr "電話番号："
 
-#: .\templates\store\checkout_address.html:72
+#: .\fashion\templates\store\checkout_address.html:73
 msgid "Email:"
 msgstr "メール："
 
-#: .\templates\store\checkout_address.html:81
+#: .\fashion\templates\store\checkout_address.html:82
 msgid "Bạn chưa có địa chỉ nhận hàng nào. Vui lòng thêm địa chỉ mới:"
 msgstr "配送先住所がありません。新しい住所を追加してください："
 
-#: .\templates\store\checkout_address.html:87
+#: .\fashion\templates\store\checkout_address.html:88
 msgid "Mã voucher (nếu có)"
 msgstr "クーポンコード（ある場合）"
 
-#: .\templates\store\checkout_address.html:94
+#: .\fashion\templates\store\checkout_address.html:95
 msgid "Nhập mã voucher"
 msgstr "クーポンコードを入力"
 
-#: .\templates\store\checkout_address.html:105
-#: .\templates\store\checkout_address.html:180
+#: .\fashion\templates\store\checkout_address.html:106
+#: .\fashion\templates\store\checkout_address.html:181
 msgid "Thêm địa chỉ mới"
 msgstr "新しい住所を追加"
 
-#: .\templates\store\checkout_address.html:114
+#: .\fashion\templates\store\checkout_address.html:115
 msgid "Tiếp tục thanh toán"
 msgstr "支払いを続ける"
 
-#: .\templates\store\checkout_address.html:121 .\templates\store\home.html:6
+#: .\fashion\templates\store\checkout_address.html:122
+#: .\fashion\templates\store\home.html:8
 msgid "Danh sách sản phẩm"
 msgstr "商品リスト"
 
-#: \templates\store\home.html:3
-msgid "Trang chủ"
-msgstr "家"
-
-#: .\templates\store\checkout_address.html:186
+#: .\fashion\templates\store\checkout_address.html:187
 msgid "Đóng"
 msgstr "閉じる"
 
-#: .\templates\store\checkout_address.html:192
+#: .\fashion\templates\store\checkout_address.html:193
 msgid "Địa chỉ nhận hàng"
 msgstr "配送先住所"
 
-#: .\templates\store\checkout_address.html:201
+#: .\fashion\templates\store\checkout_address.html:202
 msgid "Vui lòng nhập địa chỉ nhận hàng."
 msgstr "配送先住所を入力してください。"
 
-#: .\templates\store\checkout_address.html:205
+#: .\fashion\templates\store\checkout_address.html:206
 msgid "Số điện thoại liên hệ"
 msgstr "連絡先電話番号"
 
-#: .\templates\store\checkout_address.html:215
+#: .\fashion\templates\store\checkout_address.html:216
 msgid "Vui lòng nhập số điện thoại liên hệ."
 msgstr "連絡先電話番号を入力してください。"
 
-#: .\templates\store\checkout_address.html:220
+#: .\fashion\templates\store\checkout_address.html:221
 msgid "Email liên hệ (không bắt buộc)"
 msgstr "連絡用メール（任意）"
 
-#: .\templates\store\checkout_address.html:237
+#: .\fashion\templates\store\checkout_address.html:238
 msgid "Hủy"
 msgstr "キャンセル"
 
-#: .\templates\store\checkout_address.html:239
+#: .\fashion\templates\store\checkout_address.html:240
 msgid "Lưu địa chỉ"
 msgstr "住所を保存"
 
-#: .\templates\store\checkout_address.html:266
+#: .\fashion\templates\store\checkout_address.html:267
 msgid "Bạn chắc chắn muốn xóa địa chỉ này?"
 msgstr "この住所を削除してもよろしいですか？"
 
-#: .\templates\store\edit_profile.html:40
-#: .\templates\store\edit_profile.html:47
-msgid "Ảnh đại diện"
-msgstr "プロフィール画像"
-
-#: .\templates\store\home.html:15 .\templates\store\search_results.html:18
-msgid "Xem chi tiết"
-msgstr "詳細を見る"
-
-#: .\templates\store\product_detail.html:10
-msgid "Quay lại trang chủ"
-msgstr "ホームに戻る"
-
-#: .\templates\store\product_detail.html:42
-msgid "Số lượng"
-msgstr "数量"
-
-#: .\templates\store\product_detail.html:55
-msgid "Thêm vào giỏ hàng"
-msgstr "カートに追加"
-
-#: .\templates\store\search_results.html:4
-msgid "Kết quả tìm kiếm"
-msgstr "検索結果"
-
-#: .\templates\store\search_results.html:7
-msgid " Kết quả tìm kiếm cho"
-msgstr "の検索結果："
-
-#: .\templates\store\search_results.html:25
-msgid "Không tìm thấy sản phẩm nào phù hợp."
-msgstr "該当する商品が見つかりませんでした。"
-
-#: .\templates\store\user_profile.html:28
+#: .\fashion\templates\store\edit_profile.html:27
+#: .\fashion\templates\store\user_profile.html:74
 msgid "Tên"
 msgstr "名前"
 
-#: .\templates\store\user_profile.html:33
+#: .\fashion\templates\store\edit_profile.html:35
+#, fuzzy
+#| msgid "Huỷ"
+msgid "Họ"
+msgstr "キャンセル"
+
+#: .\fashion\templates\store\edit_profile.html:45
+#: .\fashion\templates\store\edit_profile.html:52
+msgid "Ảnh đại diện"
+msgstr "プロフィール画像"
+
+#: .\fashion\templates\store\home.html:3
+msgid "Trang chủ"
+msgstr "家"
+
+#: .\fashion\templates\store\home.html:17
+#: .\fashion\templates\store\search_results.html:19
+msgid "Xem chi tiết"
+msgstr "詳細を見る"
+
+#: .\fashion\templates\store\product_detail.html:12
+msgid "Quay lại trang chủ"
+msgstr "ホームに戻る"
+
+#: .\fashion\templates\store\product_detail.html:44
+msgid "Số lượng"
+msgstr "数量"
+
+#: .\fashion\templates\store\product_detail.html:57
+msgid "Thêm vào giỏ hàng"
+msgstr "カートに追加"
+
+#: .\fashion\templates\store\search_results.html:5
+msgid "Kết quả tìm kiếm"
+msgstr "検索結果"
+
+#: .\fashion\templates\store\search_results.html:8
+msgid " Kết quả tìm kiếm cho"
+msgstr "の検索結果："
+
+#: .\fashion\templates\store\search_results.html:26
+msgid "Không tìm thấy sản phẩm nào phù hợp."
+msgstr "該当する商品が見つかりませんでした。"
+
+#: .\fashion\templates\store\user_profile.html:57
+#, fuzzy
+#| msgid "Số điện thoại liên hệ"
+msgid "Số điện thoại"
+msgstr "連絡先電話番号"
+
+#: .\fashion\templates\store\user_profile.html:82
 msgid "Ngày tạo tài khoản"
 msgstr "アカウント作成日"
 
-#: .\templates\store\user_profile.html:38
+#: .\fashion\templates\store\user_profile.html:91
 msgid "Sửa thông tin"
 msgstr "情報を編集"
+
+#~ msgid "Email"
+#~ msgstr "メール："
+
+#~ msgid "Sign Up"
+#~ msgstr "新規登録"
+
+#~ msgid "Đăng nhập tài khoản"
+#~ msgstr "アカウントにログイン"
+
+#~ msgid "Chưa có tài khoản?"
+#~ msgstr "アカウントをお持ちでないですか？"
+
+#~ msgid "và"
+#~ msgstr "そして"

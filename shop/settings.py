@@ -80,16 +80,23 @@ APPEND_SLASH=True
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'dvwuutxc_fashion_web',      
+#         'USER': 'dvwuutxc_truongdev',           
+#         'PASSWORD': 'truongdev230405',    
+#         'HOST': 'localhost',       
+#         'PORT': '3306',            
+#     }
+# }  
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dvwuutxc_fashion_web',      
-        'USER': 'dvwuutxc_truongdev',           
-        'PASSWORD': 'truongdev230405',    
-        'HOST': 'localhost',       
-        'PORT': '3306',            
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # hoặc đường dẫn tuyệt đối tới file .sqlite3 của bạn
     }
-}  
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -134,7 +141,9 @@ DEFAULT_CHARSET = 'utf-8'
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = 'login'
+LOGOUT_REDIRECT_URL = '/login/'
+LOGOUT_URL = '/logout/'
+LOGOUT_REDIRECT_URL = '/login/'
 
 STATIC_URL = '/static/'
 

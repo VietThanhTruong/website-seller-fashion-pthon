@@ -1,16 +1,20 @@
+import json
+import random
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required, permission_required
-from django.views.decorators.csrf import csrf_protect
+from django.views.decorators.csrf import csrf_protect, csrf_exempt
 from django.views.decorators.http import require_POST
+from django.contrib.auth.models import User
 from django.http import JsonResponse
 from .forms import EditProfileForm, UserProfileForm
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import logout, authenticate, login
 from fuzzywuzzy import process
-from django.urls import reverse
+from .controllers import send_email, send_zalo
 from django.contrib import messages
 from .models import Product, CartItem, UserProfile, UserContact, Order, OrderItem
 import logging
 import urllib.parse
+import threading
 
 logger = logging.getLogger(__name__)
 
@@ -52,6 +56,94 @@ def user_profile(request):
         'cart_item_count': _cart_items(request).count()
     })
 
+send_code_store = {}
+
+def remove_code_later(code):
+    def remover():
+        send_code_store.pop(code, None)
+    timer = threading.Timer(300, remover)  # 300 giây = 5 phút
+    timer.start()
+
+@login_required
+@csrf_exempt
+def send_code(request, type):
+    if request.method != 'POST':
+        return JsonResponse({'success': False, 'message': 'Phương thức không hợp lệ.'})
+
+    user = request.user
+
+    if type not in ['email', 'phone']:
+        return JsonResponse({'success': False, 'message': 'Loại xác minh không hợp lệ.'})
+
+    email = user.email
+    profile = getattr(user, 'userprofile', None)
+    phone = getattr(profile, 'contact_phone', None) if profile else None
+
+    platforms = {
+        'email': email,
+        'phone': phone,
+    }
+
+    if not platforms.get(type):
+        return JsonResponse({'success': False, 'message': 'Thiếu dữ liệu để gửi mã.'})
+
+    code = ''.join(str(random.randint(0, 9)) for _ in range(6))
+
+    if type == 'email':
+        result = send_email(email, "otp", {"code": code})  
+    else:
+        result = send_zalo(phone, "otp", {"code": code})  
+
+    if not result:
+        return JsonResponse({'success': False, 'message': f'Gửi mã qua {type} thất bại.'})
+
+    send_code_store[code] = {
+        'user_id': user.id,
+        'type': type
+    }
+    remove_code_later(code)
+
+    return JsonResponse({'success': True, 'message': f'Đã gửi mã xác nhận đến {type} của bạn.'})
+
+@login_required
+@require_POST
+@csrf_exempt
+def verify_code(request, type):
+    if request.method != 'POST':
+        return JsonResponse({'success': False, 'message': 'Phương thức không hợp lệ.'})
+    
+    data = json.loads(request.body)
+    code = data.get('code')
+    user_id = request.user.id
+
+    if not code or not user_id:
+        return JsonResponse({'success': False, 'message': 'Thiếu dữ liệu tham chiếu!'})
+
+    data = send_code_store.get(code)
+
+    if not data or data.get('user_id') != user_id or type not in ['email', 'phone']:
+        return JsonResponse({'success': False, 'message': 'Mã xác nhận không chính xác.'})
+
+    column_map = {
+        'email': 'isVerified_email',
+        'phone': 'isVerified_phone'
+    }
+
+    column_name = column_map.get(type)
+
+    if not column_name:
+        return JsonResponse({'success': False, 'message': 'Không hỗ trợ loại xác minh.'})
+
+    try:
+        profile, created = UserProfile.objects.get_or_create(user=request.user)
+    except UserProfile.DoesNotExist:
+        return JsonResponse({'success': False, 'message': 'Không tìm thấy hồ sơ người dùng.'})
+    setattr(profile, column_name, True)
+    profile.save()
+
+    send_code_store.pop(code, None)
+    return JsonResponse({'success': True, 'message': 'Xác minh thông tin thành công.'})
+
 @login_required
 def edit_profile(request):
     user = request.user
@@ -67,6 +159,8 @@ def edit_profile(request):
     else:
         user_form = EditProfileForm(instance=user)
         profile_form = UserProfileForm(instance=profile)
+    print("user_form errors:", user_form.errors)
+    print("profile_form errors:", profile_form.errors)
 
     context = {
         'user_form': user_form,
@@ -288,9 +382,48 @@ def checkout_view(request):
         }
     })
 
+@require_POST
+def ajax_login(request):
+    if request.method == 'POST':
+        if request.headers.get('x-requested-with') != 'XMLHttpRequest':
+            return JsonResponse({'success': False, 'error': 'Yêu cầu không hợp lệ'}, status=400)
+
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+
+        if not username or not password:
+            return JsonResponse({'success': False, 'error': 'Vui lòng nhập tên đăng nhập và mật khẩu'})
+
+        user = authenticate(request, username=username, password=password)
+
+        if user is not None:
+            login(request, user)
+            return JsonResponse({'success': True, 'redirect_url': '/'})
+        else:
+            return JsonResponse({'success': False, 'error': 'Tên đăng nhập hoặc mật khẩu không đúng'})
+    else:
+        return JsonResponse({'success': False, 'error': 'Phương thức không hợp lệ'}, status=405)
+
+@require_POST
 def register(request):
-    form = UserCreationForm(request.POST or None)
-    if request.method == 'POST' and form.is_valid():
-        form.save()
-        return redirect('login')
-    return render(request, 'register.html', {'form': form})
+    username = request.POST.get('username')
+    password1 = request.POST.get('password1')
+    password2 = request.POST.get('password2')
+
+    if not username or not password1 or not password2:
+        return JsonResponse({'success': False, 'error': 'Vui lòng nhập đầy đủ thông tin'})
+
+    if password1 != password2:
+        return JsonResponse({'success': False, 'error': 'Mật khẩu nhập lại không khớp'})
+
+    if User.objects.filter(username=username).exists():
+        return JsonResponse({'success': False, 'error': 'Tên đăng nhập đã tồn tại'})
+
+    user = User.objects.create_user(username=username, password=password1)
+    user.save()
+
+    return JsonResponse({'success': True, 'redirect_url': '/login/'})
+
+def logout_view(request):
+    logout(request)
+    return redirect('login')

@@ -93,6 +93,8 @@ class UserProfile(models.Model):
     address = models.TextField(null=True, blank=True, verbose_name="Địa chỉ nhận hàng")
     contact_phone = models.CharField(max_length=20, null=True, blank=True, verbose_name="Số điện thoại liên hệ")
     contact_email = models.EmailField(null=True, blank=True, verbose_name="Email liên hệ")
+    isVerified_email = models.BooleanField(default=False, verbose_name="Email đã xác thực")
+    isVerified_phone = models.BooleanField(default=False, verbose_name="Số điện thoại đã xác thực")
 
     def __str__(self):
         return self.user.username

@@ -1,45 +1,148 @@
-{% extends 'store/base_profile.html' %}
-{% load i18n %}
+{% extends 'store/base_profile.html' %} 
+{% load i18n %} 
 {% block content %}
 <div class="container py-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-8">
-            <div class="card shadow rounded-4">
-                <div class="card-body">
-                    <div class="text-center mb-4">
-                        {% if user.userprofile.profile_picture %}
-                            <img src="{{ user.userprofile.profile_picture.url }}" alt="Profile Picture" class="rounded-circle shadow" width="130" height="130" style="object-fit: cover;"/>
-                        {% else %}
-                            <img src="/media/users/default.jpg" alt="Default Profile Picture" class="rounded-circle shadow" width="130" height="130" style="object-fit: cover;"/>
-                        {% endif %}
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow rounded-4">
+        <div class="card-body">
+          <div class="text-center mb-4">
+            {% if user.userprofile.profile_picture %}
+            <img
+              src="{{ user.userprofile.profile_picture.url }}"
+              alt="Profile Picture"
+              class="rounded-circle shadow"
+              width="130"
+              height="130"
+              style="object-fit: cover"
+            />
+            {% else %}
+            <img
+              src="/media/users/default.jpg"
+              alt="Default Profile Picture"
+              class="rounded-circle shadow"
+              width="130"
+              height="130"
+              style="object-fit: cover"
+            />
+            {% endif %}
 
-                        <h4 class="mt-3 mb-0">{{ user.first_name }} {{ user.last_name }}</h4>
-                        <small class="text-muted">@{{ user.username }}</small>
-                    </div>
+            <h4 class="mt-3 mb-0">
+              {{ user.first_name }} {{ user.last_name }}
+            </h4>
+            <small class="text-muted">@{{ user.username }}</small>
+          </div>
 
-                    <hr>
+          <hr />
 
-                    <div class="row mb-3">
-                        <div class="col-md-4 fw-semibold text-muted">Email</div>
-                        <div class="col-md-8">{{ user.email }}</div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-md-4 fw-semibold text-muted">{% trans "Tên" %}</div>
-                        <div class="col-md-8">{{ user.first_name }} {{ user.last_name }}</div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-md-4 fw-semibold text-muted">{% trans "Ngày tạo tài khoản" %}</div>
-                        <div class="col-md-8">{{ user.date_joined|date:"F j, Y" }}</div>
-                    </div>
-
-                    <div class="text-center mt-4">
-                        <a href="{% url 'edit_profile' %}" class="btn btn-outline-primary px-4">{% trans "Sửa thông tin" %}</a>
-                    </div>
-                </div>
+          <!-- EMAIL -->
+        <div class="row mb-3">
+        <div class="col-md-4 fw-semibold text-muted">Email</div>
+        <div class="col-md-8">
+            <div class="d-flex align-items-center justify-content-between">
+            <span>{{ user.userprofile.contact_email }}</span>
+            {% if not user.userprofile.isVerified_email %}
+            <button class="btn btn-sm btn-outline-primary ms-2" onclick="sendVerification('email')">Xác minh</button>
+            {% endif %}
+            </div>
+            <div id="email-verification-input" class="mt-2 d-none">
+            <input type="text" id="email-code" class="form-control mb-1" placeholder="Nhập mã xác minh email">
+            <button class="btn btn-success btn-sm" onclick="submitCode('email')">Gửi mã</button>
             </div>
         </div>
+        </div>
+
+        <!-- PHONE -->
+        <div class="row mb-3">
+        <div class="col-md-4 fw-semibold text-muted">Số điện thoại</div>
+        <div class="col-md-8">
+            <div class="d-flex align-items-center justify-content-between">
+            <span>{{ user.userprofile.contact_phone }}</span>
+            {% if not user.userprofile.isVerified_phone %}
+            <button class="btn btn-sm btn-outline-primary ms-2" onclick="sendVerification('phone')">Xác minh</button>
+            {% endif %}
+            </div>
+            <div id="phone-verification-input" class="mt-2 d-none">
+            <input type="text" id="phone-code" class="form-control mb-1" placeholder="Nhập mã xác minh điện thoại">
+            <button class="btn btn-success btn-sm" onclick="submitCode('phone')">Gửi mã</button>
+            </div>
+        </div>
+        </div>
+
+
+          <div class="row mb-3">
+            <div class="col-md-4 fw-semibold text-muted">{% trans "Tên" %}</div>
+            <div class="col-md-8">
+              {{ user.first_name }} {{ user.last_name }}
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-4 fw-semibold text-muted">
+              {% trans "Ngày tạo tài khoản" %}
+            </div>
+            <div class="col-md-8">{{ user.date_joined|date:"F j, Y" }}</div>
+          </div>
+
+          <div class="text-center mt-4">
+            <a
+              href="{% url 'edit_profile' %}"
+              class="btn btn-outline-primary px-4"
+              >{% trans "Sửa thông tin" %}</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
+<script>
+  function sendVerification(type) {
+  fetch(`/vi/profile/send_code/${type}/`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-CSRFToken": "{{ csrf_token }}",
+    },
+    body: JSON.stringify({ type: type })
+  })
+    .then(res => res.json())
+    .then(data => {
+      if (data.success) {
+        document.getElementById(`${type}-verification-input`).classList.remove("d-none");
+        alert("✅ Mã xác minh đã được gửi!");
+      } else {
+        alert(data.message || "❌ Gửi mã thất bại!");
+      }
+    })
+    .catch(() => alert("❌ Có lỗi xảy ra khi gửi mã!"));
+}
+
+function submitCode(type) {
+  const code = document.getElementById(`${type}-code`).value;
+  if (!code.trim()) {
+    alert("⚠️ Vui lòng nhập mã xác minh!");
+    return;
+  }
+
+  fetch(`/vi/profile/verify_code/${type}/`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-CSRFToken": "{{ csrf_token }}",
+    },
+    body: JSON.stringify({ code: code })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.success) {
+      alert(`✅ ${type === 'email' ? 'Email' : 'Số điện thoại'} đã được xác minh thành công!`);
+      location.reload(); 
+    } else {
+      alert(data.message || "❌ Mã xác minh không đúng!");
+    }
+  })
+  .catch(() => alert("❌ Có lỗi xảy ra khi xác minh mã!"));
+}
+</script>
 {% endblock %}

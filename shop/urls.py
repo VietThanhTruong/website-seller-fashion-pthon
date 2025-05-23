@@ -1,5 +1,4 @@
 from django.contrib import admin
-from django.contrib.auth import views as auth_views
 from django.urls import path, include
 from django.urls import re_path
 from django.views.static import serve
@@ -13,7 +12,6 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
-    path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
     path('admin/', admin.site.urls),
     path('accounts/sessions/', SessionListView.as_view(), name='session_list'),
     path('accounts/sessions/delete/<pk>/', SessionDeleteView.as_view(), name='session_delete'),
