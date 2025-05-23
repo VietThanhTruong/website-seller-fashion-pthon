@@ -75,9 +75,9 @@ def send_code(request, type):
     if type not in ['email', 'phone']:
         return JsonResponse({'success': False, 'message': 'Loại xác minh không hợp lệ.'})
 
-    email = user.email
     profile = getattr(user, 'userprofile', None)
     phone = getattr(profile, 'contact_phone', None) if profile else None
+    email = getattr(profile, 'contact_email', None) if profile else None
 
     platforms = {
         'email': email,

@@ -58,7 +58,7 @@ msgstr "すでにアカウントをお持ちですか？"
 
 #: .\fashion\templates\login.html:176
 msgid "Nhập lại mật khẩu"
-msgstr ""
+msgstr "パスワード再入力"
 
 #: .\fashion\templates\register.html:34
 msgid "Đăng ký tài khoản"
