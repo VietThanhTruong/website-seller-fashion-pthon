@@ -115,8 +115,8 @@ class UpdateSessionInfoMiddleware:
 
     def __call__(self, request):
         if request.user.is_authenticated:
-            if '/checkout' not in request.path:
-                for key in ['selected_items', 'total_price', 'oderKey', 'selected_contact_id', 'voucher_code', 'items']:
+            if 'checkout' not in request.path and 'media' not in request.path and 'static' not in request.path:
+                for key in ['selected_items', 'total_price', 'oderKey', 'order_note', 'selected_contact_id', 'voucher', 'items']:
                     if key in request.session:
                         del request.session[key]
 

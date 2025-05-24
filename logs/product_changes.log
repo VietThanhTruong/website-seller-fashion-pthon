@@ -2409,3 +2409,2013 @@ TypeError: 'set' object is not subscriptable
 [2025-05-23 15:33:07,308] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
 [2025-05-23 15:33:07,595] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
 [2025-05-23 15:33:07,668] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 16:52:59,670] INFO Watching for file changes with StatReloader
+[2025-05-23 16:53:07,871] INFO "GET /vi/admin HTTP/1.1" 301 0
+[2025-05-23 16:53:07,948] INFO "GET /vi/admin/ HTTP/1.1" 302 0
+[2025-05-23 16:53:08,103] INFO "GET /vi/admin/login/?next=/vi/admin/ HTTP/1.1" 200 4223
+[2025-05-23 16:53:11,541] INFO "GET /vi/ HTTP/1.1" 302 0
+[2025-05-23 16:53:11,574] INFO "GET /login/?next=/vi/ HTTP/1.1" 302 0
+[2025-05-23 16:53:11,614] INFO "GET /vi/login/?next=/vi/ HTTP/1.1" 200 9548
+[2025-05-23 16:53:23,666] INFO "GET /vi/ HTTP/1.1" 302 0
+[2025-05-23 16:53:23,703] INFO "GET /login/?next=/vi/ HTTP/1.1" 302 0
+[2025-05-23 16:53:23,759] INFO "GET /vi/login/?next=/vi/ HTTP/1.1" 200 9548
+[2025-05-23 16:53:29,281] INFO "GET /media/images/login.png HTTP/1.1" 200 107035
+[2025-05-23 16:53:29,281] INFO "GET /static/css/auth.css HTTP/1.1" 200 2133
+[2025-05-23 16:53:29,289] INFO "GET /media/images/register.png HTTP/1.1" 200 95079
+[2025-05-23 16:53:29,341] INFO "GET /static/js/auth.js HTTP/1.1" 200 3174
+[2025-05-23 16:53:36,319] INFO "POST /vi/api/login/ HTTP/1.1" 200 38
+[2025-05-23 16:53:38,801] INFO "GET / HTTP/1.1" 302 0
+[2025-05-23 16:53:38,868] INFO "GET /vi/ HTTP/1.1" 200 11966
+[2025-05-23 16:53:38,997] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 16:53:39,029] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 16:53:39,089] INFO "GET /media/products/8.png HTTP/1.1" 200 31650
+[2025-05-23 16:53:39,098] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 16:53:39,139] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 16:53:39,160] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 16:53:39,231] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 16:53:39,246] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 16:53:39,304] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 16:53:39,331] INFO "GET /media/products/9.png HTTP/1.1" 200 31060
+[2025-05-23 16:53:39,355] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 16:53:39,438] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 16:53:39,465] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 16:53:45,216] INFO "GET /vi/cart HTTP/1.1" 200 32429
+[2025-05-23 16:53:45,298] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 16:53:49,544] INFO "GET /vi/ HTTP/1.1" 200 11966
+[2025-05-23 16:53:50,589] INFO "GET /vi/product/1 HTTP/1.1" 200 8348
+[2025-05-23 16:53:50,661] INFO "GET /static/js/add_cart.js HTTP/1.1" 200 1345
+[2025-05-23 16:54:43,947] INFO "GET /vi/product/1 HTTP/1.1" 200 8348
+[2025-05-23 16:54:44,072] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 16:54:44,079] INFO "GET /static/js/add_cart.js HTTP/1.1" 200 1345
+[2025-05-23 16:54:44,090] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 16:54:44,101] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 16:54:46,267] INFO "GET /vi/product/1 HTTP/1.1" 200 8348
+[2025-05-23 16:54:46,423] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 16:54:46,477] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 16:54:46,495] INFO "GET /static/js/add_cart.js HTTP/1.1" 200 1345
+[2025-05-23 16:54:46,604] INFO - Broken pipe from ('127.0.0.1', 62440)
+[2025-05-23 16:54:49,798] INFO "GET /vi/product/1 HTTP/1.1" 200 8348
+[2025-05-23 16:54:50,075] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 16:54:50,387] INFO "GET /static/js/add_cart.js HTTP/1.1" 200 1345
+[2025-05-23 16:54:50,423] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 16:54:50,459] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 16:54:53,265] INFO "GET /vi/product/1 HTTP/1.1" 200 8348
+[2025-05-23 16:54:54,601] INFO "GET /vi/product/1 HTTP/1.1" 200 8348
+[2025-05-23 16:54:59,136] INFO "GET /vi/product/1 HTTP/1.1" 200 8348
+[2025-05-23 16:54:59,763] INFO "GET /vi/product/1 HTTP/1.1" 200 8348
+[2025-05-23 16:55:00,025] INFO "GET /vi/product/1 HTTP/1.1" 200 8348
+[2025-05-23 16:55:00,391] INFO "GET /vi/product/1 HTTP/1.1" 200 8348
+[2025-05-23 16:55:00,809] INFO "GET /vi/product/1 HTTP/1.1" 200 8348
+[2025-05-23 16:55:01,308] INFO "GET /vi/product/1 HTTP/1.1" 200 8348
+[2025-05-23 16:55:09,758] INFO "GET /vi/product/1 HTTP/1.1" 200 8348
+[2025-05-23 16:55:10,461] INFO "GET /vi/product/1 HTTP/1.1" 200 8348
+[2025-05-23 16:55:11,114] INFO "GET /vi/product/1 HTTP/1.1" 200 8348
+[2025-05-23 16:55:53,918] INFO "GET /vi/product/1 HTTP/1.1" 200 8332
+[2025-05-23 16:55:55,519] INFO "GET /vi/product/1 HTTP/1.1" 200 8332
+[2025-05-23 16:55:56,291] INFO "GET /vi/product/1 HTTP/1.1" 200 8332
+[2025-05-23 16:56:05,725] INFO "GET /vi/product/1 HTTP/1.1" 200 8332
+[2025-05-23 16:56:05,823] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 16:56:05,828] INFO "GET /static/js/add_cart.js HTTP/1.1" 200 1345
+[2025-05-23 16:56:05,837] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 16:56:05,859] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 16:57:46,081] INFO "GET /vi/ HTTP/1.1" 200 11950
+[2025-05-23 19:41:06,212] INFO Watching for file changes with StatReloader
+[2025-05-23 19:41:10,908] INFO "GET / HTTP/1.1" 302 0
+[2025-05-23 19:41:10,955] INFO "GET /vi/ HTTP/1.1" 302 0
+[2025-05-23 19:41:11,000] INFO "GET /login/?next=/vi/ HTTP/1.1" 302 0
+[2025-05-23 19:41:11,188] INFO "GET /vi/login/?next=/vi/ HTTP/1.1" 200 9548
+[2025-05-23 19:41:11,677] INFO "GET /static/css/auth.css HTTP/1.1" 200 2133
+[2025-05-23 19:41:11,710] INFO "GET /media/images/register.png HTTP/1.1" 200 95079
+[2025-05-23 19:41:11,724] INFO "GET /media/images/login.png HTTP/1.1" 200 107035
+[2025-05-23 19:41:11,757] INFO "GET /static/js/auth.js HTTP/1.1" 200 3174
+[2025-05-23 19:41:14,032] INFO "POST /vi/api/login/ HTTP/1.1" 200 119
+[2025-05-23 19:41:20,200] INFO "POST /vi/api/login/ HTTP/1.1" 200 38
+[2025-05-23 19:41:22,667] INFO "GET / HTTP/1.1" 302 0
+[2025-05-23 19:41:22,783] INFO "GET /vi/ HTTP/1.1" 200 11865
+[2025-05-23 19:41:22,887] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 19:41:22,908] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 19:41:22,980] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 19:41:22,997] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 19:41:23,065] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 19:41:23,077] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 19:41:23,078] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 19:41:23,179] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 19:41:23,232] INFO "GET /media/products/8.png HTTP/1.1" 200 31650
+[2025-05-23 19:41:23,248] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 19:41:23,358] INFO "GET /media/products/9.png HTTP/1.1" 200 31060
+[2025-05-23 19:41:23,398] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 19:41:23,402] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 19:43:12,911] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\templatetags\custom_filters.py changed, reloading.
+[2025-05-23 19:43:18,361] INFO Watching for file changes with StatReloader
+[2025-05-23 19:46:40,058] ERROR Internal Server Error: /vi/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'orders'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 48, in home
+    return render(request, 'store/home.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'orders' is not a registered namespace
+[2025-05-23 19:46:40,074] ERROR "GET /vi/ HTTP/1.1" 500 167906
+[2025-05-23 19:47:29,042] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 19:47:31,965] INFO Watching for file changes with StatReloader
+[2025-05-23 19:48:31,876] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 19:48:35,858] INFO Watching for file changes with StatReloader
+[2025-05-23 19:48:47,679] INFO "GET /vi/ HTTP/1.1" 200 12215
+[2025-05-23 19:48:51,929] ERROR Internal Server Error: /vi/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 388, in order_list
+    return render(request, 'orders/order_list.html', {'orders': orders, 'orderItems': orderItems})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: orders/order_list.html
+[2025-05-23 19:48:51,941] ERROR "GET /vi/my-orders/ HTTP/1.1" 500 89407
+[2025-05-23 19:49:27,373] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 19:49:29,214] INFO Watching for file changes with StatReloader
+[2025-05-23 19:49:32,820] ERROR Internal Server Error: /vi/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 388, in order_list
+    return render(request, 'store/order_list.html', {'orders': orders, 'orderItems': orderItems})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+[2025-05-23 19:49:32,823] ERROR "GET /vi/my-orders/ HTTP/1.1" 500 146798
+[2025-05-23 19:49:48,679] ERROR Internal Server Error: /vi/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base_shop.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 388, in order_list
+    return render(request, 'store/order_list.html', {'orders': orders, 'orderItems': orderItems})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base_shop.html
+[2025-05-23 19:49:48,679] ERROR "GET /vi/my-orders/ HTTP/1.1" 500 146988
+[2025-05-23 19:49:50,840] ERROR Internal Server Error: /vi/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base_shop.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 388, in order_list
+    return render(request, 'store/order_list.html', {'orders': orders, 'orderItems': orderItems})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base_shop.html
+[2025-05-23 19:49:50,845] ERROR "GET /vi/my-orders/ HTTP/1.1" 500 146988
+[2025-05-23 19:50:03,059] ERROR Internal Server Error: /vi/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'orders'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 388, in order_list
+    return render(request, 'store/order_list.html', {'orders': orders, 'orderItems': orderItems})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'orders' is not a registered namespace
+[2025-05-23 19:50:03,063] ERROR "GET /vi/my-orders/ HTTP/1.1" 500 201487
+[2025-05-23 19:51:30,418] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\urls.py changed, reloading.
+[2025-05-23 19:51:32,818] INFO Watching for file changes with StatReloader
+[2025-05-23 19:55:19,187] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 19:55:20,900] INFO Watching for file changes with StatReloader
+[2025-05-23 19:55:29,392] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 19:55:30,298] INFO Watching for file changes with StatReloader
+[2025-05-23 19:55:44,573] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 19:55:45,494] INFO Watching for file changes with StatReloader
+[2025-05-23 19:56:12,539] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 19:56:13,571] INFO Watching for file changes with StatReloader
+[2025-05-23 19:56:39,397] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 19:56:41,098] INFO Watching for file changes with StatReloader
+[2025-05-23 19:56:45,863] ERROR Internal Server Error: /vi/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'orders'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 387, in order_list
+    return render(request, 'store/order_list.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'orders' is not a registered namespace
+[2025-05-23 19:56:45,869] ERROR "GET /vi/my-orders/ HTTP/1.1" 500 188602
+[2025-05-23 19:56:54,472] INFO "GET /vi/my-orders/ HTTP/1.1" 200 9662
+[2025-05-23 19:57:26,020] INFO "GET /vi/my-orders/ HTTP/1.1" 200 9774
+[2025-05-23 19:57:43,154] INFO "GET /vi/my-orders/ HTTP/1.1" 200 9774
+[2025-05-23 19:57:44,358] INFO "GET /vi/my-orders/ HTTP/1.1" 200 9774
+[2025-05-23 19:58:49,909] INFO "GET /vi/my-orders/ HTTP/1.1" 200 9774
+[2025-05-23 19:58:51,130] INFO "GET /vi/my-orders/ HTTP/1.1" 200 9774
+[2025-05-23 19:59:05,270] INFO "GET /vi/my-orders/ HTTP/1.1" 200 9824
+[2025-05-23 19:59:08,591] ERROR Internal Server Error: /vi/order/2/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 391, in order_detail
+    return render(request, 'orders/order_detail.html', {'order': order})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: orders/order_detail.html
+[2025-05-23 19:59:08,593] ERROR "GET /vi/order/2/ HTTP/1.1" 500 86724
+[2025-05-23 19:59:42,976] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 19:59:46,000] INFO Watching for file changes with StatReloader
+[2025-05-23 19:59:46,623] ERROR Internal Server Error: /vi/order/2/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 391, in order_detail
+    return render(request, 'store/order_detail.html', {'order': order})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+[2025-05-23 19:59:46,635] ERROR "GET /vi/order/2/ HTTP/1.1" 500 135564
+[2025-05-23 20:00:05,504] INFO "GET /vi/order/2/ HTTP/1.1" 200 7776
+[2025-05-23 20:00:15,621] INFO "GET /vi/my-orders/ HTTP/1.1" 200 9824
+[2025-05-23 20:01:09,976] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:01:10,688] INFO Watching for file changes with StatReloader
+[2025-05-23 20:01:13,827] ERROR Internal Server Error: /vi/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 387, in order_list
+    return render(request, 'store/order_list.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'order_detail' with arguments '('FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf',)' not found. 1 pattern(s) tried: ['vi/order/(?P<order_id>[0-9]+)/\\Z']
+[2025-05-23 20:01:13,830] ERROR "GET /vi/my-orders/ HTTP/1.1" 500 190551
+[2025-05-23 20:01:50,451] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\urls.py changed, reloading.
+[2025-05-23 20:01:53,918] INFO Watching for file changes with StatReloader
+[2025-05-23 20:01:54,641] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10264
+[2025-05-23 20:01:57,191] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 7776
+[2025-05-23 20:02:15,562] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 7792
+[2025-05-23 20:03:24,821] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\models.py changed, reloading.
+[2025-05-23 20:03:25,825] INFO Watching for file changes with StatReloader
+[2025-05-23 20:04:26,308] ERROR Internal Server Error: /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: '!=='
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 391, in order_detail
+    return render(request, 'store/order_detail.html', {'order': order})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '!==' from '!=='
+[2025-05-23 20:04:26,316] ERROR "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 500 229039
+[2025-05-23 20:04:41,657] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 7792
+[2025-05-23 20:04:47,205] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10264
+[2025-05-23 20:05:02,121] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 7792
+[2025-05-23 20:05:06,589] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10264
+[2025-05-23 20:05:49,669] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10265
+[2025-05-23 20:05:51,223] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10265
+[2025-05-23 20:06:01,878] ERROR Internal Server Error: /vi/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 387, in order_list
+    return render(request, 'store/order_list.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '|' from 'order.total_amount|format_price|floatformat:0|'
+[2025-05-23 20:06:01,881] ERROR "GET /vi/my-orders/ HTTP/1.1" 500 226070
+[2025-05-23 20:06:03,205] ERROR Internal Server Error: /vi/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 387, in order_list
+    return render(request, 'store/order_list.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '|' from 'order.total_amount|format_price|floatformat:0|'
+[2025-05-23 20:06:03,209] ERROR "GET /vi/my-orders/ HTTP/1.1" 500 226070
+[2025-05-23 20:06:13,450] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10215
+[2025-05-23 20:06:14,452] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10215
+[2025-05-23 20:06:22,527] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10265
+[2025-05-23 20:06:23,305] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10265
+[2025-05-23 20:06:23,584] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10265
+[2025-05-23 20:06:23,990] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10265
+[2025-05-23 20:06:24,439] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10265
+[2025-05-23 20:06:29,297] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10265
+[2025-05-23 20:06:30,253] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10279
+[2025-05-23 20:06:31,331] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10279
+[2025-05-23 20:06:31,731] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10279
+[2025-05-23 20:06:32,205] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10279
+[2025-05-23 20:07:02,492] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 7792
+[2025-05-23 20:07:16,970] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 7800
+[2025-05-23 20:07:17,743] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 7800
+[2025-05-23 20:07:22,915] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10279
+[2025-05-23 20:07:24,884] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 7800
+[2025-05-23 20:07:31,817] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10279
+[2025-05-23 20:09:03,662] ERROR Internal Server Error: /vi/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 387, in order_list
+    return render(request, 'store/order_list.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 5: 'trans', expected 'endblock'. Did you forget to register or load this tag?
+[2025-05-23 20:09:03,665] ERROR "GET /vi/my-orders/ HTTP/1.1" 500 203414
+[2025-05-23 20:09:36,550] ERROR Internal Server Error: /vi/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 387, in order_list
+    return render(request, 'store/order_list.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 5: 'trans', expected 'endblock'. Did you forget to register or load this tag?
+[2025-05-23 20:09:36,552] ERROR "GET /vi/my-orders/ HTTP/1.1" 500 203442
+[2025-05-23 20:10:16,160] ERROR Internal Server Error: /vi/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 387, in order_list
+    return render(request, 'store/order_list.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 228, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+[2025-05-23 20:10:16,165] ERROR "GET /vi/my-orders/ HTTP/1.1" 500 204088
+[2025-05-23 20:10:28,105] ERROR Internal Server Error: /vi/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 387, in order_list
+    return render(request, 'store/order_list.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 5: 'trans', expected 'endblock'. Did you forget to register or load this tag?
+[2025-05-23 20:10:28,107] ERROR "GET /vi/my-orders/ HTTP/1.1" 500 203442
+[2025-05-23 20:10:52,815] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10280
+[2025-05-23 20:10:58,795] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 7800
+[2025-05-23 20:12:11,776] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 8130
+[2025-05-23 20:12:12,929] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 8130
+[2025-05-23 20:12:13,568] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 8130
+[2025-05-23 20:12:13,984] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 8130
+[2025-05-23 20:12:14,361] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 8130
+[2025-05-23 20:12:14,680] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 8130
+[2025-05-23 20:12:15,159] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 8130
+[2025-05-23 20:12:15,459] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 8130
+[2025-05-23 20:12:15,753] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 8130
+[2025-05-23 20:14:37,426] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 8904
+[2025-05-23 20:14:49,371] INFO "GET /vi/my-orders/ HTTP/1.1" 200 10280
+[2025-05-23 20:16:33,123] INFO "GET /vi/my-orders/ HTTP/1.1" 200 11277
+[2025-05-23 20:16:51,187] INFO "GET /vi/my-orders/ HTTP/1.1" 200 13341
+[2025-05-23 20:17:04,248] INFO "GET /vi/order/FxTM2vtomid0NTLUsf2KNWbeI0fW4T7C1a1G9qbK0DilEFJ92HHdzl7n4sEgLljf/ HTTP/1.1" 200 8904
+[2025-05-23 20:17:07,466] INFO "GET /vi/order/gJ24TwNoYtNrkssfN2ACtlatcQYIvOgKCmaY0rvKCOSMbequnuf5fK6Cyin2cgsn/ HTTP/1.1" 200 8900
+[2025-05-23 20:17:12,865] INFO "GET /vi/order/Lg4LcBMLYF9fkChYwHO2auAW7Hi0VaLwMer0BmmGWq021taZdD56oXGvkEr8froz/ HTTP/1.1" 200 10147
+[2025-05-23 20:17:18,023] INFO "GET /vi/order/EAJOp3t0aCcUeiGabk4ZhycUtXgRujJGFltrwwhDPg8wNSxDpzPHAW1SnVDHUtF2/ HTTP/1.1" 200 8907
+[2025-05-23 20:18:04,580] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\models.py changed, reloading.
+[2025-05-23 20:18:07,031] INFO Watching for file changes with StatReloader
+[2025-05-23 20:19:29,910] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:19:30,235] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:19:35,318] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=VrjHzBBSEgT2Xzhzdc6fa4cC8beffpAx9BrFDKMlkZvvFzjGXfGtrVr2cITSLG3B&selected_items=18 HTTP/1.1" 200 14796
+[2025-05-23 20:19:54,091] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\models.py changed, reloading.
+[2025-05-23 20:19:55,421] INFO Watching for file changes with StatReloader
+[2025-05-23 20:23:20,842] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:23:33,399] INFO Watching for file changes with StatReloader
+[2025-05-23 20:23:34,255] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=VrjHzBBSEgT2Xzhzdc6fa4cC8beffpAx9BrFDKMlkZvvFzjGXfGtrVr2cITSLG3B&selected_items=18 HTTP/1.1" 200 14796
+[2025-05-23 20:23:34,719] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:23:34,763] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:23:34,791] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:23:43,132] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:23:43,165] INFO "GET /vi/checkout/ HTTP/1.1" 302 0
+[2025-05-23 20:23:43,258] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:23:43,457] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:23:43,469] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:23:43,483] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:23:43,541] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:23:43,794] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:23:43,994] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:23:44,147] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:23:44,234] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:23:44,260] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:23:44,325] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:23:44,368] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:23:44,507] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:23:49,055] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=l016nEHO7zXVtMp6p4odl0f3z40MTcIQza94rNShNizobMrd97YrCRutDBFpptbU&selected_items=18 HTTP/1.1" 200 14796
+[2025-05-23 20:23:49,241] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:23:49,301] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:23:49,309] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:23:52,721] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:23:52,777] INFO "GET /vi/checkout/ HTTP/1.1" 302 0
+[2025-05-23 20:23:52,965] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:23:53,173] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:23:53,225] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:23:53,225] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:23:53,277] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:23:53,340] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:23:53,366] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:23:53,628] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:23:53,907] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:23:54,008] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:23:54,029] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:23:54,115] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:23:54,125] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:24:23,997] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:24:25,060] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:25:46,826] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:25:48,806] INFO Watching for file changes with StatReloader
+[2025-05-23 20:25:52,876] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=Y4ZvRHI5eyDM4MGA72W2fdCnimhpIk8lce7tVQTyUhffMMIHR5wgw4RNmTW2eBBp&selected_items=18 HTTP/1.1" 200 14796
+[2025-05-23 20:25:53,346] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:25:53,411] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:25:53,439] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:25:56,495] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:25:56,518] INFO "GET /vi/checkout/ HTTP/1.1" 302 0
+[2025-05-23 20:25:56,648] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:25:56,911] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:25:56,957] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:25:57,007] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:25:57,041] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:25:57,045] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:25:57,347] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:25:57,533] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:25:57,637] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:25:57,767] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:25:57,977] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:25:57,999] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:25:58,088] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:26:39,008] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:26:40,763] INFO Watching for file changes with StatReloader
+[2025-05-23 20:27:11,259] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:27:12,217] INFO Watching for file changes with StatReloader
+[2025-05-23 20:27:16,573] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=fdmCXjRQXTMIR5hcjfL1E8XMJmRmN7gDtnuA1s2jDCobz5jj3ilfVZccNTwZjoJH&selected_items=18 HTTP/1.1" 200 14796
+[2025-05-23 20:27:17,263] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:27:17,362] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:27:17,420] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:27:22,641] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:27:22,663] INFO "GET /vi/checkout/ HTTP/1.1" 302 0
+[2025-05-23 20:27:22,756] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:27:22,910] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:27:23,009] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:27:23,085] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:27:23,250] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:27:23,568] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:27:24,100] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:27:24,169] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:27:24,183] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:27:24,249] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:27:24,350] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:27:24,410] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:27:24,502] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:27:58,255] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:27:59,362] INFO Watching for file changes with StatReloader
+[2025-05-23 20:28:33,110] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:28:35,273] INFO Watching for file changes with StatReloader
+[2025-05-23 20:28:37,675] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=W15tXQC85ww7eGuApHkOreM2XQWJTYBpabdr1ZNBLf8AWGwH9KU2I51s1nBmpf4t&selected_items=18 HTTP/1.1" 200 14796
+[2025-05-23 20:28:38,525] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:28:38,624] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:28:38,657] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:28:41,099] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:28:41,134] INFO "GET /vi/checkout/ HTTP/1.1" 302 0
+[2025-05-23 20:28:41,226] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:28:41,357] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:28:41,393] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:28:41,420] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:28:41,420] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:28:41,538] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:28:41,830] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:28:41,857] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:28:41,908] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:28:41,930] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:28:41,964] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:28:41,967] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:28:41,997] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:28:57,348] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:29:00,265] INFO Watching for file changes with StatReloader
+[2025-05-23 20:29:03,224] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=4LFie2yZeuHWc2vg7PJR5brBlzORwEimiVNgibJsUdjpU2xnRSj5m2G1p6tu2VLq&selected_items=18 HTTP/1.1" 200 14796
+[2025-05-23 20:29:03,849] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:29:04,010] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:29:04,137] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:29:06,834] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:29:06,865] INFO "GET /vi/checkout/ HTTP/1.1" 302 0
+[2025-05-23 20:29:06,967] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:29:07,372] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:29:07,375] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:29:07,376] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:29:07,377] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:29:07,392] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:29:07,456] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:29:07,492] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:29:07,512] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:29:07,517] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:29:07,532] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:29:07,533] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:29:07,574] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:30:45,845] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:30:47,893] INFO Watching for file changes with StatReloader
+[2025-05-23 20:30:50,567] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=TpxZpVRjmgX6w9no1ID8kTeN5xJFpbIM7zFXt42M2Zzze9pvLLdmBKtd94oiVsbQ&selected_items=18 HTTP/1.1" 200 14796
+[2025-05-23 20:30:50,918] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:30:50,941] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:30:50,945] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:30:54,745] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:30:54,789] INFO "GET /vi/checkout/ HTTP/1.1" 302 0
+[2025-05-23 20:30:55,062] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:30:55,368] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:30:56,004] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:30:56,746] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:30:56,771] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:30:56,977] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:30:57,084] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:30:57,344] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:30:57,419] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:30:57,422] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:30:57,555] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:30:57,641] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:30:57,646] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:31:44,011] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:31:45,260] INFO Watching for file changes with StatReloader
+[2025-05-23 20:31:50,994] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=2MJbam8k8FvvrGgtSZHt8uXKfvrcLsnSgWR9evjNOo7Y9GiAC2hHplcaj26PhJQW&selected_items=18 HTTP/1.1" 200 14796
+[2025-05-23 20:31:51,668] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:31:51,865] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:31:51,951] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:31:56,328] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:31:56,405] INFO "GET /vi/checkout/ HTTP/1.1" 302 0
+[2025-05-23 20:31:56,892] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:31:57,025] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:31:57,425] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:31:58,713] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:31:58,976] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:32:01,726] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:32:01,804] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:32:01,980] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:32:02,143] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:32:02,259] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:32:02,275] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:32:02,293] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:32:02,338] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:32:54,995] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:32:55,724] INFO Watching for file changes with StatReloader
+[2025-05-23 20:33:01,510] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=dUkQIypNJdNhUo7Syneu7w5G3OngeSifr4sOMHAgpWpKCo9ZiqOIonk67l2TK9Lj&selected_items=18 HTTP/1.1" 200 14796
+[2025-05-23 20:33:01,925] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:33:01,980] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:33:02,027] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:33:05,605] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:33:05,637] INFO "GET /vi/checkout/ HTTP/1.1" 302 0
+[2025-05-23 20:33:05,807] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:33:06,209] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:33:06,347] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:33:06,581] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:33:06,746] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:33:06,928] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:33:06,963] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:33:06,974] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:33:07,033] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:33:07,191] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:33:07,621] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:33:07,684] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:33:07,687] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:33:51,562] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:33:53,559] INFO Watching for file changes with StatReloader
+[2025-05-23 20:33:58,053] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=b26xHl8QrQY4RuTNQaYX9EGK4XENQN2UpcevLujj7zAxzuVUAdybqvVa8ujqm4vY&selected_items=18 HTTP/1.1" 200 14796
+[2025-05-23 20:33:58,781] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:33:58,793] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:33:58,817] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:34:01,954] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:34:02,071] INFO "GET /vi/checkout/ HTTP/1.1" 302 0
+[2025-05-23 20:34:02,335] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:34:02,512] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:34:02,523] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:34:02,554] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:34:02,699] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:34:02,745] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:34:02,834] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:34:02,888] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:34:03,145] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:34:03,220] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:34:03,270] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:34:03,314] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:34:03,337] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:34:18,623] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:34:18,695] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:34:18,763] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:34:18,799] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:34:18,838] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:34:18,847] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:34:18,866] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:34:18,870] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:34:18,873] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:34:18,910] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:34:18,915] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:34:18,920] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:34:18,951] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:34:28,422] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=L06MRFX0mVZsHLgUw2Xw98TDWuvXMHZtZaeKVO8t2EBVpLi1g5xKqZ8301aAiYsx&selected_items=18 HTTP/1.1" 200 14796
+[2025-05-23 20:34:28,580] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:34:28,627] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:34:28,656] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:35:59,125] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:35:59,187] INFO "GET /vi/checkout/ HTTP/1.1" 302 0
+[2025-05-23 20:35:59,279] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:35:59,400] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:35:59,427] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:35:59,513] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:35:59,520] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:35:59,521] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:35:59,583] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:35:59,815] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:36:00,003] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:36:00,013] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:36:00,074] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:36:00,100] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:36:00,112] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:36:21,525] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:36:24,066] INFO Watching for file changes with StatReloader
+[2025-05-23 20:36:32,034] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=ZnSwixjAMcNjceBy3VQ9b3p1hG0pvCsXdx0umGu3sVpMUeDFNYqnsUErldF21TV1&selected_items=18 HTTP/1.1" 200 14796
+[2025-05-23 20:36:32,605] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:36:32,635] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:36:32,734] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:36:40,219] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:36:40,241] INFO "GET /vi/checkout/ HTTP/1.1" 302 0
+[2025-05-23 20:36:40,305] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:36:40,574] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:36:40,575] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:36:40,603] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:36:40,620] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:36:40,637] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:36:40,638] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:36:40,643] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:36:40,648] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:36:40,682] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:36:40,687] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:36:40,689] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:36:40,701] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:37:20,327] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:37:21,348] INFO Watching for file changes with StatReloader
+[2025-05-23 20:37:25,962] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=XsAFEbQ9IOkncxQBTsXRKRt4PVQQQDjabCIDIk1CoxWQUxSIDvx51IIuTsvtmUMe&selected_items=18%2C19 HTTP/1.1" 200 15499
+[2025-05-23 20:37:26,556] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:37:26,617] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:37:26,709] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:37:26,711] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:37:33,030] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:37:33,074] INFO "GET /vi/checkout/ HTTP/1.1" 302 0
+[2025-05-23 20:37:33,185] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:37:33,428] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:37:33,445] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:37:33,477] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:37:33,590] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:37:33,615] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:37:33,682] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:37:33,690] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:37:33,740] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:37:33,760] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:37:33,813] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:37:33,910] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:37:34,794] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:38:05,526] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:38:06,594] INFO Watching for file changes with StatReloader
+[2025-05-23 20:39:15,836] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\signals.py changed, reloading.
+[2025-05-23 20:39:17,436] INFO Watching for file changes with StatReloader
+[2025-05-23 20:39:21,421] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=RcjARZ50SpdFTVoZl4liFRFFoWUJP7FK5mryV8gty8P8BVq657VwWIU5stzmlo8O&selected_items=18%2C19 HTTP/1.1" 200 15499
+[2025-05-23 20:39:22,505] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:39:22,557] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:39:22,587] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:39:22,752] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:39:32,869] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:39:32,886] INFO "GET /vi/checkout/ HTTP/1.1" 302 0
+[2025-05-23 20:39:32,965] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:39:33,198] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:39:33,231] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:39:33,259] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:39:33,282] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:39:33,285] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:39:33,320] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:39:33,322] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:39:33,327] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:39:33,339] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:39:33,353] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:39:33,356] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:39:33,357] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:40:09,551] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\signals.py changed, reloading.
+[2025-05-23 20:40:10,380] INFO Watching for file changes with StatReloader
+[2025-05-23 20:40:18,662] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\signals.py changed, reloading.
+[2025-05-23 20:40:19,935] INFO Watching for file changes with StatReloader
+[2025-05-23 20:40:22,957] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:40:23,701] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:40:23,735] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:40:23,746] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:40:23,775] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:40:23,784] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:40:23,854] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:40:23,874] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:40:24,076] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:40:24,080] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:40:24,104] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:40:24,352] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:40:24,434] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:40:30,946] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=tDTHbVDR8SyS4ZMX9cEhKvXS31rU3WTmHN1Ff4OkOBalMZO4Tfev1mci7y6xzdmq&selected_items=18 HTTP/1.1" 200 14796
+[2025-05-23 20:40:31,068] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:40:31,136] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:40:31,804] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:40:39,955] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:40:39,969] INFO "GET /vi/checkout/ HTTP/1.1" 302 0
+[2025-05-23 20:40:40,036] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:40:40,296] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:40:40,700] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:40:40,715] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:40:40,799] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:40:40,816] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:40:41,007] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:40:41,131] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:40:41,362] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:40:41,469] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:40:41,500] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:40:41,586] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:40:41,616] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:41:23,176] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\signals.py changed, reloading.
+[2025-05-23 20:41:24,836] INFO Watching for file changes with StatReloader
+[2025-05-23 20:41:25,450] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:41:26,093] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:41:26,107] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:41:26,108] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:41:26,118] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:41:26,122] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:41:26,151] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:41:26,185] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:41:26,194] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:41:26,219] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:41:26,224] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:41:26,243] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:41:26,334] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:41:29,195] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=fD5OYXUTaHizpBOquvaYHEB6SLRa2MPstNdM265mQqU27BQxeyKcYvQwWiwNy3iw&selected_items=18 HTTP/1.1" 200 14796
+[2025-05-23 20:41:29,581] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:41:29,658] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:41:29,660] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:41:47,206] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:41:47,244] INFO "GET /vi/checkout/ HTTP/1.1" 200 11003
+[2025-05-23 20:41:47,468] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:41:47,557] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:42:07,181] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=fD5OYXUTaHizpBOquvaYHEB6SLRa2MPstNdM265mQqU27BQxeyKcYvQwWiwNy3iw&selected_items=18 HTTP/1.1" 200 14796
+[2025-05-23 20:42:07,289] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:42:07,313] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:42:07,327] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:42:10,624] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:42:10,814] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:42:10,841] INFO "GET /static/js/cart.js HTTP/1.1" 200 5144
+[2025-05-23 20:42:10,933] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:42:10,985] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:42:11,051] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:42:11,074] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:42:11,127] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:42:11,143] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:42:11,306] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:42:11,377] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:42:11,390] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:42:11,395] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:42:22,062] INFO "GET /vi/my-orders/ HTTP/1.1" 200 8168
+[2025-05-23 20:42:22,161] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:42:22,182] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:42:32,082] INFO "GET / HTTP/1.1" 302 0
+[2025-05-23 20:42:32,179] INFO "GET /vi/ HTTP/1.1" 200 12215
+[2025-05-23 20:42:32,513] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:42:32,547] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:42:32,703] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:42:32,753] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:42:32,756] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:42:33,518] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:42:33,542] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:42:33,548] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:42:33,617] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:42:33,647] INFO "GET /media/products/9.png HTTP/1.1" 200 31060
+[2025-05-23 20:42:33,658] INFO "GET /media/products/8.png HTTP/1.1" 200 31650
+[2025-05-23 20:42:33,939] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:42:33,942] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:42:44,888] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\signals.py changed, reloading.
+[2025-05-23 20:42:47,517] INFO Watching for file changes with StatReloader
+[2025-05-23 20:43:19,681] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:43:21,412] INFO Watching for file changes with StatReloader
+[2025-05-23 20:43:49,274] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\signals.py changed, reloading.
+[2025-05-23 20:43:50,377] INFO Watching for file changes with StatReloader
+[2025-05-23 20:44:08,452] INFO "GET /vi/ HTTP/1.1" 200 12215
+[2025-05-23 20:44:09,815] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:44:09,858] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 20:44:10,112] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 20:44:10,157] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 20:44:10,203] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 20:44:10,219] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 20:44:10,358] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 20:44:10,380] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:44:10,961] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 20:44:10,995] INFO "GET /media/products/8.png HTTP/1.1" 200 31650
+[2025-05-23 20:44:10,996] INFO "GET /media/products/9.png HTTP/1.1" 200 31060
+[2025-05-23 20:44:10,999] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 20:44:11,643] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 20:44:13,030] INFO "GET /vi/my-orders/ HTTP/1.1" 200 8168
+[2025-05-23 20:44:13,168] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 20:44:13,193] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 20:44:16,056] INFO "GET /vi/order/fD5OYXUTaHizpBOquvaYHEB6SLRa2MPstNdM265mQqU27BQxeyKcYvQwWiwNy3iw/ HTTP/1.1" 200 8816
+[2025-05-23 20:44:27,107] INFO "GET /vi/my-orders/ HTTP/1.1" 200 8168
+[2025-05-23 20:44:31,717] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:45:14,667] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:45:17,301] INFO Watching for file changes with StatReloader
+[2025-05-23 20:45:17,741] INFO "GET /vi/my-orders/ HTTP/1.1" 200 8588
+[2025-05-23 20:45:58,671] INFO D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py changed, reloading.
+[2025-05-23 20:46:00,354] INFO Watching for file changes with StatReloader
+[2025-05-23 20:46:10,392] INFO "GET /vi/cart HTTP/1.1" 200 32678
+[2025-05-23 20:46:13,971] INFO "GET /vi/checkout/address/?csrfmiddlewaretoken=2406GsWjg3gub6KVvwcgTpJOBRFBAD8lge84KB7MWMSXT6M2fzMuagYeFoke6UBp&selected_items=18%2C19 HTTP/1.1" 200 15499
+[2025-05-23 20:46:18,433] INFO "POST /vi/checkout/address/ HTTP/1.1" 302 0
+[2025-05-23 20:46:18,478] INFO "GET /vi/checkout/ HTTP/1.1" 200 11003
+[2025-05-23 20:46:36,584] INFO "GET /vi/cart HTTP/1.1" 200 27188
+[2025-05-23 20:46:42,287] INFO "GET /vi/my-orders/ HTTP/1.1" 200 8588
+[2025-05-23 20:46:44,003] INFO "GET /vi/order/2406GsWjg3gub6KVvwcgTpJOBRFBAD8lge84KB7MWMSXT6M2fzMuagYeFoke6UBp/ HTTP/1.1" 200 9486
+[2025-05-23 20:46:50,489] INFO "GET / HTTP/1.1" 302 0
+[2025-05-23 20:46:50,507] INFO "GET /vi/ HTTP/1.1" 200 12215
+[2025-05-23 20:49:15,056] INFO "GET /vi/cart HTTP/1.1" 200 27188
+[2025-05-23 20:49:17,079] INFO "GET /vi/my-orders/ HTTP/1.1" 200 8588
+[2025-05-23 20:49:19,081] INFO "GET /vi/order/2406GsWjg3gub6KVvwcgTpJOBRFBAD8lge84KB7MWMSXT6M2fzMuagYeFoke6UBp/ HTTP/1.1" 200 9486
+[2025-05-23 20:49:30,267] INFO "GET /vi/my-orders/ HTTP/1.1" 200 8588
+[2025-05-23 20:49:52,532] INFO "GET /vi/my-orders/ HTTP/1.1" 200 8597
+[2025-05-23 20:49:54,807] INFO "GET /vi/cart HTTP/1.1" 200 27197
+[2025-05-23 20:50:05,950] INFO "GET /vi/cart HTTP/1.1" 200 27197
+[2025-05-23 20:50:07,733] INFO "GET / HTTP/1.1" 302 0
+[2025-05-23 20:50:07,786] INFO "GET /vi/ HTTP/1.1" 200 12224
+[2025-05-23 20:50:39,468] INFO "GET /vi/cart HTTP/1.1" 200 27197
+[2025-05-23 20:50:43,427] INFO "GET /vi/my-orders/ HTTP/1.1" 200 8597
+[2025-05-23 21:00:42,045] INFO "POST /i18n/setlang/ HTTP/1.1" 302 0
+[2025-05-23 21:00:42,084] INFO "GET /en/my-orders/ HTTP/1.1" 200 8519
+[2025-05-23 21:00:44,201] INFO "POST /i18n/setlang/ HTTP/1.1" 302 0
+[2025-05-23 21:00:44,257] INFO "GET /ja/my-orders/ HTTP/1.1" 200 8534
+[2025-05-23 22:07:40,731] INFO "GET / HTTP/1.1" 302 0
+[2025-05-23 22:07:40,774] INFO "GET /ja/ HTTP/1.1" 200 12190
+[2025-05-23 22:07:41,392] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-23 22:07:41,398] INFO "GET /static/css/base_style.css HTTP/1.1" 200 1864
+[2025-05-23 22:07:41,430] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-23 22:07:41,469] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-23 22:07:41,481] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-23 22:07:41,527] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-23 22:07:41,530] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-23 22:07:41,542] INFO "GET /media/products/8.png HTTP/1.1" 200 31650
+[2025-05-23 22:07:41,553] INFO "GET /media/products/9.png HTTP/1.1" 200 31060
+[2025-05-23 22:07:41,559] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-23 22:07:41,596] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-23 22:07:41,618] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-23 22:07:41,627] INFO "GET /media/products/11.png HTTP/1.1" 200 461237
+[2025-05-23 22:07:43,817] INFO "GET /ja/logout/ HTTP/1.1" 302 0
+[2025-05-23 22:07:43,857] INFO "GET /ja/login/ HTTP/1.1" 200 9558
+[2025-05-23 22:07:43,962] INFO "GET /static/css/auth.css HTTP/1.1" 200 2133
+[2025-05-23 22:07:43,964] INFO "GET /static/js/auth.js HTTP/1.1" 200 3174
+[2025-05-23 22:07:43,965] INFO "GET /media/images/register.png HTTP/1.1" 200 95079
+[2025-05-23 22:07:43,965] INFO "GET /media/images/login.png HTTP/1.1" 200 107035
+[2025-05-24 07:16:11,999] ERROR Internal Server Error: /ja/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\fields\__init__.py", line 2128, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 388, in order_list
+    orders = Order.objects.filter(user=request.user)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\query.py", line 1491, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\query.py", line 1509, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\query.py", line 1516, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\sql\query.py", line 1585, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\sql\query.py", line 1412, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\fields\related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\fields\__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x000001786FD98410>>.
+[2025-05-24 07:16:12,022] ERROR "GET /ja/my-orders/ HTTP/1.1" 500 130991
+[2025-05-24 07:16:15,680] ERROR Internal Server Error: /ja/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\fields\__init__.py", line 2128, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 388, in order_list
+    orders = Order.objects.filter(user=request.user)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\query.py", line 1491, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\query.py", line 1509, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\query.py", line 1516, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\sql\query.py", line 1585, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\sql\query.py", line 1412, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\fields\related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\fields\__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x000001786FFE8710>>.
+[2025-05-24 07:16:15,683] ERROR "GET /ja/my-orders/ HTTP/1.1" 500 131128
+[2025-05-24 07:16:16,771] ERROR Internal Server Error: /ja/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\fields\__init__.py", line 2128, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 388, in order_list
+    orders = Order.objects.filter(user=request.user)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\query.py", line 1491, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\query.py", line 1509, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\query.py", line 1516, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\sql\query.py", line 1585, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\sql\query.py", line 1412, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\fields\related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\fields\__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x00000178702C09E0>>.
+[2025-05-24 07:16:16,773] ERROR "GET /ja/my-orders/ HTTP/1.1" 500 131128
+[2025-05-24 07:16:17,500] ERROR Internal Server Error: /ja/my-orders/
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\fields\__init__.py", line 2128, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\assigment-t\python-2\website-seller-fashion-pthon\fashion\views.py", line 388, in order_list
+    orders = Order.objects.filter(user=request.user)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\query.py", line 1491, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\query.py", line 1509, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\query.py", line 1516, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\sql\query.py", line 1585, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\sql\query.py", line 1412, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\fields\related_lookups.py", line 112, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\linh7\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\db\models\fields\__init__.py", line 2130, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x000001786FE02AB0>>.
+[2025-05-24 07:16:17,503] ERROR "GET /ja/my-orders/ HTTP/1.1" 500 131128
+[2025-05-24 07:16:21,905] INFO "GET /ja/ HTTP/1.1" 302 0
+[2025-05-24 07:16:21,952] INFO "GET /login/?next=/ja/ HTTP/1.1" 302 0
+[2025-05-24 07:16:21,986] INFO "GET /ja/login/?next=/ja/ HTTP/1.1" 200 9558
+[2025-05-24 07:16:22,076] INFO "GET /media/images/register.png HTTP/1.1" 304 0
+[2025-05-24 07:16:22,088] INFO "GET /media/images/login.png HTTP/1.1" 304 0
+[2025-05-24 07:16:22,109] INFO "GET /static/css/auth.css HTTP/1.1" 304 0
+[2025-05-24 07:16:22,110] INFO "GET /static/js/auth.js HTTP/1.1" 304 0
+[2025-05-24 07:16:24,622] INFO "POST /vi/api/login/ HTTP/1.1" 200 38
+[2025-05-24 07:16:28,054] INFO "GET / HTTP/1.1" 302 0
+[2025-05-24 07:16:28,100] INFO "GET /ja/ HTTP/1.1" 200 12190
+[2025-05-24 07:16:28,336] INFO "GET /static/css/base_style.css HTTP/1.1" 304 0
+[2025-05-24 07:16:28,411] INFO "GET /media/products/4.png HTTP/1.1" 200 132892
+[2025-05-24 07:16:28,438] INFO "GET /media/products/7.jpeg HTTP/1.1" 200 129271
+[2025-05-24 07:16:28,528] INFO "GET /media/products/5.jpg HTTP/1.1" 200 63065
+[2025-05-24 07:16:28,601] INFO "GET /media/products/2.png HTTP/1.1" 200 67607
+[2025-05-24 07:16:28,645] INFO "GET /media/products/9.png HTTP/1.1" 200 31060
+[2025-05-24 07:16:28,719] INFO "GET /media/products/3.png HTTP/1.1" 200 3040011
+[2025-05-24 07:16:28,788] INFO "GET /media/products/1.png HTTP/1.1" 200 50314
+[2025-05-24 07:16:28,825] INFO "GET /media/products/10.jpg HTTP/1.1" 200 246646
+[2025-05-24 07:16:28,894] INFO "GET /media/products/8.png HTTP/1.1" 200 31650
+[2025-05-24 07:16:28,915] INFO "GET /media/products/6.png HTTP/1.1" 200 211482
+[2025-05-24 07:16:28,920] INFO "GET /media/users/1.png HTTP/1.1" 200 793660
+[2025-05-24 07:16:29,065] INFO "GET /media/products/11.png HTTP/1.1" 200 461237

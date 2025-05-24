@@ -1,0 +1,81 @@
+{% extends 'store/base_shop.html' %}
+{% load math_filters %}
+{% load i18n %}
+{% load custom_filters %}
+
+{% block title %}
+  {% trans "Chi tiết đơn hàng" %}
+{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">📋 {% trans "Chi tiết đơn hàng" %} <span class="text-primary">#{{ order.id }}</span></h2>
+    <p class="text-muted">{% trans "Thông tin chi tiết đơn hàng bạn đã đặt" %}</p>
+  </div>
+
+  <div class="card shadow-lg border-0 rounded-4">
+    <div class="card-body p-4">
+
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <p><i class="bi bi-calendar-event"></i> <strong>{% trans "Ngày tạo" %}:</strong> {{ order.created_at|date:"d/m/Y H:i" }}</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p>
+            <i class="bi bi-info-circle"></i> <strong>{% trans "Trạng thái" %}:</strong>
+            {% if order.status != 'pending' %}
+              <span class="badge bg-success px-3 py-2 fs-6">✅ {% trans "Đã thanh toán" %}</span>
+            {% else %}
+              <span class="badge bg-warning text-dark px-3 py-2 fs-6">⏳ {% trans "Chưa thanh toán" %}</span>
+            {% endif %}
+          </p>
+        </div>
+      </div>
+
+      {% if order.status == 'pending' %}
+      <div class="alert alert-info text-center">
+        <p class="mb-2 fw-semibold">💳 {% trans "Vui lòng quét mã QR bên dưới để thanh toán" %}:</p>
+        <img src="{{ order.qr_code_url }}" alt="{% trans 'Mã QR thanh toán' %}" class="img-fluid rounded" style="max-width: 250px;">
+        <p class="mt-2 text-muted"><small>{% trans "Đơn hàng sẽ tự động xác nhận sau khi bạn thanh toán thành công." %}</small></p>
+      </div>
+      {% endif %}
+
+      <h5 class="fw-bold mt-4 mb-3">🛒 {% trans "Sản phẩm trong đơn" %}</h5>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle shadow-sm">
+          <thead class="table-light text-center">
+            <tr>
+              <th>{% trans "Sản phẩm" %}</th>
+              <th>{% trans "Đơn giá" %}</th>
+              <th>{% trans "Số lượng" %}</th>
+              <th>{% trans "Thành tiền" %}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in order.items.all %}
+            <tr>
+              <td>{{ item.product.name }}</td>
+              <td class="text-end">{{ item.price|format_price }}₫</td>
+              <td class="text-center">{{ item.quantity }}</td>
+              <td class="text-end text-danger fw-bold">{{ item.price|mul:item.quantity|format_price }}₫</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="text-end mt-4">
+        <h5 class="fw-bold">{% trans "Tổng tiền" %}: <span class="text-danger fs-4">{{ order.total_amount|format_price }}₫</span></h5>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="{% url 'order_list' %}" class="btn btn-outline-primary px-4 py-2 rounded-pill">
+          ← {% trans "Quay lại danh sách đơn hàng" %}
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -65,12 +65,15 @@ class Order(models.Model):
     order_key = models.CharField(max_length=100, unique=True, null=True, editable=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
+    qr_code_url = models.CharField(max_length=255, null=True, blank=True)
     address = models.TextField(verbose_name="Địa chỉ nhận hàng")
     contact_phone = models.CharField(max_length=20, verbose_name="Số điện thoại liên hệ")
     contact_email = models.EmailField(verbose_name="Email liên hệ", null=True, blank=True)
 
     note = models.TextField(null=True, blank=True, verbose_name="Nội dung ghi chú")
+    voucher_code = models.CharField(max_length=20, null=True, blank=True, verbose_name="Mã giảm giá")
     total_amount = models.IntegerField(default=0)
+    status = models.CharField(max_length=20, default='pending', verbose_name="Trạng thái đơn hàng")
 
     def __str__(self):
         return f"Đơn hàng #{self.id} của {self.user}"

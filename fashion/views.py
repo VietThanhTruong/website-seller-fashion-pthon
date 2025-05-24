@@ -269,16 +269,13 @@ def checkout_address_view(request):
 
     if not items.exists():
         return redirect('cart')
-
     contacts = UserContact.objects.filter(user=user)
 
     item_ids_str = request.session.get("selected_items", "") or request.GET.get("selected_items")
     oderKey = request.session.get("oderKey", "") or request.GET.get("csrfmiddlewaretoken") 
     item_ids = item_ids_str.split(",") if item_ids_str else []
-
     selected_items = items.filter(id__in=item_ids)
     total_price = sum(item.total_price() for item in selected_items)
-
     request.session['selected_items'] = ",".join(item_ids)
     request.session['total_price'] = int(total_price)  
     request.session['items_ids_only'] = item_ids
@@ -314,6 +311,7 @@ def checkout_address_view(request):
             if not selected_contact_id:
                 messages.error(request, "Vui lòng chọn địa chỉ giao hàng.")
             else:
+                request.session['voucher'] = request.POST.get("voucher_code", "")
                 request.session['selected_contact_id'] = selected_contact_id
                 request.session['order_note'] = request.POST.get("note", "")
                 return redirect("checkout")
@@ -335,7 +333,8 @@ def checkout_view(request):
     total_price = request.session.get('total_price')
     note = request.session.get('order_note', '')
     oder_key = request.session.get('oderKey')
-    print(contact_id, item_ids_str, total_price)
+    voucher_code = request.session.get('voucher', '')
+    print(111,contact_id, item_ids_str, total_price, voucher_code)
     if not all([contact_id, item_ids_str, total_price]):
         return redirect("cart")
 
@@ -349,7 +348,10 @@ def checkout_view(request):
             'contact_phone': contact.contact_phone,
             'contact_email': contact.contact_email,
             'note': note,
-            'total_amount': total_price
+            'total_amount': total_price,
+            'voucher_code': voucher_code,
+            'status': 'pending',
+            'qr_code_url': generate_vietqr_url(total_price, user.username)
         }
     )
 
@@ -364,7 +366,7 @@ def checkout_view(request):
                 quantity=item.quantity,
                 price=product.price
             )
-        # selected_items.delete()
+        selected_items.delete()
 
     return render(request, "store/checkout.html", {
         'cart_item_count': items.count(),
@@ -381,6 +383,16 @@ def checkout_view(request):
             "oderKey": oder_key
         }
     })
+
+def order_list(request):
+    orders = Order.objects.filter(user=request.user)
+    items = _cart_items(request)
+    return render(request, 'store/order_list.html', {'orders': orders, 'cart_item_count': items.count()})
+
+def order_detail(request, order_key):
+    order = get_object_or_404(Order, order_key=order_key, user=request.user)
+    items = _cart_items(request)
+    return render(request, 'store/order_detail.html', {'order': order, 'cart_item_count': items.count()})
 
 @require_POST
 def ajax_login(request):

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-23 12:36+0700\n"
+"POT-Creation-Date: 2025-05-23 20:51+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: English <en@li.org>\n"
@@ -79,7 +79,7 @@ msgid "Giỏ hàng"
 msgstr "Shopping Cart"
 
 #: .\fashion\templates\store\base_profile.html:38
-#: .\fashion\templates\store\base_shop.html:184
+#: .\fashion\templates\store\base_shop.html:193
 msgid "Đăng xuất"
 msgstr "Logout"
 
@@ -227,81 +227,81 @@ msgstr "Cannot copy!"
 msgid "Thông tin nhận hàng"
 msgstr "Shipping Information"
 
-#: .\fashion\templates\store\checkout_address.html:42
+#: .\fashion\templates\store\checkout_address.html:43
 msgid "Chọn địa chỉ có sẵn:"
 msgstr "Select Available Address:"
 
-#: .\fashion\templates\store\checkout_address.html:71
+#: .\fashion\templates\store\checkout_address.html:72
 msgid "Địa chỉ:"
 msgstr "Address:"
 
-#: .\fashion\templates\store\checkout_address.html:72
+#: .\fashion\templates\store\checkout_address.html:73
 msgid "Điện thoại:"
 msgstr "Phone:"
 
-#: .\fashion\templates\store\checkout_address.html:73
+#: .\fashion\templates\store\checkout_address.html:74
 msgid "Email:"
 msgstr "Email:"
 
-#: .\fashion\templates\store\checkout_address.html:82
+#: .\fashion\templates\store\checkout_address.html:83
 msgid "Bạn chưa có địa chỉ nhận hàng nào. Vui lòng thêm địa chỉ mới:"
 msgstr "You have no shipping address. Please add a new address:"
 
-#: .\fashion\templates\store\checkout_address.html:88
+#: .\fashion\templates\store\checkout_address.html:89
 msgid "Mã voucher (nếu có)"
 msgstr "Voucher Code (if any)"
 
-#: .\fashion\templates\store\checkout_address.html:95
+#: .\fashion\templates\store\checkout_address.html:96
 msgid "Nhập mã voucher"
 msgstr "Enter voucher code"
 
-#: .\fashion\templates\store\checkout_address.html:106
-#: .\fashion\templates\store\checkout_address.html:181
+#: .\fashion\templates\store\checkout_address.html:107
+#: .\fashion\templates\store\checkout_address.html:182
 msgid "Thêm địa chỉ mới"
 msgstr "Add New Address"
 
-#: .\fashion\templates\store\checkout_address.html:115
+#: .\fashion\templates\store\checkout_address.html:116
 msgid "Tiếp tục thanh toán"
 msgstr "Continue to Payment"
 
-#: .\fashion\templates\store\checkout_address.html:122
+#: .\fashion\templates\store\checkout_address.html:123
 #: .\fashion\templates\store\home.html:8
 msgid "Danh sách sản phẩm"
 msgstr "Product List"
 
-#: .\fashion\templates\store\checkout_address.html:187
+#: .\fashion\templates\store\checkout_address.html:188
 msgid "Đóng"
 msgstr "Close"
 
-#: .\fashion\templates\store\checkout_address.html:193
+#: .\fashion\templates\store\checkout_address.html:194
 msgid "Địa chỉ nhận hàng"
 msgstr "Shipping Address"
 
-#: .\fashion\templates\store\checkout_address.html:202
+#: .\fashion\templates\store\checkout_address.html:203
 msgid "Vui lòng nhập địa chỉ nhận hàng."
 msgstr "Please enter a shipping address."
 
-#: .\fashion\templates\store\checkout_address.html:206
+#: .\fashion\templates\store\checkout_address.html:207
 msgid "Số điện thoại liên hệ"
 msgstr "Contact Phone Number"
 
-#: .\fashion\templates\store\checkout_address.html:216
+#: .\fashion\templates\store\checkout_address.html:217
 msgid "Vui lòng nhập số điện thoại liên hệ."
 msgstr "Please enter a contact phone number."
 
-#: .\fashion\templates\store\checkout_address.html:221
+#: .\fashion\templates\store\checkout_address.html:222
 msgid "Email liên hệ (không bắt buộc)"
 msgstr "Contact Email (optional)"
 
-#: .\fashion\templates\store\checkout_address.html:238
+#: .\fashion\templates\store\checkout_address.html:239
 msgid "Hủy"
 msgstr "Cancel"
 
-#: .\fashion\templates\store\checkout_address.html:240
+#: .\fashion\templates\store\checkout_address.html:241
 msgid "Lưu địa chỉ"
 msgstr "Save Address"
 
-#: .\fashion\templates\store\checkout_address.html:267
+#: .\fashion\templates\store\checkout_address.html:268
 msgid "Bạn chắc chắn muốn xóa địa chỉ này?"
 msgstr "Are you sure you want to delete this address?"
 
@@ -329,14 +329,100 @@ msgstr "Home"
 #: .\fashion\templates\store\search_results.html:19
 msgid "Xem chi tiết"
 msgstr "View Details"
+#: .\fashion\templates\store\order_detail.html:7
+#: .\fashion\templates\store\order_detail.html:13
+msgid "Chi tiết đơn hàng"
+msgstr "Order Details"
+
+#: .\fashion\templates\store\order_detail.html:14
+msgid "Thông tin chi tiết đơn hàng bạn đã đặt"
+msgstr "Detailed information about your order"
+
+#: .\fashion\templates\store\order_detail.html:22
+#: .\fashion\templates\store\order_list.html:20
+msgid "Ngày tạo"
+msgstr "Created Date"
+
+#: .\fashion\templates\store\order_detail.html:26
+#: .\fashion\templates\store\order_list.html:21
+msgid "Trạng thái"
+msgstr "Status"
+
+#: .\fashion\templates\store\order_detail.html:28
+#: .\fashion\templates\store\order_list.html:33
+msgid "Đã thanh toán"
+msgstr "Paid"
+
+#: .\fashion\templates\store\order_detail.html:30
+#: .\fashion\templates\store\order_list.html:35
+msgid "Chưa thanh toán"
+msgstr "Unpaid"
+
+#: .\fashion\templates\store\order_detail.html:38
+msgid "Vui lòng quét mã QR bên dưới để thanh toán"
+msgstr "Please scan the QR code below to make a payment"
+
+#: .\fashion\templates\store\order_detail.html:39
+msgid "Mã QR thanh toán"
+msgstr "Payment QR Code"
+
+#: .\fashion\templates\store\order_detail.html:40
+msgid "Đơn hàng sẽ tự động xác nhận sau khi bạn thanh toán thành công."
+msgstr "Your order will be automatically confirmed after a successful payment."
+
+#: .\fashion\templates\store\order_detail.html:44
+msgid "Sản phẩm trong đơn"
+msgstr "Items in Order"
+
+#: .\fashion\templates\store\order_detail.html:49
+msgid "Sản phẩm"
+msgstr "Product"
+
+#: .\fashion\templates\store\order_detail.html:50
+msgid "Đơn giá"
+msgstr "Unit Price"
+
+#: .\fashion\templates\store\order_detail.html:51
+#: .\fashion\templates\store\product_detail.html:44
+msgid "Số lượng"
+msgstr "Quantity"
+
+#: .\fashion\templates\store\order_detail.html:52
+msgid "Thành tiền"
+msgstr "Subtotal"
+
+#: .\fashion\templates\store\order_detail.html:69
+#: .\fashion\templates\store\order_list.html:22
+msgid "Tổng tiền"
+msgstr "Total Amount"
+
+#: .\fashion\templates\store\order_detail.html:74
+msgid "Quay lại danh sách đơn hàng"
+msgstr "Back to Order List"
+
+#: .\fashion\templates\store\order_list.html:8
+msgid "📦 Đơn hàng của bạn"
+msgstr "📦 Your Orders"
+
+#: .\fashion\templates\store\order_list.html:9
+msgid "Dưới đây là danh sách các đơn hàng bạn đã đặt"
+msgstr "Below is the list of orders you have placed"
+
+#: .\fashion\templates\store\order_list.html:23
+msgid "Hành động"
+msgstr "Action"
+
+#: .\fashion\templates\store\order_list.html:42
+msgid "Chi tiết"
+msgstr "Details"
+
+#: .\fashion\templates\store\order_list.html:54
+msgid "Bạn chưa có đơn hàng nào."
+msgstr "You don't have any orders yet."
 
 #: .\fashion\templates\store\product_detail.html:12
 msgid "Quay lại trang chủ"
 msgstr "Back to Home"
-
-#: .\fashion\templates\store\product_detail.html:44
-msgid "Số lượng"
-msgstr "Quantity"
 
 #: .\fashion\templates\store\product_detail.html:57
 msgid "Thêm vào giỏ hàng"
@@ -354,12 +440,6 @@ msgstr " Search results for"
 msgid "Không tìm thấy sản phẩm nào phù hợp."
 msgstr "No matching products found."
 
-#: .\fashion\templates\store\user_profile.html:57
-#, fuzzy
-#| msgid "Số điện thoại liên hệ"
-msgid "Số điện thoại"
-msgstr "Contact Phone Number"
-
 #: .\fashion\templates\store\user_profile.html:82
 msgid "Ngày tạo tài khoản"
 msgstr "Account Creation Date"
@@ -367,6 +447,11 @@ msgstr "Account Creation Date"
 #: .\fashion\templates\store\user_profile.html:91
 msgid "Sửa thông tin"
 msgstr "Edit Information"
+
+#, fuzzy
+#~| msgid "Số điện thoại liên hệ"
+#~ msgid "Số điện thoại"
+#~ msgstr "Contact Phone Number"
 
 #~ msgid "Email"
 #~ msgstr "Email"

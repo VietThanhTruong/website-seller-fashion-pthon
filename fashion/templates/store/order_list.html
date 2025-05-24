@@ -1,0 +1,59 @@
+{% extends 'store/base_shop.html' %}
+{% load i18n %}
+{% load custom_filters %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">{% trans "📦 Đơn hàng của bạn" %}</h2>
+        <p class="text-muted">{% trans "Dưới đây là danh sách các đơn hàng bạn đã đặt" %}</p>
+    </div>
+
+    {% if orders %}
+    <div class="card shadow-sm rounded-4 border-0">
+        <div class="card-body p-4">
+            <div class="table-responsive">
+                <table class="table align-middle table-bordered table-hover text-center mb-0">
+                    <thead class="table-primary text-uppercase">
+                        <tr>
+                            <th>#ID</th>
+                            <th>{% trans "Ngày tạo" %}</th>
+                            <th>{% trans "Trạng thái" %}</th>
+                            <th>{% trans "Tổng tiền" %}</th>
+                            <th>{% trans "Hành động" %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for order in orders %}
+                        <tr>
+                            <td class="fw-semibold">#{{ order.id }}</td>
+                            <td>{{ order.created_at|date:"d/m/Y H:i" }}</td>
+                            <td>
+                                {% if order.status != 'pending' %}
+                                <span class="badge bg-success px-3 py-2">{% trans "Đã thanh toán" %}</span>
+                                {% else %}
+                                <span class="badge bg-warning text-dark px-3 py-2">{% trans "Chưa thanh toán" %}</span>
+                                {% endif %}
+                            </td>
+                            <td class="text-danger fw-bold">{{ order.total_amount|format_price }}₫</td>
+                            <td>
+                                <a href="{% url 'order_detail' order.order_key %}"
+                                    class="btn btn-outline-primary btn-sm">
+                                    {% trans "Chi tiết" %}
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="text-center mt-5">
+        <p class="fs-5 text-muted">{% trans "Bạn chưa có đơn hàng nào." %}</p>
+    </div>
+    {% endif %}
+</div>
+
+{% endblock %}
